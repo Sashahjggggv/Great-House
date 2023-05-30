@@ -82,6 +82,7 @@ body {
 }
 body * {
   transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
 .container {
@@ -94,6 +95,7 @@ body * {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
 }
 .header__container {
@@ -101,7 +103,7 @@ body * {
   align-items: center;
   justify-content: space-between;
 }
-.header__logo:hover {
+.header__logo:hover, .header :focus {
   transform: scale(1.1);
 }
 .header__links {
@@ -110,17 +112,17 @@ body * {
 .header__link {
   position: relative;
   color: #FFA500;
+  font-weight: 500;
   /* font-size: 20px; */
   font-size: 18px;
-  font-weight: normal;
   margin-left: 30px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-.header__link:hover {
+.header__link:hover, .header__link:focus {
   transform: scale(1.1);
-}
-.header__link:last-child {
-  margin: 0;
 }
 .header__link.active::after {
   content: "";
@@ -133,18 +135,213 @@ body * {
   border-radius: 1px;
   background: #FFA500;
 }
+.header__link:first-child {
+  margin: 0;
+}
 .header__btn-contacts {
+  background: #fff;
   font-size: 18px;
   font-weight: 600;
   color: #FFA500;
   border: 3px solid #FFA500;
+  box-shadow: 0 0 10px #FFA500;
   border-radius: 20px;
   padding: 8px 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-.header__btn-contacts:hover {
+.header__btn-contacts:hover, .header__btn-contacts.active {
   background: #FFA500;
   color: #fff;
 }
 .header__btn-contacts:active {
   transform: scale(0.9);
+}
+
+.contacts {
+  position: fixed;
+  bottom: 150%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, 50%);
+  background: #F0EAD6;
+  border-radius: 30px;
+  padding: 30px 50px;
+  visibility: hidden;
+}
+.contacts.active {
+  bottom: 50%;
+  visibility: visible;
+}
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__container > div {
+  max-width: 50%;
+}
+.contacts__title {
+  font-size: 18px;
+  color: #FFA500;
+  margin-bottom: 20px;
+}
+.contacts__block-phone {
+  margin-bottom: 10px;
+}
+.contacts__input {
+  border: 2.5px solid #FFA500;
+  padding: 9.5px 12px;
+  border-radius: 30px;
+  margin: 5px 0;
+  font-size: 16px;
+  width: 100%;
+}
+.contacts__input:hover, .contacts__input:active, .contacts__input:focus {
+  box-shadow: 0 0 10px #FFA500;
+}
+.contacts__btn-submit {
+  font-size: 20px;
+  color: #E6E6FA;
+  margin-top: 5px;
+  background: #FFA500;
+  width: 100%;
+  height: 47px;
+  border-radius: 30px;
+}
+.contacts__btn-submit:hover, .contacts__btn-submit:focus {
+  box-shadow: 0 0 10px #FFA500;
+}
+.contacts__btn-submit:active {
+  transform: scale(0.9);
+}
+.contacts__operator-name {
+  display: flex;
+  align-items: center;
+  color: #FFA500;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contacts__operator-name_email::after {
+  content: url(../img/email.png);
+  margin-left: 5px;
+}
+.contacts__link {
+  color: #6495ED;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: 2.5px solid #FFA500;
+}
+.contacts__link:hover, .contacts__link:focus {
+  background: #FFA500;
+  color: #E6E6FA;
+}
+.contacts__link:hover > svg path, .contacts__link:focus > svg path {
+  fill: #E6E6FA;
+}
+.contacts__link > svg:first-child {
+  margin-right: 5px;
+}
+.contacts__link:active {
+  transform: scale(0.9);
+}
+.contacts__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.contacts__close:hover, .contacts__close:focus {
+  transform: scale(1.1);
+}
+
+.contacts-bg-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: none;
+}
+.contacts-bg-shadow.active {
+  display: block;
+}
+
+.gallery {
+  position: relative;
+  margin-top: 85px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery .movable {
+  display: flex;
+  height: 85vh;
+  max-width: 100%;
+  transition: transform 0.4s;
+}
+.gallery .movable > div {
+  flex: 1;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .movable img {
+  height: auto;
+  max-height: 100%;
+  border-radius: 25px;
+  max-width: 100%;
+}
+.gallery .prev, .gallery .next {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 4px solid #FFA500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .prev:hover, .gallery .next:hover {
+  background: #FFA500;
+}
+.gallery .prev:hover svg path, .gallery .next:hover svg path {
+  fill: #fff;
+}
+.gallery .prev:active, .gallery .next:active {
+  box-shadow: 0 0 10px #FFA500;
+}
+.gallery .prev {
+  position: absolute;
+  bottom: 50%;
+  left: 50px;
+  transform: translateY(50%);
+}
+.gallery .prev svg {
+  transform: rotate(180deg);
+}
+.gallery .next {
+  position: absolute;
+  bottom: 50%;
+  right: 50px;
+  transform: translateY(50%);
+}
+
+@media (max-width: 1100px) {
+  .gallery .movable {
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+  }
+  .gallery .prev {
+    left: 20px;
+  }
+  .gallery .next {
+    right: 20px;
+  }
 }
