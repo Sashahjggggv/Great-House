@@ -142,6 +142,7 @@ body * {
   align-items: center;
 }
 .header__btn-contacts {
+  position: relative;
   background: #fff;
   font-size: 18px;
   font-weight: 600;
@@ -163,6 +164,19 @@ body * {
 }
 .header__btn-contacts:active {
   transform: scale(0.9);
+}
+.header__btn-contacts-z-block {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.5px;
+}
+.header__btn-contacts-z-block.active {
+  display: block;
 }
 .header__menu-btn {
   display: none;
