@@ -87,12 +87,9 @@ body {
     border-radius: 22.5px;
     padding: 8px 15px;
     user-select: none;
-    &:hover {
+    &:hover, &.active {
       background: #FFA500;
       color: #fff;
-    }
-    &.active {
-      display: none;
     }
     &:active {
       transform: scale(0.9);
@@ -455,6 +452,9 @@ body {
     }
     &__menu-btn {
       display: flex;
+    }
+    &__btn-contacts.active {
+      display: none;
     }
   }
 }

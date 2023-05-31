@@ -155,12 +155,9 @@ body * {
      -moz-user-select: none;
           user-select: none;
 }
-.header__btn-contacts:hover {
+.header__btn-contacts:hover, .header__btn-contacts.active {
   background: #FFA500;
   color: #fff;
-}
-.header__btn-contacts.active {
-  display: none;
 }
 .header__btn-contacts:active {
   transform: scale(0.9);
@@ -498,5 +495,8 @@ body * {
   }
   .header__menu-btn {
     display: flex;
+  }
+  .header__btn-contacts.active {
+    display: none;
   }
 }
