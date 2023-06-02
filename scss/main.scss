@@ -1,5 +1,7 @@
 @import "_nullstyle.scss";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import "_homepage.scss";
+@import "_apartment.scss";
 @font-face {
   font-family: "Marisa";
   src: url("../fonts/Marisa/Marisa.otf");
@@ -371,62 +373,6 @@ body {
   }
 }
 
-.gallery {
-  padding-top: 85px;
-  overflow: hidden;
-  position: relative;
-  & .movable{
-    display: flex;
-    height: 85vh;
-    max-width: 100%;
-    transition: transform 0.4s;
-    & > div {
-      flex:1;
-      min-width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    & img {
-      height: auto;
-      max-height: 100%;
-      border-radius: 25px;
-      max-width: 100%;
-    }
-  }
-  &__btns {
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
-    width: 100%;
-    padding-top: 85px;
-    display: flex;
-    justify-content: space-between;
-    & > button {
-      border-radius: 50%;
-      width: 70px;
-      height: 70px;
-      margin: 50px;
-      border: 4px solid #FFA500;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &:hover {
-        background: #FFA500;
-        & svg path {
-          fill: #fff;
-        }
-      }
-      &:active {
-        box-shadow: 0 0 10px #FFA500;
-      }
-    }
-  }
-  & .prev svg {
-      transform: rotate(180deg);
-  }
-}
-
 @media (max-width: 1100px) {
   .container {
     padding-left: 10px;
@@ -434,17 +380,6 @@ body {
   }
   .contacts__close {
     display: none;
-  }
-  .gallery{
-    & .movable{
-      width: 100%;
-      height: auto;
-      max-height: 85vh;
-    }
-    &__btns > button {
-      margin: 10px;
-      transform: scale(0.6);
-    }
   }
   .header {
     &__links {
