@@ -198,6 +198,16 @@ body {
       display: none;
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -5px; /* control the spread */
+    transform: translate(10px, 8px); /* control the offsets */
+    z-index: -1; /* place the element behind */
+    background: /* your gradient here */;
+    filter: blur(10px); /* control the blur */
+  }
 }
 
 .contacts {
