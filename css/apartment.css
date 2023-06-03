@@ -1,0 +1,227 @@
+.gallery {
+  padding-top: 85px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery .movable {
+  display: flex;
+  height: 85vh;
+  max-width: 100%;
+  transition: transform 0.4s;
+}
+.gallery .movable > div {
+  flex: 1;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .movable img {
+  height: auto;
+  max-height: 100%;
+  border-radius: 25px;
+  max-width: 100%;
+}
+.gallery__btns {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 100%;
+  padding-top: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery__btns > button {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 50px;
+  border: 4px solid #FFA500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__btns > button:hover {
+  background: #FFA500;
+}
+.gallery__btns > button:hover svg path {
+  fill: #fff;
+}
+.gallery__btns > button:active {
+  box-shadow: 0 0 10px #FFA500;
+}
+.gallery .prev svg {
+  transform: rotate(180deg);
+}
+
+.location {
+  margin-top: 50px;
+}
+.location__container {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+.location__block-map {
+  width: 48%;
+  height: 100%;
+}
+.location__block-slider {
+  width: 48%;
+  height: 100%;
+}
+.location__title {
+  font-size: 18px;
+  color: #FFA500;
+  margin-bottom: 20px;
+}
+.location__map {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.location__photo-slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.location__photo-slider .movable {
+  display: flex;
+  height: 500px;
+  max-width: 100%;
+  transition: transform 0.4s;
+}
+.location__photo-slider .movable > div {
+  flex: 1;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location__photo-slider .movable img {
+  height: auto;
+  max-height: 100%;
+  border-radius: 25px;
+  max-width: 100%;
+}
+.location__btns-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.location__btns-slide > button {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  transform: scale(0.6);
+  border: 4px solid #FFA500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location__btns-slide > button:hover {
+  background: #FFA500;
+}
+.location__btns-slide > button:hover svg path {
+  fill: #fff;
+}
+.location__btns-slide > button:active {
+  box-shadow: 0 0 10px #FFA500;
+}
+.location .prev svg {
+  transform: rotate(180deg);
+}
+
+.furniture-plan {
+  margin-top: 100px;
+}
+.furniture-plan__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.furniture-plan__image {
+  width: 70%;
+  height: auto;
+}
+
+.info {
+  margin-top: 100px;
+}
+.info__container {
+  display: flex;
+  justify-content: space-between;
+}
+.info__text-block {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info__bti-plan {
+  width: 48%;
+}
+.info__plan-image {
+  width: 100%;
+  height: auto;
+}
+.info__table {
+  border: 2px solid #009879;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.info__table thead tr {
+  background-color: #009879;
+  font-size: 16px;
+}
+.info__table td {
+  border-right: 2px solid #009879;
+  padding: 12px 15px;
+}
+.info__table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  font-size: 16px;
+}
+.info__table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.info__table tbody tr:nth-child(even) {
+  background: rgba(0, 152, 122, 0.5137254902);
+}
+.info__table tbody tr.none {
+  display: none;
+}
+
+.round {
+  margin-top: 50px;
+}
+.round__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.round__img {
+  width: 80%;
+  height: auto;
+}
+
+@media (max-width: 1100px) {
+  .gallery .movable {
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+  }
+  .gallery__btns > button {
+    margin: 10px;
+    transform: scale(0.6);
+  }
+}

@@ -169,6 +169,9 @@
 
   &__text-block {
     width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__bti-plan {
@@ -177,6 +180,54 @@
 
   &__plan-image {
     width: 100%;
+    height: auto;
+  }
+
+  &__table {
+    border: 2px solid #009879;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+    & thead tr {
+      background-color: #009879;
+      font-size: 16px;
+    }
+    & td {
+      border-right: 2px solid #009879;
+      padding: 12px 15px;
+    }
+    & tbody tr {
+      border-bottom: 1px solid #dddddd;
+      font-size: 16px;
+
+      &:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      &:nth-child(even) {
+        background: #00987a83;
+      }
+      &.none {
+        display: none;
+      }
+    }
+  }
+}
+
+.round {
+  margin-top: 50px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 80%;
     height: auto;
   }
 }
