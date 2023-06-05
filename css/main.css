@@ -91,7 +91,7 @@ body * {
 }
 
 .header {
-  background: linear-gradient(#F8F1F1, rgba(248, 241, 241, 0.7607843137), rgba(248, 241, 241, 0));
+  background: #F8F1F1;
   position: fixed;
   top: -82px;
   left: 0;
