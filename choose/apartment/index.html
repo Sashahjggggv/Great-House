@@ -43,7 +43,7 @@
   <section class="contacts">
     <div class="contacts__container">
       <div class="contacts__contacts">
-        <h3 class="contacts__title">Наші контакти:</h3>
+        <h3 class="title">Наші контакти:</h3>
         <div class="contacts__content">
           <div class="contacts__block-phone">
             <h5 class="contacts__operator-name">Алекс</h5>
@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="contacts__feedback">
-        <h3 class="contacts__title">Ми вам зателефонуємо:</h3>
+        <h3 class="title">Ми вам зателефонуємо:</h3>
         <div class="contacts__content">
           <form action="">
             <input type="text" placeholder="Імʼя" class="contacts__input">
@@ -136,14 +136,75 @@
     </div>
   </section>
 
+  <section class="info">
+    <div class="info__container container">
+      <div class="info__text-block">
+        <table class="info__table">
+          <thead>
+            <tr>
+              <td>№</td>
+              <td>Назва приміщення</td>
+              <td>Площа, м²</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-line1 non">
+              <td class="table-num1">1</td>
+              <td class="table-name1">-</td>
+              <td class="table-area1">-</td>
+            </tr>
+            <tr class="table-line2 non">
+              <td class="table-num2">2</td>
+              <td class="table-name2">-</td>
+              <td class="table-area2">-</td>
+            </tr>
+            <tr class="table-line3 non">
+              <td class="table-num3">3</td>
+              <td class="table-name3">-</td>
+              <td class="table-area3">-</td>
+            </tr>
+            <tr class="table-line4 non">
+              <td class="table-num4">4</td>
+              <td class="table-name4">-</td>
+              <td class="table-area4">-</td>
+            </tr>
+            <tr class="table-line5 non">
+              <td class="table-num5">5</td>
+              <td class="table-name5">-</td>
+              <td class="table-area5">-</td>
+            </tr>
+            <tr class="table-line6 non">
+              <td class="table-num6">6</td>
+              <td class="table-name6">-</td>
+              <td class="table-area6">-</td>
+            </tr>
+            <tr class="table-line7 non">
+              <td class="table-num7">7</td>
+              <td class="table-name7">-</td>
+              <td class="table-area7">-</td>
+            </tr>
+            <tr class="table-line-end non">
+              <td class="table-num-end">-</td>
+              <td class="table-name-end">-</td>
+              <td class="table-area-end">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info__bti-plan">
+        <img src="../../img/apartment-type1/bti-plan.png" alt="bti-plan" class="info__plan-image">
+      </div>
+    </div>
+  </section>
+
   <section class="location">
     <div class="location__container container">
       <div class="location__block-map">
-        <h3 class="location__title">Розташування:</h3>
+        <h3 class="title">Розташування:</h3>
         <div class="location__map" id="map"></div>
       </div>
       <div class="location__block-slider">
-        <h3 class="location__title">Вигляд з вікна:</h3>
+        <h3 class="title">Вигляд з вікна:</h3>
         <div class="location__photo-slider">
           <div class="movable">
             <div>
@@ -194,62 +255,6 @@
     </div>
   </section>
 
-  <section class="info">
-    <div class="info__container container">
-      <div class="info__text-block">
-        <table class="info__table">
-          <thead>
-            <tr>
-              <td>№</td>
-              <td>Назва приміщення</td>
-              <td>Площа, м²</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table-line1 none">
-              <td class="table-num1">1</td>
-              <td class="table-name1">-</td>
-              <td class="table-area1">-</td>
-            </tr>
-            <tr class="table-line2 none">
-              <td class="table-num2">2</td>
-              <td class="table-name2">-</td>
-              <td class="table-area2">-</td>
-            </tr>
-            <tr class="table-line3 none">
-              <td class="table-num3">3</td>
-              <td class="table-name3">-</td>
-              <td class="table-area3">-</td>
-            </tr>
-            <tr class="table-line4 none">
-              <td class="table-num4">4</td>
-              <td class="table-name4">-</td>
-              <td class="table-area4">-</td>
-            </tr>
-            <tr class="table-line5 none">
-              <td class="table-num5">5</td>
-              <td class="table-name5">-</td>
-              <td class="table-area5">-</td>
-            </tr>
-            <tr class="table-line6 none">
-              <td class="table-num6">6</td>
-              <td class="table-name6">-</td>
-              <td class="table-area6">-</td>
-            </tr>
-            <tr class="table-line7 none">
-              <td class="table-num7">7</td>
-              <td class="table-name7">-</td>
-              <td class="table-area7">-</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="info__bti-plan">
-        <img src="../../img/apartment-type1/bti-plan.png" alt="bti-plan" class="info__plan-image">
-      </div>
-    </div>
-  </section>
-
   <section class="round">
     <div class="round__container container">
       <img src="../../img/apartment-type1/round.png" alt="round-plan" class="round__img">
@@ -257,25 +262,91 @@
   </section>
 
   <footer class="footer">
-    <div class="footer__gallery"></div>
+    <div class="footer__gallery gallery-footer">
+      <div class="movable">
+        <div>
+          <img class="gallery-footer__card-item" src="../../img/apartment-type1/zal.jpg" alt="">
+        </div>
+        <div>
+          <img class="gallery-footer__card-item" src="../../img/apartment-type1/bath2.jpg" alt="">
+        </div>
+        <div>
+          <img class="gallery-footer__card-item" src="../../img/apartment-type1/kitchen.jpg" alt="">
+        </div>
+        <div>
+          <img class="gallery-footer__card-item" src="../../img/apartment-type1/koridoor.jpg" alt="">
+        </div>
+        <div>
+          <img class="gallery-footer__card-item" src="../../img/apartment-type1/zal.jpg" alt="">
+        </div>
+        <div>
+          <img class="gallery-footer__card-item" src="../../img/apartment-type1/zal2.jpg" alt="">
+        </div>
+      </div>
+      <div class="gallery-footer__btns">
+        <button class="prev">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.7808" height="35.4419">
+          <g>
+           <rect opacity="0" x="0" y="0"/>
+           <path d="M42.7808 17.644C42.7808 16.7761 42.4182 15.8862 41.814 15.293L27.5098 1.02173C26.8286 0.32959 26.0486 0 25.2686 0C23.4009 0 22.1375 1.29639 22.1375 3.02124C22.1375 3.97705 22.5439 4.71313 23.1372 5.29541L28.0591 10.2393L35.332 16.9299L36.6724 14.9194L28.136 14.458L3.2959 14.458C1.31836 14.458 0 15.7434 0 17.644C0 19.5447 1.31836 20.8301 3.2959 20.8301L28.136 20.8301L36.6724 20.3687L35.332 18.3801L28.0591 25.0488L23.1372 29.9817C22.5439 30.542 22.1375 31.3 22.1375 32.2559C22.1375 33.9807 23.4009 35.2771 25.2686 35.2771C26.0486 35.2771 26.8286 34.9365 27.4878 34.2773L41.814 19.9951C42.4182 19.4019 42.7808 18.512 42.7808 17.644Z" fill="#FFA500"/>
+          </g>
+         </svg>
+        </button>
+        <button class="next">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.7808" height="35.4419">
+          <g>
+           <rect opacity="0" x="0" y="0"/>
+           <path d="M42.7808 17.644C42.7808 16.7761 42.4182 15.8862 41.814 15.293L27.5098 1.02173C26.8286 0.32959 26.0486 0 25.2686 0C23.4009 0 22.1375 1.29639 22.1375 3.02124C22.1375 3.97705 22.5439 4.71313 23.1372 5.29541L28.0591 10.2393L35.332 16.9299L36.6724 14.9194L28.136 14.458L3.2959 14.458C1.31836 14.458 0 15.7434 0 17.644C0 19.5447 1.31836 20.8301 3.2959 20.8301L28.136 20.8301L36.6724 20.3687L35.332 18.3801L28.0591 25.0488L23.1372 29.9817C22.5439 30.542 22.1375 31.3 22.1375 32.2559C22.1375 33.9807 23.4009 35.2771 25.2686 35.2771C26.0486 35.2771 26.8286 34.9365 27.4878 34.2773L41.814 19.9951C42.4182 19.4019 42.7808 18.512 42.7808 17.644Z" fill="#FFA500"/>
+          </g>
+         </svg>
+        </button>
+      </div>
+    </div>
     <div class="footer__container container">
       <div class="footer__info">
         <img src="../../img/logo.svg" alt="Great House" class="footer__logo">
-        <div class="footer__links">
-          <a href="../../" class="footer__link">Загальний опис</a>
-          <a href="../" class="footer__link active">Обрати квартиру</a>
-          <a href="../../location" class="footer__link">Розташування</a>
-          <a href="../../parking" class="footer__link">Паркінг</a>
-        </div>
-        <div class="footer__contacts">
-          <a href="tel:+380632478641" class="footer__phone-link">+380632478641</a>
-          <a href="tel:+380989703948" class="footer__phone-link">+380989703948</a>
-        </div>
-        <div class="footer__form">
-          <input type="text" class="footer__input">
-          <input type="text" class="footer__input">
-          <input type="tel" class="footer__input">
-          <button class="footer__btn"></button>
+        <div class="footer__content">
+          <div class="footer__links">
+            <h3 class="title">Навігація сайту:</h3>
+            <a href="../../" class="footer__link">Загальний опис</a>
+            <a href="../" class="footer__link active">Обрати квартиру</a>
+            <a href="../../location" class="footer__link">Розташування</a>
+            <a href="../../parking" class="footer__link">Паркінг</a>
+          </div>
+          <div class="footer__contacts"><div class="contacts__contacts">
+            <h3 class="title">Наші контакти:</h3>
+            <div class="contacts__content">
+              <div class="contacts__block-phone">
+                <a href="tel:+380632478641" class="contacts__link">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" x="0px" y="0px" viewBox="0 0 122.88 122.27" style="enable-background:new 0 0 122.88 122.27" xml:space="preserve"><g><path fill="#6495ED" d="M33.84,50.25c4.13,7.45,8.89,14.6,15.07,21.12c6.2,6.56,13.91,12.53,23.89,17.63c0.74,0.36,1.44,0.36,2.07,0.11 c0.95-0.36,1.92-1.15,2.87-2.1c0.74-0.74,1.66-1.92,2.62-3.21c3.84-5.05,8.59-11.32,15.3-8.18c0.15,0.07,0.26,0.15,0.41,0.21 l22.38,12.87c0.07,0.04,0.15,0.11,0.21,0.15c2.95,2.03,4.17,5.16,4.2,8.71c0,3.61-1.33,7.67-3.28,11.1 c-2.58,4.53-6.38,7.53-10.76,9.51c-4.17,1.92-8.81,2.95-13.27,3.61c-7,1.03-13.56,0.37-20.27-1.69 c-6.56-2.03-13.17-5.38-20.39-9.84l-0.53-0.34c-3.31-2.07-6.89-4.28-10.4-6.89C31.12,93.32,18.03,79.31,9.5,63.89 C2.35,50.95-1.55,36.98,0.58,23.67c1.18-7.3,4.31-13.94,9.77-18.32c4.76-3.84,11.17-5.94,19.47-5.2c0.95,0.07,1.8,0.62,2.25,1.44 l14.35,24.26c2.1,2.72,2.36,5.42,1.21,8.12c-0.95,2.21-2.87,4.25-5.49,6.15c-0.77,0.66-1.69,1.33-2.66,2.03 c-3.21,2.33-6.86,5.02-5.61,8.18L33.84,50.25L33.84,50.25L33.84,50.25z"></path></g></svg>
+                  <p>(063) 247 86-41</p>
+                </a>
+              </div>
+              <div class="contacts__block-phone">
+                <a href="tel:+380989703948" class="contacts__link">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" x="0px" y="0px" viewBox="0 0 122.88 122.27" style="enable-background:new 0 0 122.88 122.27" xml:space="preserve"><g><path fill="#6495ED" d="M33.84,50.25c4.13,7.45,8.89,14.6,15.07,21.12c6.2,6.56,13.91,12.53,23.89,17.63c0.74,0.36,1.44,0.36,2.07,0.11 c0.95-0.36,1.92-1.15,2.87-2.1c0.74-0.74,1.66-1.92,2.62-3.21c3.84-5.05,8.59-11.32,15.3-8.18c0.15,0.07,0.26,0.15,0.41,0.21 l22.38,12.87c0.07,0.04,0.15,0.11,0.21,0.15c2.95,2.03,4.17,5.16,4.2,8.71c0,3.61-1.33,7.67-3.28,11.1 c-2.58,4.53-6.38,7.53-10.76,9.51c-4.17,1.92-8.81,2.95-13.27,3.61c-7,1.03-13.56,0.37-20.27-1.69 c-6.56-2.03-13.17-5.38-20.39-9.84l-0.53-0.34c-3.31-2.07-6.89-4.28-10.4-6.89C31.12,93.32,18.03,79.31,9.5,63.89 C2.35,50.95-1.55,36.98,0.58,23.67c1.18-7.3,4.31-13.94,9.77-18.32c4.76-3.84,11.17-5.94,19.47-5.2c0.95,0.07,1.8,0.62,2.25,1.44 l14.35,24.26c2.1,2.72,2.36,5.42,1.21,8.12c-0.95,2.21-2.87,4.25-5.49,6.15c-0.77,0.66-1.69,1.33-2.66,2.03 c-3.21,2.33-6.86,5.02-5.61,8.18L33.84,50.25L33.84,50.25L33.84,50.25z"></path></g></svg>
+                  <p>(098) 970 39-48</p>
+                </a>
+              </div>
+              <div class="contacts__block-phone">
+                <a href="mail:alex@gordiichuk.com" class="contacts__link">
+                  <p>alex@gordiichuk.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="footer__feedback">
+            <h3 class="title">Ми вам зателефонуємо:</h3>
+            <div class="footer__content">
+              <form action="">
+                <input type="text" placeholder="Імʼя" class="footer__input">
+                <input type="text" placeholder="Прізвище" class="footer__input">
+                <input type="tel" placeholder="(063) 247 86-41" class="footer__input">
+                <button class="footer__btn-submit">Замовити дзвінок</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

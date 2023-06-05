@@ -64,3 +64,19 @@ $(function(){
 
 
 
+var st = $(window).scrollTop();
+var navheight = $('.header').height() + 15;
+
+$(window).scroll(function() {
+	var nst = $(window).scrollTop();
+	var subio = nst < st;
+	var bajo = nst - 80 > st;
+	
+	if (subio) {
+		$('.header').addClass('sticky');
+		st = nst;
+	} else if(bajo) {
+		$('.header').removeClass('sticky');
+		st = nst;
+	}
+});

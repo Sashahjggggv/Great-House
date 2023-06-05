@@ -1,5 +1,5 @@
 .gallery {
-  padding-top: 85px;
+  margin-top: 85px;
   overflow: hidden;
   position: relative;
   & .movable{
@@ -26,7 +26,6 @@
     bottom: 50%;
     transform: translateY(50%);
     width: 100%;
-    padding-top: 85px;
     display: flex;
     justify-content: space-between;
     & > button {
@@ -65,18 +64,10 @@
 
   &__block-map {
     width: 48%;
-    height: 100%;
   }
 
   &__block-slider {
     width: 48%;
-    height: 100%;
-  }
-
-  &__title {
-    font-size: 18px;
-    color: #FFA500;
-    margin-bottom: 20px;
   }
 
   &__map {
@@ -87,7 +78,6 @@
   &__photo-slider {
     position: relative;
     width: 100%;
-    height: 500px;
     overflow: hidden;
 
     & .movable{

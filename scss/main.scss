@@ -9,7 +9,8 @@
   }
 
 body {
-  background: #F8F1F1;
+  background-color: #F8F1F1;
+
   font-family: 'Open Sans', sans-serif;
   & * {
     transition: all 0.2s ease; 
@@ -23,11 +24,16 @@ body {
 }
 
 .header {
+  background: linear-gradient(#F8F1F1, #f8f1f1c2, #f8f1f100);
   position: fixed;
-  top: 0;
+  top: -82px;
   left: 0;
   z-index: 2;
   width: 100%;
+
+  &.sticky {
+    top: 0;
+  }
 
   &__container {
     display: flex;
@@ -224,12 +230,6 @@ body {
 
   &__contacts {}
 
-  &__title {
-    font-size: 18px;
-    color: #FFA500;
-    margin-bottom: 20px;
-  }
-
   &__content {}
 
   &__block-phone {
@@ -371,23 +371,84 @@ body {
   }
 }
 
-.footer {
-  background: #009879;
 
-  &__gallery {}
+.gallery-footer {
+  overflow: hidden;
+  position: relative;
+  & .movable{
+    display: flex;
+    height: 85vh;
+    max-width: 100%;
+    transition: transform 0.4s;
+    & > div {
+      flex:1;
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & img {
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      /* width: calc(100% / 6); */
+    }
+  }
+  &__btns {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & > button {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin: 50px;
+      border: 4px solid #FFA500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background: #FFA500;
+        & svg path {
+          fill: #fff;
+        }
+      }
+      &:active {
+        box-shadow: 0 0 10px #FFA500;
+      }
+    }
+  }
+  & .prev svg {
+      transform: rotate(180deg);
+  }
+}
+
+.footer {
 
   &__container {
     padding-top: 20px;
     padding-bottom: 20px;
+    background: #dfdac6;
   }
 
   &__info {
     display: flex;
-    justify-content: space-between;
     align-items: start;
   }
 
-  &__logo {}
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+  }
 
   &__links {
     display: flex;
@@ -396,17 +457,26 @@ body {
 
   &__link {
     position: relative;
-    color: #FFA500;
+    color: #6495ed;
     font-weight: 500;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     cursor: pointer;
     user-select: none;
     &:hover, &:focus {
       transform: scale(1.1);
     }
+    &.active::after {
+      content: url("../img/arrow-mini.svg");
+      position: absolute;
+      display: block;
+      transform: scale(0.5);
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6495ed;
+    }
     &.active {
-      transform: scale(1.1);
       font-weight: 700;
     }
     &:last-child {
@@ -419,16 +489,41 @@ body {
     flex-direction: column;
   }
 
-  &__phone-link {}
+  &__feedback {}
 
-  &__form {
+  &__content form {
     display: flex;
     flex-direction: column;
+
   }
 
-  &__input {}
+  &__input {
+    border: 2.5px solid #FFA500;
+    padding: 7px 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 16px;
+    &:hover, &:active, &:focus {
+      box-shadow: 0 0 10px #FFA500;
+    }
+  }
 
-  &__btn {}
+  &__btn-submit {
+    font-size: 20px;
+    color: #E6E6FA;
+    margin-top: 5px;
+    background: #FFA500;
+    width: 200px;
+    height: 47px;
+    border-radius: 30px;
+    &:hover, &:focus {
+      box-shadow: 0 0 10px #FFA500;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
 }
 
 @media (max-width: 1100px) {
@@ -450,4 +545,11 @@ body {
       display: none;
     }
   }
+}
+
+.title {
+  font-size: 18px;
+  color: #FFA500;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
