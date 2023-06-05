@@ -419,6 +419,7 @@ body * {
 .gallery-footer {
   overflow: hidden;
   position: relative;
+  height: 300px;
 }
 .gallery-footer .movable {
   display: flex;
@@ -435,6 +436,7 @@ body * {
 }
 .gallery-footer .movable img {
   height: auto;
+  width: 100%;
   max-height: 100%;
   max-width: 100%;
   /* width: calc(100% / 6); */
@@ -471,16 +473,18 @@ body * {
 }
 
 .footer__container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: #dfdac6;
 }
 .footer__info {
   display: flex;
   align-items: start;
+  justify-content: space-between;
 }
 .footer__logo {
   margin-right: 60px;
+  width: 130px;
 }
 .footer__content {
   display: flex;

@@ -166,6 +166,9 @@
 
   &__bti-plan {
     width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__plan-image {
@@ -174,7 +177,7 @@
   }
 
   &__table {
-    border: 2px solid #009879;
+    border: 2px solid #00836a;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -182,13 +185,19 @@
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     
-    & thead tr {
-      background-color: #009879;
-      font-size: 16px;
+    & thead {
+      & td {
+        color: #fff;
+      }
+      & tr {
+        background-color: #009879;
+        font-size: 16px;
+      }
     }
     & td {
-      border-right: 2px solid #009879;
       padding: 12px 15px;
+      font-weight: 500;
+      color: #000;
     }
     & tbody tr {
       border-bottom: 1px solid #dddddd;
@@ -198,7 +207,10 @@
         border-bottom: 2px solid #009879;
       }
       &:nth-child(even) {
-        background: #00987a83;
+        background: #00836b24;
+        & td {
+          color: #00836a;
+        }
       }
       &.none {
         display: none;
@@ -217,7 +229,7 @@
   }
 
   &__img {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 }

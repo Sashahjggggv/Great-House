@@ -375,6 +375,7 @@ body {
 .gallery-footer {
   overflow: hidden;
   position: relative;
+  height: 300px;
   & .movable{
     display: flex;
     height: 85vh;
@@ -389,6 +390,7 @@ body {
     }
     & img {
       height: auto;
+      width: 100%;
       max-height: 100%;
       max-width: 100%;
       /* width: calc(100% / 6); */
@@ -429,18 +431,20 @@ body {
 .footer {
 
   &__container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: #dfdac6;
   }
 
   &__info {
     display: flex;
     align-items: start;
+    justify-content: space-between;
   }
 
   &__logo {
     margin-right: 60px;
+    width: 130px;
   }
 
   &__content {
