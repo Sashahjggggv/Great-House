@@ -225,4 +225,46 @@
     margin: 10px;
     transform: scale(0.6);
   }
+  .info__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__bti-plan {
+    width: 90%;
+  }
+  .info__table {
+    min-width: 20px;
+    width: 100%;
+  }
+  .info__text-block {
+    width: 90%;
+  }
+  .location__container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .location__block-slider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .location__photo-slider .movable {
+    height: 400px;
+  }
+  .location__block-map {
+    width: 100%;
+  }
+  .location__map {
+    height: 400px;
+  }
+  .furniture-plan__image {
+    width: 90%;
+  }
+  .round__container {
+    justify-content: start;
+    overflow: auto;
+    padding: 0 20px;
+  }
+  .round__img {
+    width: 500%;
+  }
 }

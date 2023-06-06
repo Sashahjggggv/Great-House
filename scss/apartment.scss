@@ -246,4 +246,52 @@
       transform: scale(0.6);
     }
   }
+  .info {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__bti-plan {
+      width: 90%;
+    }
+    &__table {
+      min-width: 20px;
+      width: 100%;
+    }
+    &__text-block {
+      width: 90%;
+    }
+  }
+  .location {
+    &__container {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+    &__block-slider {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__photo-slider .movable {
+      height: 400px;
+    }
+    &__block-map {
+      width: 100%;
+    }
+    &__map {
+      height: 400px;
+    }
+  }
+  .furniture-plan__image {
+    width: 90%;
+  }
+  .round {
+    &__container {
+      justify-content: start;
+      overflow: auto;
+      padding: 0 20px;
+    }
+    &__img {
+      width: 500%;
+    }
+  }
 }
