@@ -43,7 +43,7 @@
   <section class="contacts">
     <div class="contacts__container">
       <div class="contacts__contacts">
-        <h3 class="title">Наші контакти:</h3>
+        <h3 class="subtitle">Наші контакти:</h3>
         <div class="contacts__content">
           <div class="contacts__block-phone">
             <h5 class="contacts__operator-name">Алекс</h5>
@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="contacts__feedback">
-        <h3 class="title">Ми вам зателефонуємо:</h3>
+        <h3 class="subtitle">Ми вам зателефонуємо:</h3>
         <div class="contacts__content">
           <form action="">
             <input type="text" placeholder="Імʼя" class="contacts__input">
@@ -136,7 +136,23 @@
     </div>
   </section>
 
+  <section class="number">
+    <div class="number__container container">
+      <h1 class="number__text">Квартира №<span>19</span></h1>
+    </div>
+  </section>
+
+  <section class="text">
+    <div class="text__container container">
+      <h2 class="title">Опис квартири:</h2>
+      <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p>
+      <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p>
+      <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p>
+    </div>
+  </section>
+
   <section class="info">
+    <h3 class="info__title title">Технічна інформація:</h3>
     <div class="info__container container">
       <div class="info__text-block">
         <table class="info__table">
@@ -192,20 +208,24 @@
         </table>
       </div>
       <div class="info__bti-plan">
+        <h3 class="subtitle">БТІ план:</h3>
         <img src="../../img/apartment-type1/bti-plan.png" alt="bti-plan" class="info__plan-image">
       </div>
     </div>
   </section>
 
-  <section class="location">
-    <div class="location__container container">
-      <div class="location__block-map">
-        <h3 class="title">Розташування:</h3>
-        <div class="location__map" id="map"></div>
-      </div>
-      <div class="location__block-slider">
+  <section class="furniture-plan">
+    <h3 class="title">Вигляд з ремонтом:</h3>
+    <div class="furniture-plan__container container">
+      <img src="../../img/apartment-type1/furniture-plan.png" alt="furniture-plan" class="furniture-plan__image">
+    </div>
+  </section>
+
+  <section class="window">
+    <div class="window__container container">
+      <div class="window__slider">
         <h3 class="title">Вигляд з вікна:</h3>
-        <div class="location__photo-slider">
+        <div class="window__photo-slider">
           <div class="movable">
             <div>
               <img class="gallery__card-item" src="../../img/apartment-type1/zal.jpg" alt="">
@@ -226,7 +246,7 @@
               <img class="gallery__card-item" src="../../img/apartment-type1/zal2.jpg" alt="">
             </div>
           </div>
-          <div class="location__btns-slide">
+          <div class="window__btns-slide">
             <button class="prev">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.7808" height="35.4419">
               <g>
@@ -246,18 +266,29 @@
           </div>
         </div>
       </div>
+      <div class="window__text">
+        <h3 class="subtitle">Опис вигляду з вікна:</h3>
+        <p class="paragraf">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eos ullam, sed dolores quo in veritatis repellat culpa magni explicabo quos delectus laboriosam, harum repellendus nihil doloribus maxime eius tempore quidem alias. Iure doloribus illum quo incidunt architecto modi ea distinctio veniam velit unde cum impedit corrupti, et voluptas laboriosam.</p>
+      </div>
     </div>
   </section>
 
-  <section class="furniture-plan">
-    <div class="furniture-plan__container container">
-      <img src="../../img/apartment-type1/furniture-plan.png" alt="furniture-plan" class="furniture-plan__image">
+  <section class="location">
+    <div class="location__container container">
+      <div class="location__text">
+        <h3 class="subtitle">Опис розташування будинку:</h3>
+        <p class="paragraf">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eos ullam, sed dolores quo in veritatis repellat culpa magni explicabo quos delectus laboriosam, harum repellendus nihil doloribus maxime eius tempore quidem alias. Iure doloribus illum quo incidunt architecto modi ea distinctio veniam velit unde cum impedit corrupti, et voluptas laboriosam.</p>
+      </div>
+      <div class="location__block-map">
+        <h3 class="title">Розташування:</h3>
+        <div class="location__map" id="map"></div>
+      </div>
     </div>
   </section>
 
   <section class="round">
     <div class="round__container container">
-      <img src="../../img/apartment-type1/round.png" alt="round-plan" class="round__img">
+      <iframe src="../../img/apartment-type1/plan-9-round.pdf" frameborder="0" class="round__img"></iframe>
     </div>
   </section>
 
@@ -306,7 +337,7 @@
       <div class="footer__info">
         <img src="../../img/logo.svg" alt="Great House" class="footer__logo">
         <div class="footer__links">
-          <h3 class="title">Навігація сайту:</h3>
+          <h3 class="subtitle">Навігація сайту:</h3>
           <a href="../../" class="footer__link">Загальний опис</a>
           <a href="../" class="footer__link active">Обрати квартиру</a>
           <a href="../../location" class="footer__link">Розташування</a>
@@ -314,7 +345,7 @@
         </div>
         <div class="footer__contacts">
           <div class="contacts__contacts">
-          <h3 class="title">Наші контакти:</h3>
+          <h3 class="subtitle">Наші контакти:</h3>
           <div class="contacts__content">
             <div class="contacts__block-phone">
               <a href="tel:+380632478641" class="contacts__link">
@@ -337,7 +368,7 @@
           </div>
         </div>
         <div class="footer__feedback">
-          <h3 class="title">Ми вам зателефонуємо:</h3>
+          <h3 class="subtitle">Ми вам зателефонуємо:</h3>
           <div class="footer__content">
             <form action="">
               <input type="text" placeholder="Імʼя" class="footer__input">

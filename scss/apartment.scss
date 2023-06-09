@@ -53,33 +53,47 @@
   }
 }
 
-.location {
+.number {
+  margin-top: 20px;
+
+  &__container {
+  }
+
+  &__text {
+    font-family: "Inter", sans-serif;
+    text-align: right;
+    font-size: 50px;
+    color: #A9A9A9;
+  }
+}
+
+.text {
+  margin-top: 30px;
+
+  &__container {}
+
+  &__paragraf:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.window {
   margin-top: 50px;
 
   &__container {
     display: flex;
     justify-content: space-between;
-    height: 500px;
   }
 
-  &__block-map {
-    width: 48%;
+  &__slider {
+    width: 55%;
   }
 
-  &__block-slider {
-    width: 48%;
-  }
-
-  &__map {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-  }
   &__photo-slider {
     position: relative;
     width: 100%;
     overflow: hidden;
-
+  
     & .movable{
       display: flex;
       height: 500px;
@@ -132,10 +146,53 @@
   & .prev svg {
       transform: rotate(180deg);
   }
+
+  &__text {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+}
+
+
+.location {
+  margin-top: 50px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+  }
+
+  &__text {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  &__block-map {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
 }
 
 .furniture-plan {
-  margin-top: 100px;
+  margin-top: 70px;
 
   &__container {
     display: flex;
@@ -150,7 +207,7 @@
 }
 
 .info {
-  margin-top: 100px;
+  margin-top: 70px;
 
   &__container {
     display: flex;
@@ -162,6 +219,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   &__bti-plan {
@@ -169,6 +227,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
 
   &__plan-image {
@@ -247,6 +306,7 @@
     }
   }
   .info {
+    margin-top: 20px;
     &__container {
       flex-direction: column;
       align-items: center;
