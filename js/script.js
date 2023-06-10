@@ -80,3 +80,12 @@ $(window).scroll(function() {
 		st = nst;
 	}
 });
+
+
+$.ajax({
+  "method": "GET",
+  'url': "https://sashahjggggv.github.io/photos-great-house/apartments/type1/inside-models/bath.jpg",
+  'success': function(data){
+    console.log("success")
+  }
+});
