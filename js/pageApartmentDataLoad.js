@@ -182,6 +182,25 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
   if (allArea) { funcCreateLastLineInTable(allArea) }
 }
 
+// підгрузка фото з вікна, тексту до вигляду з вікна і напрямок компасу, карти
+funcSetSideInfo = function(side) {
+
+  
+
+  // підгрузка тексту до опису вигляду з вікна
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/description.json",
+    'success': function(data){
+      let windowText = document.getElementById('windowText');
+      let paragraf = document.createElement('p');
+      paragraf.classList.add("paragraf");
+      paragraf.innerHTML = data.paragraf;
+      windowText.appendChild(paragraf);
+    }
+  });
+}
+
 // загрузка файлу json з даними площі, з номером типу
 funcLoadAreas = function(numOfApartment) {
   $.ajax({
@@ -203,6 +222,8 @@ funcLoadAreas = function(numOfApartment) {
       line11 = data.n11,
       allArea = data.all;
       funcAddInfoInTable(line1, line2, line3, line4, line5, line6, line7, line8, line9, line10, line11, allArea)
+
+      let side = data.side
 
       funcLoadImageRound(numOfRound);
       funcLoadType(numOfType);
