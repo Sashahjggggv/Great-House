@@ -293,9 +293,6 @@
 .info__table tbody tr:nth-child(even) td {
   color: #00836a;
 }
-.info__table tbody tr.none {
-  display: none;
-}
 .info__bg1 {
   bottom: 20%;
   left: 5%;

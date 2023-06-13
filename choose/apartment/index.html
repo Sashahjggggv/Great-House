@@ -102,8 +102,8 @@
       <img src="../../img/bg-images/free-icon-bed-2789596.svg" alt="" class="gallery__bg3 bg-icon-left">
       <img src="../../img/bg-images/free-icon-fireplace-2789615.svg" alt="" class="gallery__bg4 bg-icon-right">
     </div>
-    <div class="movable">
-      <div>
+    <div id="movable" class="movable">
+      <!-- <div>
         <img class="gallery__card-item" src="../../img/apartment-type1/zal.jpg" alt="">
       </div>
       <div>
@@ -120,7 +120,7 @@
       </div>
       <div>
         <img class="gallery__card-item" src="../../img/apartment-type1/zal2.jpg" alt="">
-      </div>
+      </div> -->
     </div>
     <div class="gallery__btns">
       <button class="prev">
@@ -144,7 +144,7 @@
 
   <section class="number">
     <div class="number__container container">
-      <h1 class="number__text">Квартира №<span>19</span></h1>
+      <h1 class="number__text">Квартира №<span id="numOfApartment" class="numOfApartment">#</span></h1>
     </div>
   </section>
 
@@ -152,11 +152,11 @@
     <div class="text__gb-icons bg-icons">
       <img src="../../img/bg-images/free-icon-family-picture-2789612.svg" class="text__bg1 bg-icon-right">
     </div>
-    <div class="text__container container">
+    <div id="textContainer" class="text__container container">
       <h2 class="title">Опис квартири:</h2>
+      <!-- <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p>
       <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p>
-      <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p>
-      <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p>
+      <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae maxime ex, eveniet inventore hic a. Ipsum quis animi natus, dolorum asperiores consequatur distinctio quae repudiandae. Vitae necessitatibus, facilis perferendis, blanditiis, molestiae deserunt earum fuga cumque ipsam omnis dolor nostrum.</p> -->
     </div>
   </section>
 
@@ -175,8 +175,8 @@
               <td>Площа, м²</td>
             </tr>
           </thead>
-          <tbody>
-            <tr class="table-line1 non">
+          <tbody id="tbody">
+            <!-- <tr class="table-line1 non">
               <td class="table-num1">1</td>
               <td class="table-name1">-</td>
               <td class="table-area1">-</td>
@@ -215,13 +215,13 @@
               <td class="table-num-end">-</td>
               <td class="table-name-end">-</td>
               <td class="table-area-end">-</td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </div>
       <div class="info__bti-plan">
         <h3 class="subtitle">БТІ план:</h3>
-        <img src="../../img/apartment-type1/bti-plan.png" alt="bti-plan" class="info__plan-image">
+        <img src="" id="bti-plan" alt="bti-plan" class="info__plan-image">
       </div>
     </div>
   </section>
@@ -234,7 +234,7 @@
     </div>
     <h3 class="title">Вигляд з ремонтом:</h3>
     <div class="furniture-plan__container container">
-      <img src="../../img/apartment-type1/furniture-plan.png" alt="furniture-plan" class="furniture-plan__image">
+      <img src="" alt="furniture-plan" id="furniture-plan" class="furniture-plan__image">
     </div>
   </section>
 
@@ -312,7 +312,7 @@
 
   <section class="round">
     <div class="round__container container">
-      <img src="../../img/apartment-type1/0.png" alt="" class="round__img">
+      <img src="" alt="" id="round__img" class="round__img">
     </div>
   </section>
 
@@ -408,6 +408,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   <script src="../../js/script.js"></script>
+  <script src="../../js/pageApartmentDataLoad.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9xDMQwWgmXZDwdgqK5lD925t6EMIsmpc&callback=initMap&v=weekly"
   defer></script>
   <script src="../../js/initMap.js"></script>
