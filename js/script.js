@@ -10,7 +10,7 @@ $('.header__menu-btn-close,.contacts-bg-shadow,.contacts__close,.header__btn-con
 });
 
 // функції взяті з інету перелистування картинок в першому блоці галереї
-$(function(){
+funcSlideTopGallery = function(){
   $('.gallery').each(function() {
     var $gal     = $(this),
         $movable = $(".movable", $gal), 
@@ -28,10 +28,10 @@ $(function(){
     $gal.hover(stop, play);
     play();
   });
-});
+}
 
 // функції перелистування картинок в блоці вигляду з вікна
-$(function(){
+funcSlideWindowGallery = function(){
   $('.window').each(function() {
     var $gal     = $(this),
         $movable = $(".movable", $gal), 
@@ -49,7 +49,7 @@ $(function(){
     $gal.hover(stop, play);
     play();
   });
-});
+}
 
 // функція хлвання, показу хедера при скролі
 var st = $(window).scrollTop();

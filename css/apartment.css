@@ -1,5 +1,6 @@
 .gallery {
   margin-top: 85px;
+  border-radius: 25px;
   overflow: hidden;
   position: relative;
 }
@@ -100,11 +101,12 @@
   justify-content: space-between;
 }
 .window__slider {
-  width: 55%;
+  width: 50%;
 }
 .window__photo-slider {
   position: relative;
   width: 100%;
+  border-radius: 25px;
   overflow: hidden;
 }
 .window__photo-slider .movable {
@@ -158,7 +160,7 @@
   transform: rotate(180deg);
 }
 .window__text {
-  width: 42%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,7 +189,7 @@
   padding: 0 20px;
 }
 .location__block-map {
-  width: 48%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,5 +1,6 @@
 .gallery {
   margin-top: 85px;
+  border-radius: 25px;
   overflow: hidden;
   position: relative;
   & .movable{
@@ -110,12 +111,13 @@
   }
 
   &__slider {
-    width: 55%;
+    width: 50%;
   }
 
   &__photo-slider {
     position: relative;
     width: 100%;
+    border-radius: 25px;
     overflow: hidden;
   
     & .movable{
@@ -172,7 +174,7 @@
   }
 
   &__text {
-    width: 42%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,7 +208,7 @@
   }
 
   &__block-map {
-    width: 48%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
