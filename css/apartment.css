@@ -261,6 +261,9 @@
   width: 100%;
   height: auto;
 }
+.info__z1-svg g:hover path {
+  fill: #000;
+}
 .info__table {
   border: 2px solid #00836a;
   border-collapse: collapse;
@@ -304,10 +307,23 @@
 .round {
   margin: 50px 0;
 }
-.round__container {
+.round__container div {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.round__container div > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: 100%;
+}
+.round__container div > svg > path:hover, .round__container div > svg > rect:hover {
+  fill: #fff;
 }
 .round__img {
   width: 100%;

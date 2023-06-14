@@ -128,8 +128,21 @@ funcLoadType = function(numOfType) {
 
 // функція підгрузки картинки поверху 
 funcLoadImageRound = function(numOfRound) {
+
+  // background png
   let roundImg = document.getElementById("round__img");
   roundImg.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.png"
+
+  // foreground svg
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.svg",
+    'success': function(data){
+      console.log(data)
+      let roundContent = document.getElementById('roundContent');
+      roundContent.appendChild(data.documentElement);
+    }
+  });
 }
 
 // функція підстановки інфи з json в лінію таблиці

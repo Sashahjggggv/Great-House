@@ -1,0 +1,40 @@
+<svg width="553" height="331" viewBox="0 0 553 331" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5_67)">
+<path d="M0 166V331H133H266V291V251H173.9H81.8L82.5 126L83.3 0.99997H41.6H0V166Z"/>
+<g clip-path="url(#clip1_5_67)">
+<path d="M207.426 90.4048C166.226 91.132 124.764 89.5123 83.5917 90.5321C82.6282 148.186 83.014 178.609 82.955 254.668C143.97 254.668 204.985 254.668 266 254.668C266 172.112 266 89.5558 266 6.99991C246.475 6.99991 226.95 6.99991 207.426 6.99991C207.426 34.8015 207.426 62.6031 207.426 90.4048Z"/>
+</g>
+</g>
+<g clip-path="url(#clip2_5_67)">
+<path d="M266 330.567C310 330.567 354 330.567 398 330.567C398 244.378 398 158.189 398 72.0001C354 72.0001 310 72.0001 266 72.0001C266 158.189 266 244.378 266 330.567Z"/>
+</g>
+<g clip-path="url(#clip3_5_67)">
+<path d="M266 77.1078C333.333 77.1078 400.667 77.1078 468 77.1078C468 53.7385 468 30.3693 468 7.00002C400.667 7.00002 333.333 7.00002 266 7.00002C266 30.3693 266 53.7385 266 77.1078Z"/>
+</g>
+<g clip-path="url(#clip4_5_67)">
+<path d="M398 271.07C449.667 271.07 501.333 271.07 553 271.07C553 219.404 553 167.737 553 116.07C524.711 116.07 496.423 116.07 468.134 116.07C468.134 103.047 468.134 90.0235 468.134 77.0001C444.756 77.0001 421.378 77.0001 398 77.0001C398 141.69 398 206.38 398 271.07Z"/>
+</g>
+<g clip-path="url(#clip5_5_67)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M467.5 6.5H552.5V115.5H467.5V6.5Z"/>
+</g>
+<defs>
+<clipPath id="clip0_5_67">
+<rect width="266" height="331" fill="white"/>
+</clipPath>
+<clipPath id="clip1_5_67">
+<rect width="184" height="247.668" fill="white" transform="translate(82 7)"/>
+</clipPath>
+<clipPath id="clip2_5_67">
+<rect width="132" height="258.567" fill="white" transform="translate(266 72)"/>
+</clipPath>
+<clipPath id="clip3_5_67">
+<rect width="202" height="70.1078" fill="white" transform="translate(266 7)"/>
+</clipPath>
+<clipPath id="clip4_5_67">
+<rect width="155" height="194.07" fill="white" transform="translate(398 77)"/>
+</clipPath>
+<clipPath id="clip5_5_67">
+<rect width="85" height="109" fill="white" transform="translate(468 7)"/>
+</clipPath>
+</defs>
+</svg>
