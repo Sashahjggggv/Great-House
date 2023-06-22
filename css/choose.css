@@ -16,12 +16,15 @@
   z-index: 1;
   transform: translateX(-50%);
 }
+.choose-round__path-round {
+  cursor: pointer;
+}
 .choose-round__path-round:hover {
   fill: #9EFF00;
 }
 
 .round-bti {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 .round-bti__container {
   padding: 0;
@@ -39,10 +42,11 @@
   z-index: 1;
   width: 100%;
   max-height: 100%;
+  /* & > g {
+    transform: translate(100%, 0) rotate(90deg);
+  } */
 }
 .round-bti__container > svg g.apartment:hover path, .round-bti__container > svg g.apartment:hover rect {
   fill: #fff;
-}
-.round-bti__container > svg > g {
-  transform: translate(100%, 0) rotate(90deg);
+  cursor: pointer;
 }

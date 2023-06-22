@@ -16,13 +16,16 @@
     z-index: 1;
     transform: translateX(-50%);
   }
-  &__path-round:hover {
-    fill: #9EFF00;
+  &__path-round {
+    cursor: pointer;
+    &:hover {
+      fill: #9EFF00;
+    }
   }
 }
 
 .round-bti {
-  margin-top: 100px;
+  margin: 100px 0;
 
   &__container {
     padding: 0;
@@ -44,10 +47,11 @@
     max-height: 100%;
     & g.apartment:hover path, & g.apartment:hover rect {
       fill: #fff;
+      cursor: pointer;
     }
-    & > g {
+    /* & > g {
       transform: translate(100%, 0) rotate(90deg);
-    }
+    } */
   }
 }
 

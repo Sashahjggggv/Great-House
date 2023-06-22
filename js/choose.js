@@ -21,7 +21,7 @@ funcPushImagesRoundBti = function(numOfRound) {
 
   $.ajax({
     "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.svg",
+    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.svg",
     'success': function(data){
       let roundContent = document.getElementById('roundContent');
       roundBtiContainer.appendChild(data.documentElement);
@@ -33,9 +33,7 @@ funcPushImagesRoundBti = function(numOfRound) {
 
   let img = document.createElement('img');
   img.classList.add("round-bti__bg-image");
-  img.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.png";
+  img.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.png";
   roundBtiContainer.appendChild(img);
-  setTimeout(function() {
-    roundBtiContainer.scrollIntoView({behavior: "smooth"});
-  }, 200);  
+  roundBtiContainer.scrollIntoView({behavior: "smooth"});
 }
