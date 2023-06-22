@@ -138,9 +138,11 @@ funcLoadImageRound = function(numOfRound) {
     "method": "GET",
     'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.svg",
     'success': function(data){
-      console.log(data)
       let roundContent = document.getElementById('roundContent');
       roundContent.appendChild(data.documentElement);
+      $('.apartment').click(function(event){
+        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
+      })
     }
   });
 }
@@ -260,13 +262,13 @@ funcLoadAreas = function(numOfApartment) {
   });
 }
 
-// функція підгрузки даних, коли запит від 5-144 квартири
-// https://greathouse.in.ua/choose/apartment/?num=5
+// функція підгрузки даних, коли запит від 1-144 квартири
+// https://greathouse.rv.ua/choose/apartment/?num=5
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 const numOfApartment = urlParams.get('num')
-if (numOfApartment >= 5 && numOfApartment <= 144 ) {
+if (numOfApartment >= 1 && numOfApartment <= 144 ) {
 
   funcLoadAreas(numOfApartment);
 

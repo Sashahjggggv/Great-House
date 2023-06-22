@@ -1,0 +1,48 @@
+.header {
+  background: none;
+}
+
+.choose-round {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url("https://sashahjggggv.github.io/photos-great-house/rounds/building.jpg") center/auto 100% no-repeat;
+}
+.choose-round__paths {
+  height: 83.5%;
+  position: absolute;
+  top: 3%;
+  left: 53.5%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.choose-round__path-round:hover {
+  fill: #9EFF00;
+}
+
+.round-bti {
+  margin-top: 100px;
+}
+.round-bti__container {
+  padding: 0;
+  margin: 0 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.round-bti__bg-image {
+  width: 100%;
+}
+.round-bti__container > svg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 100%;
+}
+.round-bti__container > svg g.apartment:hover path, .round-bti__container > svg g.apartment:hover rect {
+  fill: #fff;
+}
+.round-bti__container > svg > g {
+  transform: translate(100%, 0) rotate(90deg);
+}

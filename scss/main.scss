@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body {
+  transition: all 0.2s ease; 
+  box-sizing: border-box;
+  
   background-color: #F8F1F1;
 
   font-family: 'Open Sans', sans-serif;

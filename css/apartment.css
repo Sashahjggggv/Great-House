@@ -322,7 +322,7 @@
   width: 100%;
   max-height: 100%;
 }
-.round__container div > svg > g:hover path, .round__container div > svg > g:hover rect {
+.round__container div > svg .apartment:hover path, .round__container div > svg .apartment:hover rect {
   fill: #fff;
 }
 .round__img {
