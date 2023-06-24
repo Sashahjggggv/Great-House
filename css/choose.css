@@ -13,14 +13,11 @@
   position: absolute;
   top: 3%;
   left: 53.5%;
-  z-index: 1;
   transform: translateX(-50%);
-}
-.choose-round__path-round {
-  cursor: pointer;
 }
 .choose-round__path-round:hover {
   fill: #9EFF00;
+  cursor: pointer;
 }
 
 .round-bti {
@@ -49,4 +46,26 @@
 .round-bti__container > svg g.apartment:hover path, .round-bti__container > svg g.apartment:hover rect {
   fill: #fff;
   cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .choose-round {
+    /* background: url("https://sashahjggggv.github.io/photos-great-house/rounds/building.jpg") -500px 0/auto 100% no-repeat; */
+  }
+  .round-bti {
+    margin: 50px 0;
+  }
+  .round-bti__container {
+    margin: 0;
+    padding: 0 20px;
+    overflow: auto;
+    display: flex;
+    justify-content: start;
+  }
+  .round-bti__bg-image {
+    width: 300%;
+  }
+  .round-bti__foreground-svg {
+    width: 100%;
+  }
 }
