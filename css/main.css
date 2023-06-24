@@ -445,7 +445,7 @@ section {
 }
 .gallery-footer__btns {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   bottom: 50%;
   transform: translateY(50%);
   width: 100%;
@@ -625,7 +625,7 @@ section {
 .footer__creators {
   position: relative;
   background: #00836a;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .footer__creators-text {
   margin: 0 !important;
@@ -638,6 +638,9 @@ section {
 }
 .footer__creators-text span:hover {
   text-shadow: 0 0 5px #6495ed;
+}
+.footer__creators-text br {
+  display: none;
 }
 
 .bg-icons {
@@ -845,6 +848,9 @@ section {
     color: #6495ed;
     font-size: 20px;
     font-weight: 600;
+  }
+  .footer__creators-text br {
+    display: block;
   }
   .contacts__container {
     flex-direction: column;

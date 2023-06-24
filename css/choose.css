@@ -6,14 +6,23 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background: url("https://sashahjggggv.github.io/photos-great-house/rounds/building.jpg") center/auto 100% no-repeat;
+  /* max-width: 100%; */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  /* background: url('https://sashahjggggv.github.io/photos-great-house/rounds/building.jpg') center/auto 100% no-repeat; */
+}
+.choose-round__bg-img {
+  height: 100%;
+  width: auto;
 }
 .choose-round__paths {
-  height: 83.5%;
+  height: 83.7%;
   position: absolute;
-  top: 3%;
-  left: 53.5%;
+  top: 3.65%;
+  left: 53%;
   transform: translateX(-50%);
+  /* left: 13.3%; */
 }
 .choose-round__path-round:hover {
   fill: #9EFF00;
@@ -21,6 +30,7 @@
 }
 
 .round-bti {
+  display: none;
   margin: 100px 0;
 }
 .round-bti__container {
@@ -47,11 +57,11 @@
   fill: #fff;
   cursor: pointer;
 }
+.round-bti.active {
+  display: block;
+}
 
 @media (max-width: 1100px) {
-  .choose-round {
-    /* background: url("https://sashahjggggv.github.io/photos-great-house/rounds/building.jpg") -500px 0/auto 100% no-repeat; */
-  }
   .round-bti {
     margin: 50px 0;
   }
@@ -67,5 +77,10 @@
   }
   .round-bti__foreground-svg {
     width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .choose-round {
+    background: url("https://sashahjggggv.github.io/photos-great-house/rounds/building.jpg") -450px 0/auto 100% no-repeat;
   }
 }

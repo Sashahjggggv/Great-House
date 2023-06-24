@@ -6,6 +6,7 @@ loadAndPutSVGBuilding = function() {
     'success': function(data){
       choose.appendChild(data.documentElement);
       $('.choose-round__path-round').click(function(event){
+        $(".round-bti").addClass('active')
         $(".round-bti__bg-image").remove()
         $(".round-bti__foreground-svg").remove()
         funcPushImagesRoundBti($(this).attr("data-round-id"))

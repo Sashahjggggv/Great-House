@@ -399,7 +399,7 @@ section {
   }
   &__btns {
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     bottom: 50%;
     transform: translateY(50%);
     width: 100%;
@@ -594,7 +594,7 @@ section {
   &__creators {
     position: relative;
     background: #00836a;
-    padding: 50px 0;
+    padding: 20px 0;
   }
 
   &__creators-text {
@@ -607,6 +607,9 @@ section {
       &:hover {
         text-shadow: 0 0 5px #6495ed;
       }
+    }
+    & br {
+      display: none;
     }
   }
 }
@@ -832,6 +835,9 @@ section {
         font-size: 20px;
         font-weight: 600;
       }
+    }
+    &__creators-text br {
+      display: block;
     }
   }
   .contacts {
