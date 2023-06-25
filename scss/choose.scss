@@ -23,7 +23,6 @@
     top: 3.65%;
     left: 53%;
     transform: translateX(-50%);
-    /* left: 13.3%; */
   }
   &__path-round:hover {
     fill: #9EFF00;
@@ -33,7 +32,7 @@
 
 .round-bti {
   display: none;
-  margin: 100px 0;
+  padding: 100px 0;
 
   &__container {
     padding: 0;
@@ -47,19 +46,29 @@
   &__bg-image {
     width: 100%;
   }
+  &__bg-image-90 {
+    display: none;
+    width: 240%;
+  }
 
   &__container > svg {
     position: absolute;
     z-index: 1;
-    width: 100%;
-    max-height: 100%;
     & g.apartment:hover path, & g.apartment:hover rect {
       fill: #fff;
       cursor: pointer;
     }
-    /* & > g {
+  }
+  &__foreground-svg {
+    width: 100%;
+    max-height: 100%;
+  }
+  &__foreground-svg-90 {
+    display: none;
+    height: 100%;
+    & > g {
       transform: translate(100%, 0) rotate(90deg);
-    } */
+    }
   }
   &.active {
     display: block;
@@ -67,27 +76,33 @@
 }
 
 @media (max-width: 1100px) {
-  .round-bti {
-    margin: 50px 0;
-    &__container {
-      margin: 0;
-      padding: 0 20px;
-      overflow: auto;
-      display: flex;
-      justify-content: start;
-    }
-    &__bg-image {
-      width: 300%;
-
-    }
-    &__foreground-svg {
-      width: 100%;
-    }
+  .choose-round__paths {
+    left: 57%;
   }
 }
 
 @media (max-width: 600px) {
-  .choose-round {
-    background: url("https://sashahjggggv.github.io/photos-great-house/rounds/building.jpg") -450px 0/auto 100% no-repeat;
+  .choose-round__paths {
+    left: 62%;
+  }
+  .round-bti {
+    padding: 50px 0;
+    overflow: auto;
+    &__container {
+      margin: 0 50px;
+      justify-content: start;
+    }
+    &__bg-image {
+      display: none;
+    }
+    &__bg-image-90 {
+      display: block;
+    }
+    &__foreground-svg {
+      display: none;
+    }
+    &__foreground-svg-90 {
+      display: block;
+    }
   }
 }
