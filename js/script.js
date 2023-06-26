@@ -35,27 +35,6 @@ funcSlideTopGallery = function(){
   });
 }
 
-// функції взяті з інету перелистування картинок в першому блоці галереї
-funcSlideTopGallery = function(){
-  $('.gallery-footer').each(function() {
-    var $gal     = $(this),
-        $movable = $(".movable", $gal), 
-        $slides  = $(">*", $movable),
-        N        = $slides.length,
-        C        = 0,
-        itv      = null;
-    function play() { itv = setInterval(anim, 3000); }
-    function stop() { clearInterval(itv); }
-    function anim() {
-      C = ($(this).is(".prev") ? --C : ++C) <0 ? N-1 : C%N;
-      $movable.css({transform: "translateX(-"+ (C*100) +"%)"});
-    }
-    $(".prev, .next", this).on("click", anim);
-    $gal.hover(stop, play);
-    play();
-  });
-}
-
 // функції перелистування картинок в блоці вигляду з вікна
 funcSlideWindowGallery = function(){
   $('.window').each(function() {
@@ -71,13 +50,34 @@ funcSlideWindowGallery = function(){
       C = ($(this).is(".prev1") ? --C : ++C) <0 ? N-1 : C%N;
       $movable.css({transform: "translateX(-"+ (C*100) +"%)"});
     }
-    $(".prev, .next", this).on("click", anim);
+    $(".prev1, .next1", this).on("click", anim);
     $gal.hover(stop, play);
     play();
   });
 }
 
-// функція хлвання, показу хедера при скролі
+// функції взяті з інету перелистування картинок в першому блоці футера
+funcSlideFooterGallery = function(){
+  $('.gallery-footer').each(function() {
+    var $gal     = $(this),
+        $movable = $(".movable", $gal), 
+        $slides  = $(">*", $movable),
+        N        = $slides.length,
+        C        = 0,
+        itv      = null;
+    function play() { itv = setInterval(anim, 3000); }
+    function stop() { clearInterval(itv); }
+    function anim() {
+      C = ($(this).is(".prev3") ? --C : ++C) <0 ? N-1 : C%N;
+      $movable.css({transform: "translateX(-"+ (C*100) +"%)"});
+    }
+    $(".prev3, .next3", this).on("click", anim);
+    $gal.hover(stop, play);
+    play();
+  });
+}
+
+// функція ховання, показу хедера при скролі
 var st = $(window).scrollTop();
 var navheight = $('.header').height() + 15;
 $(window).scroll(function() {

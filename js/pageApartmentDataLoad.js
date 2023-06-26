@@ -92,6 +92,121 @@ funcLoadGalleryImg = function(numOfType) {
   funcSlideTopGallery()
 }
 
+// функція створення діва, імг і їх підстановку в вигляди з вікна
+funcLoadWindowLooks = function(side, numOfImg) {
+  let div = document.createElement("div");
+  let img = document.createElement('img');
+  img.classList.add("window__card-item");
+  img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".JPG";
+  div.appendChild(img);
+  let movable2 = document.getElementById("movable2");
+  movable2.appendChild(div);
+}
+// функція підгрузки картинок для виглядів з вікна
+funcLoadAllWindowLooks = function(side) {
+  if (side == "E") {
+    console.log('eee')
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+  }
+  if (side == "ES") {
+    funcLoadWindowLooks(side, 1);
+  }
+  if (side == "N") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+  }
+  if (side == "NE") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
+    funcLoadWindowLooks(side, 8);
+    funcLoadWindowLooks(side, 9);
+    funcLoadWindowLooks(side, 10);
+  }
+  if (side == "NEW") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
+    funcLoadWindowLooks(side, 8);
+  }
+  if (side == "NS") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
+    funcLoadWindowLooks(side, 8);
+    funcLoadWindowLooks(side, 9);
+    funcLoadWindowLooks(side, 10);
+    funcLoadWindowLooks(side, 11);
+    funcLoadWindowLooks(side, 12);
+    funcLoadWindowLooks(side, 13);
+    funcLoadWindowLooks(side, 14);
+  }
+  if (side == "S") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
+    funcLoadWindowLooks(side, 8);
+    funcLoadWindowLooks(side, 9);
+    funcLoadWindowLooks(side, 10);
+  }
+  if (side == "SW") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
+    funcLoadWindowLooks(side, 8);
+    funcLoadWindowLooks(side, 9);
+    funcLoadWindowLooks(side, 10);
+    funcLoadWindowLooks(side, 11);
+    funcLoadWindowLooks(side, 12);
+    funcLoadWindowLooks(side, 13);
+    funcLoadWindowLooks(side, 14);
+    funcLoadWindowLooks(side, 15);
+    funcLoadWindowLooks(side, 16);
+    funcLoadWindowLooks(side, 17);
+  }
+  if (side == "W") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+  }
+  if (side == "WN") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
+  }
+  funcSlideFooterGallery()
+}
+funcLoadAllWindowLooks()
+
 // функція підгрузки всіх файлів по типу квартири
 funcLoadType = function(numOfType) {
   funcLoadGalleryImg(numOfType)
@@ -143,6 +258,7 @@ funcLoadImageRound = function(numOfRound) {
       $('.apartment').click(function(event){
         window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
       })
+      $("[data-apartment-id=" + numOfApartment + "]").addClass('this')
     }
   });
 }
@@ -198,40 +314,8 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
   if (allArea) { funcCreateLastLineInTable(allArea) }
 }
 
-// підгрузка фоток з вікна
-funcLoadImgForWindow = function(side, numOfImg) {
-  let div = document.createElement("div");
-  let img = document.createElement('img');
-  img.classList.add("gallery__card-item");
-  img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/photos/" + numOfImg + ".jpg";
-  div.appendChild(img);
-  let movable2 = document.getElementById("movable2");
-  movable2.appendChild(div);
-}
-
-// підгрузка фото з вікна, тексту до вигляду з вікна і напрямок компасу, карти
-funcSetSideInfo = function(side) {
-  funcLoadImgForWindow(side, 1)
-  funcLoadImgForWindow(side, 2)
-  funcLoadImgForWindow(side, 3)
-  funcLoadImgForWindow(side, 4)
-  funcSlideWindowGallery()
-
-  // підгрузка тексту до опису вигляду з вікна
-  $.ajax({
-    "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/description.json",
-    'success': function(data){
-      let windowText = document.getElementById('windowText');
-      let paragraf = document.createElement('p');
-      paragraf.classList.add("paragraf");
-      paragraf.innerHTML = data.paragraf;
-      windowText.appendChild(paragraf);
-    }
-  });
-}
-
 // загрузка файлу json з даними площі, з номером типу
+let side
 funcLoadAreas = function(numOfApartment) {
   $.ajax({
     "method": "GET",
@@ -253,11 +337,25 @@ funcLoadAreas = function(numOfApartment) {
       allArea = data.all;
       funcAddInfoInTable(line1, line2, line3, line4, line5, line6, line7, line8, line9, line10, line11, allArea)
 
-      let side = data.side
-      funcSetSideInfo(side);
+      side = data.side
+      console.log(side)
 
       funcLoadImageRound(numOfRound);
       funcLoadType(numOfType);
+
+      let compas = document.getElementsByClassName('location__compas')
+
+      if (side == 'N' || side == 'NE') {
+        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/N.png";
+      } if (side == 'S') {
+        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/S.png";
+      } if (side == 'W') {
+        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/W.png";
+      } if (side == 'E') {
+        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/E.png";
+      } else {
+        console.error("compas load")
+      }
     }
   });
 }
@@ -268,9 +366,12 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 const numOfApartment = urlParams.get('num')
+// console.log(numOfApartment)
 if (numOfApartment >= 1 && numOfApartment <= 144 ) {
 
   funcLoadAreas(numOfApartment);
+
+  $('.apartment.' + numOfApartment).addClass('this')
 
   // добавлення номеру квартири в span
   document.getElementById("numOfApartment").innerHTML = numOfApartment

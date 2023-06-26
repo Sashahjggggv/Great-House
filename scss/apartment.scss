@@ -111,7 +111,7 @@
   }
 
   &__slider {
-    width: 50%;
+    width: 100%;
   }
 
   &__photo-slider {
@@ -143,8 +143,8 @@
 
   &__btns-slide {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 50%;
+    transform: translateY(50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -152,8 +152,7 @@
       border-radius: 50%;
       width: 70px;
       height: 70px;
-      margin: 10px;
-      transform: scale(0.6);
+      margin: 50px;
       border: 4px solid #FFA500;
       display: flex;
       align-items: center;
@@ -169,7 +168,7 @@
       }
     }
   }
-  & .prev svg {
+  & .prev1 svg {
       transform: rotate(180deg);
   }
 
@@ -208,11 +207,19 @@
   }
 
   &__block-map {
+    position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  &__compas {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
   }
 
   &__map {
@@ -359,9 +366,20 @@
       transform: translate(-50%, -50%);
       width: 100%;
       max-height: 100%;
+      & .apartment * {
+        fill: #ffffff00;
+        cursor: pointer;
+        transition: all 0.1s ease;
+      }
+      & .apartment:hover * {
+        fill: #9EFF00;
+      }
 
-      & .apartment:hover path, & .apartment:hover rect {
-        fill: #fff;
+      & .apartment.this * {
+        fill: #9EFF00;
+      }
+      & .apartment.sold * {
+        fill: #f00;
       }
     }
   }
@@ -455,6 +473,10 @@
     &__text {
       width: 100%;
       margin-top: 20px;
+    }
+    &__btns-slide > button {
+      margin: 10px;
+      transform: scale(0.6);
     }
   }
   .location {

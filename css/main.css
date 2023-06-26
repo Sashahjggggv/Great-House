@@ -471,7 +471,7 @@ section {
 .gallery-footer__btns > button:active {
   box-shadow: 0 0 10px #FFA500;
 }
-.gallery-footer .prev svg {
+.gallery-footer .prev3 svg {
   transform: rotate(180deg);
 }
 
