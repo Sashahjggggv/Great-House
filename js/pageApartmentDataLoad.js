@@ -205,7 +205,6 @@ funcLoadAllWindowLooks = function(side) {
   }
   funcSlideFooterGallery()
 }
-funcLoadAllWindowLooks()
 
 // функція підгрузки всіх файлів по типу квартири
 funcLoadType = function(numOfType) {
@@ -315,7 +314,6 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
 }
 
 // загрузка файлу json з даними площі, з номером типу
-let side
 funcLoadAreas = function(numOfApartment) {
   $.ajax({
     "method": "GET",
@@ -337,14 +335,9 @@ funcLoadAreas = function(numOfApartment) {
       allArea = data.all;
       funcAddInfoInTable(line1, line2, line3, line4, line5, line6, line7, line8, line9, line10, line11, allArea)
 
-      side = data.side
-      console.log(side)
-
-      funcLoadImageRound(numOfRound);
-      funcLoadType(numOfType);
-
-      let compas = document.getElementsByClassName('location__compas')
-
+      let side = data.side
+      // підгрузка компасу
+      let compas = document.getElementById('compas')
       if (side == 'N' || side == 'NE') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/N.png";
       } if (side == 'S') {
@@ -356,6 +349,11 @@ funcLoadAreas = function(numOfApartment) {
       } else {
         console.error("compas load")
       }
+
+      funcLoadAllWindowLooks(side)
+
+      funcLoadImageRound(numOfRound);
+      funcLoadType(numOfType);
     }
   });
 }
