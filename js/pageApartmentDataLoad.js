@@ -338,13 +338,13 @@ funcLoadAreas = function(numOfApartment) {
       let side = data.side
       // підгрузка компасу
       let compas = document.getElementById('compas')
-      if (side == 'N' || side == 'NEW' || side == '') {
+      if (side == 'N' || side == 'NEW') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/N.png";
-      } if (side == 'S') {
+      } if (side == 'S' || side == 'ES' || side == 'NS') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/S.png";
       } if (side == 'W' || side == 'SW' || side == 'WN') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/W.png";
-      } if (side == 'E') {
+      } if (side == 'E' || side == 'NE') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/E.png";
       } else {
         console.error("compas load")
