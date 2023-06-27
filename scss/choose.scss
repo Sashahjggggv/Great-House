@@ -54,8 +54,11 @@
     position: absolute;
     z-index: 1;
     & g.apartment:hover path, & g.apartment:hover rect {
-      fill: #fff;
+      fill-opacity: 0.8;
       cursor: pointer;
+    }
+    & .apartment.sold * {
+      fill: #f00;
     }
   }
   &__foreground-svg {

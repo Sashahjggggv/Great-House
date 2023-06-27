@@ -203,7 +203,7 @@ funcLoadAllWindowLooks = function(side) {
     funcLoadWindowLooks(side, 6);
     funcLoadWindowLooks(side, 7);
   }
-  funcSlideFooterGallery()
+  funcSlideWindowGallery()
 }
 
 // функція підгрузки всіх файлів по типу квартири
@@ -338,11 +338,11 @@ funcLoadAreas = function(numOfApartment) {
       let side = data.side
       // підгрузка компасу
       let compas = document.getElementById('compas')
-      if (side == 'N' || side == 'NE') {
+      if (side == 'N' || side == 'NEW' || side == '') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/N.png";
       } if (side == 'S') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/S.png";
-      } if (side == 'W') {
+      } if (side == 'W' || side == 'SW' || side == 'WN') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/W.png";
       } if (side == 'E') {
         compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/E.png";
