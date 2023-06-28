@@ -210,6 +210,18 @@ funcLoadAllWindowLooks = function(side) {
 funcLoadType = function(numOfType) {
   funcLoadGalleryImg(numOfType)
 
+  // підгрузка фону бті плану
+  document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.png";
+
+  // підгрузка свг бті плану
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.svg",
+    'success': function(data){
+      document.getElementById('bti-plan-content').appendChild(data.documentElement)
+    }
+  });
+
   // підгрузка опису за типом квартири
   $.ajax({
     "method": "GET",
@@ -373,9 +385,6 @@ if (numOfApartment >= 1 && numOfApartment <= 144 ) {
 
   // добавлення номеру квартири в span
   document.getElementById("numOfApartment").innerHTML = numOfApartment
-
-  // підстановка бті плану за номером квартири
-  document.getElementById("bti-plan").src = "https://sashahjggggv.github.io/photos-great-house/144/" + numOfApartment + "/bti-plan.png";
 } else {
   window.location.replace("../");
 }

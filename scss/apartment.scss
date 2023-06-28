@@ -294,6 +294,23 @@
     flex-direction: column;
   }
 
+  &__bti-plan-content {
+    position: relative;
+    
+    & > svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      & rect, & path {
+        fill: #ffffff00;
+        fill-opacity: 0.6;
+      }
+    }
+  }
+
   &__plan-image {
     width: 100%;
     height: auto;
