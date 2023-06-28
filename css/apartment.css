@@ -287,6 +287,12 @@
   width: 100%;
   height: auto;
 }
+.info__plan-image.hide {
+  display: none;
+}
+.info svg.bti-svg.hide {
+  display: none;
+}
 .info__z1-svg g:hover path {
   fill: #000;
 }
@@ -343,6 +349,38 @@
   bottom: 20%;
   left: 5%;
   width: 70px;
+}
+.info__plans-slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.info__plans-slider button:active {
+  transform: scale(0.9);
+}
+.info__plans-slider button:hover, .info__plans-slider button.active {
+  background: #FFA500;
+  color: #fff;
+}
+.info__left-element {
+  padding: 10px 15px;
+  border: 2px solid #FFA500;
+  color: #FFA500;
+  border-radius: 25px;
+  margin-bottom: 0;
+}
+.info__right-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info__right-element {
+  padding: 5px 10px;
+  border: 2px solid #FFA500;
+  color: #FFA500;
+  border-radius: 25px;
+  margin-bottom: 5px;
 }
 
 .round {
@@ -429,7 +467,7 @@
     width: 90%;
   }
   .info__bg1 {
-    top: 52%;
+    top: 42%;
     width: 60px;
   }
   .furniture-plan__image {

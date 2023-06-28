@@ -251,6 +251,9 @@ funcLoadType = function(numOfType) {
 
   // підгрузка плану з ремонтом відносно типу
   document.getElementById("furniture-plan").src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/furniture-plan.png";
+
+  // функціонал кнопок перепланування і бті
+  funcPlanBtns(numOfType);
 }
 
 // функція підгрузки картинки поверху 
@@ -546,7 +549,35 @@ funcBtiHover = function(){
   })
 }
 
+// скрол після натиснення на таблицю
 $('.info__table').click(function(){
-  console.log('clickes')
   $('.info__bti-plan')[0].scrollIntoView({behavior: "smooth"});
 })
+
+// функціонал кнопок перепланування і бті
+funcPlanBtns = function(numOfType){
+  $('.plan-v1').click(function(){
+    $('.bti-btn,.plan-v2,.plan-v3').removeClass('active')
+    $('.plan-v1').addClass('active')
+    $('.bti-svg').addClass('hide')
+    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/variant-plan/1.png"
+  })
+  $('.plan-v2').click(function(){
+    $('.bti-btn,.plan-v1,.plan-v3').removeClass('active')
+    $('.plan-v2').addClass('active')
+    $('.bti-svg').addClass('hide')
+    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/variant-plan/2.png"
+  })
+  $('.plan-v3').click(function(){
+    $('.bti-btn,.plan-v1,.plan-v2').removeClass('active')
+    $('.plan-v3').addClass('active')
+    $('.bti-svg').addClass('hide')
+    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/variant-plan/3.png"
+  })
+  $('.bti-btn').click(function(){
+    $('.plan-v1,.plan-v2,.plan-v3').removeClass('active')
+    $('.bti-btn').addClass('active')
+    $('.bti-svg').removeClass('hide')
+    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.png"
+  })
+}

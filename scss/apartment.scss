@@ -317,6 +317,13 @@
   &__plan-image {
     width: 100%;
     height: auto;
+    &.hide {
+      display: none;
+    }
+  }
+
+  & svg.bti-svg.hide {
+    display: none;
   }
 
   &__z1-svg {
@@ -383,6 +390,43 @@
     bottom: 20%;
     left: 5%;
     width: 70px;
+  }
+
+  &__plans-slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & button:active {
+      transform: scale(0.9);
+    }
+    
+    & button:hover, & button.active {
+      background: #FFA500;
+      color: #fff;
+    }
+  }
+
+  &__left-element {
+    padding: 10px 15px;
+    border: 2px solid #FFA500;
+    color: #FFA500;
+    border-radius: 25px;
+    margin-bottom: 0;
+  }
+
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__right-element {
+    padding: 5px 10px;
+    border: 2px solid #FFA500;
+    color: #FFA500;
+    border-radius: 25px;
+    margin-bottom: 5px;
   }
 }
 
@@ -479,7 +523,7 @@
     }
 
     &__bg1 {
-      top: 52%;
+      top: 42%;
       width: 60px;
     }
   }
