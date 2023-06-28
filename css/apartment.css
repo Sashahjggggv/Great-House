@@ -290,6 +290,9 @@
 .info__plan-image.hide {
   display: none;
 }
+.info svg.bti-svg > g {
+  cursor: pointer;
+}
 .info svg.bti-svg.hide {
   display: none;
 }
@@ -318,6 +321,7 @@
   color: #000;
 }
 .info__table tbody tr {
+  cursor: pointer;
   position: relative;
   border-bottom: 1px solid #dddddd;
   font-size: 16px;

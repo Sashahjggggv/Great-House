@@ -322,8 +322,13 @@
     }
   }
 
-  & svg.bti-svg.hide {
-    display: none;
+  & svg.bti-svg {
+    & > g {
+      cursor: pointer;
+    }
+    &.hide {
+      display: none;
+    }
   }
 
   &__z1-svg {
@@ -356,6 +361,7 @@
       color: #000;
     }
     & tbody tr {
+      cursor: pointer;
       position: relative;
       border-bottom: 1px solid #dddddd;
       font-size: 16px;
