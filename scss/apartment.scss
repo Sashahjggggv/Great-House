@@ -375,15 +375,14 @@
           color: #fff;
         }
       }
-      &::after {
-        content: url('../img/click.png');
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-      }
     }
+  }
+
+  &__click-img {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__bg1 {

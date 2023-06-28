@@ -337,12 +337,10 @@
 .info__table tbody tr:hover *, .info__table tbody tr.hover * {
   color: #fff;
 }
-.info__table tbody tr::after {
-  content: url("../img/click.png");
-  display: block;
+.info__click-img {
   position: absolute;
+  right: 5px;
   top: 50%;
-  right: 10px;
   transform: translateY(-50%);
 }
 .info__bg1 {
