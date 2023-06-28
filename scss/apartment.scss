@@ -308,6 +308,9 @@
         fill: #ffffff00;
         fill-opacity: 0.6;
       }
+      & g.hover rect, & g.hover path {
+        fill: #9EFF00;
+      }
     }
   }
 
@@ -346,6 +349,7 @@
       color: #000;
     }
     & tbody tr {
+      position: relative;
       border-bottom: 1px solid #dddddd;
       font-size: 16px;
 
@@ -357,6 +361,20 @@
         & td {
           color: #00836a;
         }
+      }
+      &:hover, &.hover {
+        background: #FFA500;
+        & * {
+          color: #fff;
+        }
+      }
+      &::after {
+        content: url('../img/click.png');
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
       }
     }
   }

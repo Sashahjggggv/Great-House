@@ -219,6 +219,7 @@ funcLoadType = function(numOfType) {
     'url': "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.svg",
     'success': function(data){
       document.getElementById('bti-plan-content').appendChild(data.documentElement)
+      funcBtiHover()
     }
   });
 
@@ -281,6 +282,7 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
   funcCreateLineInTable = function(numOfRoom, nameOfRoom, areaOfRoom) {
     let tbody = document.getElementById("tbody")
     let tr = document.createElement("tr");
+    tr.classList.add("line-table-" + numOfRoom)
     let td1 = document.createElement('td');
     td1.innerHTML = numOfRoom;
     let td2 = document.createElement('td');
@@ -298,6 +300,7 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
   funcCreateLastLineInTable = function(allArea) {
     let tbody = document.getElementById("tbody")
     let tr = document.createElement("tr");
+    tr.classList.add("line-table-last")
     let td1 = document.createElement('td');
     td1.innerHTML = "-";
     let td2 = document.createElement('td');
@@ -346,6 +349,7 @@ funcLoadAreas = function(numOfApartment) {
       line11 = data.n11,
       allArea = data.all;
       funcAddInfoInTable(line1, line2, line3, line4, line5, line6, line7, line8, line9, line10, line11, allArea)
+      funcTableHover()
 
       let side = data.side
       // підгрузка компасу
@@ -388,3 +392,161 @@ if (numOfApartment >= 1 && numOfApartment <= 144 ) {
 } else {
   window.location.replace("../");
 }
+
+// таблиця (наведення)
+funcTableHover = function() {
+  $('.line-table-1').mouseover(function(){
+    $('g.1').addClass('hover')
+  })
+  $('.line-table-1').mouseleave(function(){
+    $('g.1').removeClass('hover')
+  })
+
+  $('.line-table-2').mouseover(function(){
+    $('g.2').addClass('hover')
+  })
+  $('.line-table-2').mouseleave(function(){
+    $('g.2').removeClass('hover')
+  })
+
+  $('.line-table-3').mouseover(function(){
+    $('g.3').addClass('hover')
+  })
+  $('.line-table-3').mouseleave(function(){
+    $('g.3').removeClass('hover')
+  })
+
+  $('.line-table-4').mouseover(function(){
+    $('g.4').addClass('hover')
+  })
+  $('.line-table-4').mouseleave(function(){
+    $('g.4').removeClass('hover')
+  })
+
+  $('.line-table-5').mouseover(function(){
+    $('g.5').addClass('hover')
+  })
+  $('.line-table-5').mouseleave(function(){
+    $('g.5').removeClass('hover')
+  })
+
+  $('.line-table-6').mouseover(function(){
+    $('g.6').addClass('hover')
+  })
+  $('.line-table-6').mouseleave(function(){
+    $('g.6').removeClass('hover')
+  })
+
+  $('.line-table-7').mouseover(function(){
+    $('g.7').addClass('hover')
+  })
+  $('.line-table-7').mouseleave(function(){
+    $('g.7').removeClass('hover')
+  })
+
+  $('.line-table-8').mouseover(function(){
+    $('g.8').addClass('hover')
+  })
+  $('.line-table-8').mouseleave(function(){
+    $('g.8').removeClass('hover')
+  })
+
+  $('.line-table-9').mouseover(function(){
+    $('g.9').addClass('hover')
+  })
+  $('.line-table-9').mouseleave(function(){
+    $('g.9').removeClass('hover')
+  })
+
+  $('.line-table-10').mouseover(function(){
+    $('g.10').addClass('hover')
+  })
+  $('.line-table-10').mouseleave(function(){
+    $('g.10').removeClass('hover')
+  })
+
+  $('.line-table-last').mouseover(function(){
+    $('g').addClass('hover')
+  })
+  $('.line-table-last').mouseleave(function(){
+    $('g').removeClass('hover')
+  })
+}
+
+// план наведення
+funcBtiHover = function(){
+  $('g.1').mouseover(function(){
+    $('g.1,.line-table-1').addClass('hover')
+  })
+  $('g.1').mouseleave(function(){
+    $('g.1,.line-table-1').removeClass('hover')
+  })
+
+  $('g.2').mouseover(function(){
+    $('g.2,.line-table-2').addClass('hover')
+  })
+  $('g.2').mouseleave(function(){
+    $('g.2,.line-table-2').removeClass('hover')
+  })
+  
+  $('g.3').mouseover(function(){
+    $('g.3,.line-table-3').addClass('hover')
+  })
+  $('g.3').mouseleave(function(){
+    $('g.3,.line-table-3').removeClass('hover')
+  })
+  
+  $('g.4').mouseover(function(){
+    $('g.4,.line-table-4').addClass('hover')
+  })
+  $('g.4').mouseleave(function(){
+    $('g.4,.line-table-4').removeClass('hover')
+  })
+  
+  $('g.5').mouseover(function(){
+    $('g.5,.line-table-5').addClass('hover')
+  })
+  $('g.5').mouseleave(function(){
+    $('g.5,.line-table-5').removeClass('hover')
+  })
+  
+  $('g.6').mouseover(function(){
+    $('g.6,.line-table-6').addClass('hover')
+  })
+  $('g.6').mouseleave(function(){
+    $('g.6,.line-table-6').removeClass('hover')
+  })
+  
+  $('g.7').mouseover(function(){
+    $('g.7,.line-table-7').addClass('hover')
+  })
+  $('g.7').mouseleave(function(){
+    $('g.7,.line-table-7').removeClass('hover')
+  })
+  
+  $('g.8').mouseover(function(){
+    $('g.8,.line-table-8').addClass('hover')
+  })
+  $('g.8').mouseleave(function(){
+    $('g.8,.line-table-8').removeClass('hover')
+  })
+  
+  $('g.9').mouseover(function(){
+    $('g.9,.line-table-9').addClass('hover')
+  })
+  $('g.9').mouseleave(function(){
+    $('g.9,.line-table-9').removeClass('hover')
+  })
+  
+  $('g.10').mouseover(function(){
+    $('g.10,.line-table-10').addClass('hover')
+  })
+  $('g.10').mouseleave(function(){
+    $('g.10,.line-table-10').removeClass('hover')
+  })
+}
+
+$('.info__table').click(function(){
+  console.log('clickes')
+  $('.info__bti-plan')[0].scrollIntoView({behavior: "smooth"});
+})

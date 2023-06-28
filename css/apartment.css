@@ -280,6 +280,9 @@
   fill: rgba(255, 255, 255, 0);
   fill-opacity: 0.6;
 }
+.info__bti-plan-content > svg g.hover rect, .info__bti-plan-content > svg g.hover path {
+  fill: #9EFF00;
+}
 .info__plan-image {
   width: 100%;
   height: auto;
@@ -309,6 +312,7 @@
   color: #000;
 }
 .info__table tbody tr {
+  position: relative;
   border-bottom: 1px solid #dddddd;
   font-size: 16px;
 }
@@ -320,6 +324,20 @@
 }
 .info__table tbody tr:nth-child(even) td {
   color: #00836a;
+}
+.info__table tbody tr:hover, .info__table tbody tr.hover {
+  background: #FFA500;
+}
+.info__table tbody tr:hover *, .info__table tbody tr.hover * {
+  color: #fff;
+}
+.info__table tbody tr::after {
+  content: url("../img/click.png");
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 .info__bg1 {
   bottom: 20%;
