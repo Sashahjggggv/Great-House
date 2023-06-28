@@ -262,11 +262,25 @@ funcLoadImageRound = function(numOfRound) {
   // background png
   let roundImg = document.getElementById("round__img");
   roundImg.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.png"
+  let roundIng90 = document.getElementById('round__img-90')
+  roundIng90.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.png"
 
   // foreground svg
   $.ajax({
     "method": "GET",
     'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.svg",
+    'success': function(data){
+      let roundContent = document.getElementById('roundContent');
+      roundContent.appendChild(data.documentElement);
+      $('.apartment').click(function(event){
+        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
+      })
+      $("[data-apartment-id=" + numOfApartment + "]").addClass('this')
+    }
+  });
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.svg",
     'success': function(data){
       let roundContent = document.getElementById('roundContent');
       roundContent.appendChild(data.documentElement);

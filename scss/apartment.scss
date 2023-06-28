@@ -446,11 +446,7 @@
 
     & > svg {
       position: absolute;
-      top: 50%;
-      left: 50%;
       z-index: 1;
-      transform: translate(-50%, -50%);
-      width: 100%;
       max-height: 100%;
       & .apartment * {
         fill: #ffffff00;
@@ -473,6 +469,27 @@
   &__img {
     width: 100%;
   }
+  &__img-90 {
+    display: none;
+    width: 240%;
+  }
+}
+.round-bti__foreground-svg {
+  width: 100%;
+}
+.round-bti__foreground-svg-90 {
+  display: none;
+  width: 240%;
+  height: 100%;
+  & > g {
+    transform: translate(100%, 0) rotate(90deg);
+  }
+}
+
+#roundContent {
+  display: flex;
+  justify-content: start;
+  overflow: auto;
 }
 
 @media (max-width: 1100px) {
@@ -602,6 +619,28 @@
       justify-content: start;
       overflow: auto;
       padding: 0 20px;
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .round {
+    &__img {
+      display: none;
+    }
+    &__img-90 {
+      display: block;
+    }
+  }
+
+  .round-bti__foreground-svg {
+    display: none;
+  }
+  .round-bti__foreground-svg-90 {
+    display: block;
+    width: 240%;
+    & > g {
+      transform: translate(100%, 0) rotate(90deg);
     }
   }
 }
