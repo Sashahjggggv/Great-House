@@ -53,15 +53,20 @@
   &__container > svg {
     position: absolute;
     z-index: 1;
-    & g.apartment:hover path, & g.apartment:hover rect {
-      fill-opacity: 0.8;
-      cursor: pointer;
-    }
     & .apartment * {
       fill: #ffffff00;
     }
     & .apartment.sold * {
       fill: #f00;
+    }
+    & g.apartment:hover path, & g.apartment:hover rect {
+      fill: #9EFF00;
+      cursor: pointer;
+    }
+    & g.apartment.sold:hover path, & g.apartment.sold:hover rect {
+      fill: #f00;
+      fill-opacity: 0.8;
+      cursor: pointer;
     }
   }
   &__foreground-svg {

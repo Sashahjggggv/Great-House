@@ -50,15 +50,20 @@
   position: absolute;
   z-index: 1;
 }
-.round-bti__container > svg g.apartment:hover path, .round-bti__container > svg g.apartment:hover rect {
-  fill-opacity: 0.8;
-  cursor: pointer;
-}
 .round-bti__container > svg .apartment * {
   fill: rgba(255, 255, 255, 0);
 }
 .round-bti__container > svg .apartment.sold * {
   fill: #f00;
+}
+.round-bti__container > svg g.apartment:hover path, .round-bti__container > svg g.apartment:hover rect {
+  fill: #9EFF00;
+  cursor: pointer;
+}
+.round-bti__container > svg g.apartment.sold:hover path, .round-bti__container > svg g.apartment.sold:hover rect {
+  fill: #f00;
+  fill-opacity: 0.8;
+  cursor: pointer;
 }
 .round-bti__foreground-svg {
   width: 100%;
