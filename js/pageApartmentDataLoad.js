@@ -306,14 +306,14 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
     td2.innerHTML = nameOfRoom;
     let td3 = document.createElement('td');
     td3.innerHTML = areaOfRoom;
-    let img = document.createElement('img');
-    img.classList.add("info__click-img");
-    img.src = "../../img/click.png";
+    // let img = document.createElement('img');
+    // img.classList.add("info__click-img");
+    // img.src = "../../img/click.png";
   
     tr.appendChild(td1);
     tr.appendChild(td2);
     tr.appendChild(td3);
-    tr.appendChild(img);
+    // tr.appendChild(img);
     tbody.appendChild(tr);
   }
 
@@ -328,14 +328,14 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
     td2.innerHTML = "-";
     let td3 = document.createElement('td');
     td3.innerHTML = allArea;
-    let img = document.createElement('img');
-    img.classList.add("info__click-img");
-    img.src = "../../img/click.png";
+    // let img = document.createElement('img');
+    // img.classList.add("info__click-img");
+    // img.src = "../../img/click.png";
   
     tr.appendChild(td1);
     tr.appendChild(td2);
     tr.appendChild(td3);
-    tr.appendChild(img);
+    // tr.appendChild(img);
     tbody.appendChild(tr);
   }
 

@@ -338,6 +338,7 @@
   }
 
   &__table {
+    position: relative;
     border: 2px solid #00836a;
     border-collapse: collapse;
     margin: 25px 0;
@@ -384,12 +385,13 @@
     }
   }
 
-  /* &__click-img {
+  &__click-img {
     position: absolute;
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-  } */
+    width: 50px;
+  }
 
   &__bg1 {
     bottom: 20%;

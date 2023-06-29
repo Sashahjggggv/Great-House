@@ -246,12 +246,6 @@
 
 .info {
   margin-top: 70px;
-  /* &__click-img {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-  } */
 }
 .info__container {
   display: flex;
@@ -306,6 +300,7 @@
   fill: #000;
 }
 .info__table {
+  position: relative;
   border: 2px solid #00836a;
   border-collapse: collapse;
   margin: 25px 0;
@@ -346,6 +341,13 @@
 }
 .info__table tbody tr:hover *, .info__table tbody tr.hover * {
   color: #fff;
+}
+.info__click-img {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
 }
 .info__bg1 {
   bottom: 20%;
