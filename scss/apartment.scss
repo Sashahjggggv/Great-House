@@ -279,6 +279,7 @@
   }
 
   &__text-block {
+    position: relative;
     width: 48%;
     display: flex;
     align-items: center;
@@ -338,7 +339,6 @@
   }
 
   &__table {
-    position: relative;
     border: 2px solid #00836a;
     border-collapse: collapse;
     margin: 25px 0;
@@ -390,7 +390,7 @@
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px;
+    width: 40px;
   }
 
   &__bg1 {
