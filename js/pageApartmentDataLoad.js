@@ -105,7 +105,6 @@ funcLoadWindowLooks = function(side, numOfImg) {
 // функція підгрузки картинок для виглядів з вікна
 funcLoadAllWindowLooks = function(side) {
   if (side == "E") {
-    console.log('eee')
     funcLoadWindowLooks(side, 1);
     funcLoadWindowLooks(side, 2);
     funcLoadWindowLooks(side, 3);
@@ -129,8 +128,6 @@ funcLoadAllWindowLooks = function(side) {
     funcLoadWindowLooks(side, 6);
     funcLoadWindowLooks(side, 7);
     funcLoadWindowLooks(side, 8);
-    funcLoadWindowLooks(side, 9);
-    funcLoadWindowLooks(side, 10);
   }
   if (side == "NEW") {
     funcLoadWindowLooks(side, 1);
@@ -155,8 +152,6 @@ funcLoadAllWindowLooks = function(side) {
     funcLoadWindowLooks(side, 10);
     funcLoadWindowLooks(side, 11);
     funcLoadWindowLooks(side, 12);
-    funcLoadWindowLooks(side, 13);
-    funcLoadWindowLooks(side, 14);
   }
   if (side == "S") {
     funcLoadWindowLooks(side, 1);
@@ -178,16 +173,6 @@ funcLoadAllWindowLooks = function(side) {
     funcLoadWindowLooks(side, 5);
     funcLoadWindowLooks(side, 6);
     funcLoadWindowLooks(side, 7);
-    funcLoadWindowLooks(side, 8);
-    funcLoadWindowLooks(side, 9);
-    funcLoadWindowLooks(side, 10);
-    funcLoadWindowLooks(side, 11);
-    funcLoadWindowLooks(side, 12);
-    funcLoadWindowLooks(side, 13);
-    funcLoadWindowLooks(side, 14);
-    funcLoadWindowLooks(side, 15);
-    funcLoadWindowLooks(side, 16);
-    funcLoadWindowLooks(side, 17);
   }
   if (side == "W") {
     funcLoadWindowLooks(side, 1);
@@ -201,7 +186,6 @@ funcLoadAllWindowLooks = function(side) {
     funcLoadWindowLooks(side, 4);
     funcLoadWindowLooks(side, 5);
     funcLoadWindowLooks(side, 6);
-    funcLoadWindowLooks(side, 7);
   }
   funcSlideWindowGallery()
 }
