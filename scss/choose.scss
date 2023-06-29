@@ -57,6 +57,9 @@
       fill-opacity: 0.8;
       cursor: pointer;
     }
+    & .apartment * {
+      fill: #ffffff00;
+    }
     & .apartment.sold * {
       fill: #f00;
     }

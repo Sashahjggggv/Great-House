@@ -348,11 +348,13 @@
   transform: translateY(-50%);
 }
 .info__bg1 {
-  bottom: 20%;
+  position: absolute;
+  top: 80%;
   left: 5%;
   width: 70px;
 }
 .info__plans-slider {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -412,6 +414,10 @@
 }
 .round__container div > svg .apartment.sold * {
   fill: #f00;
+}
+.round__container div > svg line {
+  stroke: #9EFF00;
+  stroke-width: 7;
 }
 .round__img {
   width: 100%;
@@ -488,7 +494,8 @@
     width: 90%;
   }
   .info__bg1 {
-    top: 42%;
+    top: -20px;
+    left: -5px;
     width: 60px;
   }
   .furniture-plan__image {

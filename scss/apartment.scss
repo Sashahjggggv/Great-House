@@ -392,12 +392,14 @@
   }
 
   &__bg1 {
-    bottom: 20%;
+    position: absolute;
+    top: 80%;
     left: 5%;
     width: 70px;
   }
 
   &__plans-slider {
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
@@ -462,6 +464,10 @@
       }
       & .apartment.sold * {
         fill: #f00;
+      }
+      & line {
+        stroke: #9EFF00;
+        stroke-width: 7;
       }
     }
   }
@@ -545,7 +551,8 @@
     }
 
     &__bg1 {
-      top: 42%;
+      top: -20px;
+      left: -5px;
       width: 60px;
     }
   }
