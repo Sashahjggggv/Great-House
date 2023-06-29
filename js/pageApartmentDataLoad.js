@@ -97,7 +97,7 @@ funcLoadWindowLooks = function(side, numOfImg) {
   let div = document.createElement("div");
   let img = document.createElement('img');
   img.classList.add("window__card-item");
-  img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".JPG";
+  img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".jpg";
   div.appendChild(img);
   let movable2 = document.getElementById("movable2");
   movable2.appendChild(div);
