@@ -76,6 +76,7 @@ funcSlideFooterGallery = function(){
     play();
   });
 }
+funcSlideFooterGallery()
 
 // функція ховання, показу хедера при скролі
 var st = $(window).scrollTop();

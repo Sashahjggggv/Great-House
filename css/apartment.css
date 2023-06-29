@@ -246,6 +246,12 @@
 
 .info {
   margin-top: 70px;
+  /* &__click-img {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  } */
 }
 .info__container {
   display: flex;
@@ -341,20 +347,19 @@
 .info__table tbody tr:hover *, .info__table tbody tr.hover * {
   color: #fff;
 }
-.info__click-img {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .info__bg1 {
-  position: absolute;
-  top: 80%;
+  bottom: 20%;
   left: 5%;
   width: 70px;
 }
+.info__bg2 {
+  display: none;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 50px;
+}
 .info__plans-slider {
-  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -494,9 +499,10 @@
     width: 90%;
   }
   .info__bg1 {
-    top: -20px;
-    left: -5px;
-    width: 60px;
+    display: none;
+  }
+  .info__bg2 {
+    display: block;
   }
   .furniture-plan__image {
     width: 90%;
@@ -577,5 +583,8 @@
   }
   .round-bti__foreground-svg-90 > g {
     transform: translate(100%, 0) rotate(90deg);
+  }
+  .window__photo-slider .movable {
+    height: 250px;
   }
 }
