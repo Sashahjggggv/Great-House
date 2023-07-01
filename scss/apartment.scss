@@ -120,8 +120,12 @@
 
   &__container {}
 
-  &__paragraf:last-child {
-    margin-bottom: 0;
+  &__paragraf {
+    font-size: 18px;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__bg1 {

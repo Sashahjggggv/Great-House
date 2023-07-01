@@ -110,6 +110,10 @@
 .text {
   margin-top: 30px;
 }
+.text__paragraf {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
 .text__paragraf:last-child {
   margin-bottom: 0;
 }
