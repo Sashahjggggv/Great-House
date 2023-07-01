@@ -31,6 +31,7 @@ funcPushImagesRoundBti = function(numOfRound) {
       $('.apartment').click(function(event){
         window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
       })
+      funcShowInfoBlockApartment()
     }
   });
 
