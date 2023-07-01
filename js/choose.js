@@ -44,6 +44,7 @@ funcPushImagesRoundBti = function(numOfRound) {
         window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
       })
       funcShowFalseApartments()
+      funcShowInfoBlockApartment()
     }
   });
 
@@ -51,13 +52,13 @@ funcPushImagesRoundBti = function(numOfRound) {
   img.classList.add("round-bti__bg-image");
   img.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.png";
   roundBtiContainer.appendChild(img);
-  roundBtiContainer.scrollIntoView({behavior: "smooth"});
+  document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
 
   let img90 = document.createElement('img');
   img90.classList.add("round-bti__bg-image-90");
   img90.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.png";
   roundBtiContainer.appendChild(img90);
-  roundBtiContainer.scrollIntoView({behavior: "smooth"});
+  document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
 }
 
 // функція вичислення кількості вільних квартир для інфоблоку поверху
@@ -101,6 +102,14 @@ funcCalcTrueApartments = function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
       })
+      $('[data-round-id=2]').click(function(){
+        
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('2')
+        $('#trueApartments1').append(true2)
+        $('#falseApartments1').append(false2)
+      })
 
       // round 3
       let true3 = 0
@@ -136,6 +145,14 @@ funcCalcTrueApartments = function(){
       $('[data-round-id=3]').mouseleave(function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+      $('[data-round-id=3]').click(function(){
+        
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('3')
+        $('#trueApartments1').append(true3)
+        $('#falseApartments1').append(false3)
       })
 
       // round 4
@@ -173,6 +190,14 @@ funcCalcTrueApartments = function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
       })
+      $('[data-round-id=4]').click(function(){
+        
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('4')
+        $('#trueApartments1').append(true4)
+        $('#falseApartments1').append(false4)
+      })
 
       // round 5
       let true5 = 0
@@ -208,6 +233,14 @@ funcCalcTrueApartments = function(){
       $('[data-round-id=5]').mouseleave(function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+      $('[data-round-id=5]').click(function(){
+        
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('5')
+        $('#trueApartments1').append(true5)
+        $('#falseApartments1').append(false5)
       })
 
       // round 6
@@ -245,6 +278,14 @@ funcCalcTrueApartments = function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
       })
+      $('[data-round-id=6]').click(function(){
+        
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('6')
+        $('#trueApartments1').append(true6)
+        $('#falseApartments1').append(false6)
+      })
 
       // round 7
       let true7 = 0
@@ -280,6 +321,14 @@ funcCalcTrueApartments = function(){
       $('[data-round-id=7]').mouseleave(function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+      $('[data-round-id=7]').click(function(){
+        
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('7')
+        $('#trueApartments1').append(true7)
+        $('#falseApartments1').append(false7)
       })
 
       // round 8
@@ -317,6 +366,14 @@ funcCalcTrueApartments = function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
       })
+      $('[data-round-id=8]').click(function(){
+        
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('8')
+        $('#trueApartments1').append(true8)
+        $('#falseApartments1').append(false8)
+      })
 
       // round 9
       let true9 = 0
@@ -353,7 +410,50 @@ funcCalcTrueApartments = function(){
         $('.choose-round__round-block').removeClass('active')
         $('#numOfRound,#trueApartments,#falseApartments').empty()
       })
+      $('[data-round-id=9]').click(function(){
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('9')
+        $('#trueApartments1').append(true9)
+        $('#falseApartments1').append(false9)
+      })
     }
   });
 }
 funcCalcTrueApartments()
+
+let isItInApartment = false;
+funcShowInfo = function(numOfApartment){
+  $('[data-apartment-id=' + numOfApartment + ']').mouseover(function(){
+    if (!isItInApartment) {
+      $('#numOfApartmnet').append(numOfApartment)
+      $.ajax({
+        "method": "GET",
+        'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
+        'success': function(data){
+          if (data.n + numOfApartment) {$('#trueInfo').append('Квартира доступна')} else {$('#falseInfo').append('Квартира продана')}
+        }
+      });
+      $.ajax({
+        "method": "GET",
+        'url': "https://sashahjggggv.github.io/photos-great-house/144/" + numOfApartment + "/areas.json",
+        'success': function(data){
+          $('#allPlace').append(data.all)
+        }
+      });
+      $('.round-bti__apartment-info').addClass('active')
+      isItInApartment = true;
+    }
+  })
+  $('[data-apartment-id=' + numOfApartment + ']').mouseleave(function(){
+    $('.round-bti__apartment-info').removeClass('active')
+    $('#numOfApartmnet,#trueInfo,#falseInfo,#allPlace').empty()
+    isItInApartment = false;
+  })    
+}
+funcShowInfoBlockApartment = function(){
+  for(let i = 0; i < 145; i++) {
+    funcShowInfo(i);
+  }
+}
+funcShowInfoBlockApartment()

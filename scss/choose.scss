@@ -52,8 +52,6 @@
     transform: translateX(-50%);
   }
   &__path-round {
-    stroke: #FFA500;
-    stroke-width: 5px;
     &:hover {
       fill: #9EFF00;
       cursor: pointer;
@@ -68,6 +66,7 @@
 .round-bti {
   display: none;
   padding: 100px 0;
+  position: relative;
 
   &__container {
     padding: 0;
@@ -84,6 +83,32 @@
   &__bg-image-90 {
     display: none;
     width: 240%;
+  }
+
+  &__round-block {
+    display: none;
+    border: 2px solid #FFA500;
+    border-radius: 25px;
+    background: #F8F1F1;
+    padding: 15px;
+    width: 80%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-bottom: 20px;
+  }
+
+  &__round-block-num {
+    margin-bottom: 10px;
+  }
+
+  &__round-block-true {
+    margin-bottom: 5px;
+    color: #FFA500;
+  }
+
+  &__round-block-false {
+    margin-bottom: 5px;
+    color: red;
   }
 
   &__container > svg {
@@ -119,6 +144,36 @@
   &.active {
     display: block;
   }
+
+  &__apartment-info {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    z-index: 1;
+    border: 3px solid #FFA500;
+    border-radius: 25px;
+    background: #F8F1F1;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {}
+
+  &__apartment-info-true {
+    margin-bottom: 5px;
+    color: #FFA500;
+  }
+
+  &__apartment-info-false {
+    margin-bottom: 5px;
+    color: red;
+  }
+
+  &__place {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -128,8 +183,14 @@
 }
 
 @media (max-width: 600px) {
-  .choose-round__paths {
-    left: 62%;
+  .choose-round {
+    &__paths {
+      left: 62%;
+    }
+
+    &__round-block.active {
+      display: none;
+    }
   }
   .round-bti {
     padding: 50px 0;
@@ -138,6 +199,7 @@
       margin: 0 50px;
       justify-content: start;
     }
+    &__round-block.active {display: block;}
     &__bg-image {
       display: none;
     }
@@ -151,4 +213,7 @@
       display: block;
     }
   }
+}
+@media (min-width:600px) {
+  .round-bti__apartment-info.active {display: flex;}
 }

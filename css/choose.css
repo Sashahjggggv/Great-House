@@ -46,10 +46,6 @@
   left: 53%;
   transform: translateX(-50%);
 }
-.choose-round__path-round {
-  stroke: #FFA500;
-  stroke-width: 5px;
-}
 .choose-round__path-round:hover {
   fill: #9EFF00;
   cursor: pointer;
@@ -62,6 +58,7 @@
 .round-bti {
   display: none;
   padding: 100px 0;
+  position: relative;
 }
 .round-bti__container {
   padding: 0;
@@ -77,6 +74,28 @@
 .round-bti__bg-image-90 {
   display: none;
   width: 240%;
+}
+.round-bti__round-block {
+  display: none;
+  border: 2px solid #FFA500;
+  border-radius: 25px;
+  background: #F8F1F1;
+  padding: 15px;
+  width: 80%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  margin-bottom: 20px;
+}
+.round-bti__round-block-num {
+  margin-bottom: 10px;
+}
+.round-bti__round-block-true {
+  margin-bottom: 5px;
+  color: #FFA500;
+}
+.round-bti__round-block-false {
+  margin-bottom: 5px;
+  color: red;
 }
 .round-bti__container > svg {
   position: absolute;
@@ -111,6 +130,30 @@
 .round-bti.active {
   display: block;
 }
+.round-bti__apartment-info {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  z-index: 1;
+  border: 3px solid #FFA500;
+  border-radius: 25px;
+  background: #F8F1F1;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.round-bti__apartment-info-true {
+  margin-bottom: 5px;
+  color: #FFA500;
+}
+.round-bti__apartment-info-false {
+  margin-bottom: 5px;
+  color: red;
+}
+.round-bti__place {
+  margin-bottom: 5px;
+}
 
 @media (max-width: 1100px) {
   .choose-round__paths {
@@ -121,6 +164,9 @@
   .choose-round__paths {
     left: 62%;
   }
+  .choose-round__round-block.active {
+    display: none;
+  }
   .round-bti {
     padding: 50px 0;
     overflow: auto;
@@ -128,6 +174,9 @@
   .round-bti__container {
     margin: 0 50px;
     justify-content: start;
+  }
+  .round-bti__round-block.active {
+    display: block;
   }
   .round-bti__bg-image {
     display: none;
@@ -140,5 +189,10 @@
   }
   .round-bti__foreground-svg-90 {
     display: block;
+  }
+}
+@media (min-width: 600px) {
+  .round-bti__apartment-info.active {
+    display: flex;
   }
 }
