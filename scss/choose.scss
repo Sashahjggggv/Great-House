@@ -15,6 +15,35 @@
     width: auto;
   }
 
+  &__round-block {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    z-index: 1;
+    border: 2px solid #9EFF00;
+    border-radius: 25px;
+    background: #F8F1F1;
+    padding: 15px;
+    &.active {
+      display: block;
+    }
+  }
+
+  &__round-block-num {
+    margin-bottom: 10px;
+  }
+
+  &__round-block-true {
+    margin-bottom: 5px;
+    color: #FFA500;
+  }
+
+  &__round-block-false {
+    margin-bottom: 5px;
+    color: red;
+  }
+
   &__paths {
     height: 83.7%;
     position: absolute;
@@ -22,9 +51,17 @@
     left: 53%;
     transform: translateX(-50%);
   }
-  &__path-round:hover {
-    fill: #9EFF00;
-    cursor: pointer;
+  &__path-round {
+    stroke: #FFA500;
+    stroke-width: 5px;
+    &:hover {
+      fill: #9EFF00;
+      cursor: pointer;
+    }
+    &.sold:hover {
+      fill: #ff3300;
+      cursor: pointer;
+    }
   }
 }
 

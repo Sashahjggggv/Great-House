@@ -14,6 +14,31 @@
   height: 100%;
   width: auto;
 }
+.choose-round__round-block {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  z-index: 1;
+  border: 2px solid #9EFF00;
+  border-radius: 25px;
+  background: #F8F1F1;
+  padding: 15px;
+}
+.choose-round__round-block.active {
+  display: block;
+}
+.choose-round__round-block-num {
+  margin-bottom: 10px;
+}
+.choose-round__round-block-true {
+  margin-bottom: 5px;
+  color: #FFA500;
+}
+.choose-round__round-block-false {
+  margin-bottom: 5px;
+  color: red;
+}
 .choose-round__paths {
   height: 83.7%;
   position: absolute;
@@ -21,8 +46,16 @@
   left: 53%;
   transform: translateX(-50%);
 }
+.choose-round__path-round {
+  stroke: #FFA500;
+  stroke-width: 5px;
+}
 .choose-round__path-round:hover {
   fill: #9EFF00;
+  cursor: pointer;
+}
+.choose-round__path-round.sold:hover {
+  fill: #ff3300;
   cursor: pointer;
 }
 

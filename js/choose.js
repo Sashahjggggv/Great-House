@@ -43,6 +43,7 @@ funcPushImagesRoundBti = function(numOfRound) {
       $('.apartment').click(function(event){
         window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
       })
+      funcShowFalseApartments()
     }
   });
 
@@ -58,3 +59,301 @@ funcPushImagesRoundBti = function(numOfRound) {
   roundBtiContainer.appendChild(img90);
   roundBtiContainer.scrollIntoView({behavior: "smooth"});
 }
+
+// функція вичислення кількості вільних квартир для інфоблоку поверху
+funcCalcTrueApartments = function(){
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
+    'success': function(data){
+      // round 2
+      let true2 = 0
+
+      if (data.n1) {true2 = true2 + 1}
+      if (data.n2) {true2 = true2 + 1}
+      if (data.n3) {true2 = true2 + 1}
+      if (data.n4) {true2 = true2 + 1}
+      if (data.n33) {true2 = true2 + 1}
+      if (data.n34) {true2 = true2 + 1}
+      if (data.n35) {true2 = true2 + 1}
+      if (data.n36) {true2 = true2 + 1}
+      if (data.n65) {true2 = true2 + 1}
+      if (data.n66) {true2 = true2 + 1}
+      if (data.n67) {true2 = true2 + 1}
+      if (data.n68) {true2 = true2 + 1}
+      if (data.n69) {true2 = true2 + 1}
+      if (data.n105) {true2 = true2 + 1}
+      if (data.n106) {true2 = true2 + 1}
+      if (data.n107) {true2 = true2 + 1}
+      if (data.n108) {true2 = true2 + 1}
+      if (data.n109) {true2 = true2 + 1}
+      
+      let false2 = 18 - true2
+      if (false2 == 18) {$('[data-round-id=2]').addClass('sold')}
+
+      $('[data-round-id=2]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('2')
+        $('#trueApartments').append(true2)
+        $('#falseApartments').append(false2)
+      })
+      $('[data-round-id=2]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+
+      // round 3
+      let true3 = 0
+
+      if (data.n5) {true3 = true3 + 1}
+      if (data.n6) {true3 = true3 + 1}
+      if (data.n7) {true3 = true3 + 1}
+      if (data.n8) {true3 = true3 + 1}
+      if (data.n37) {true3 = true3 + 1}
+      if (data.n38) {true3 = true3 + 1}
+      if (data.n39) {true3 = true3 + 1}
+      if (data.n40) {true3 = true3 + 1}
+      if (data.n70) {true3 = true3 + 1}
+      if (data.n71) {true3 = true3 + 1}
+      if (data.n72) {true3 = true3 + 1}
+      if (data.n73) {true3 = true3 + 1}
+      if (data.n74) {true3 = true3 + 1}
+      if (data.n110) {true3 = true3 + 1}
+      if (data.n111) {true3 = true3 + 1}
+      if (data.n112) {true3 = true3 + 1}
+      if (data.n113) {true3 = true3 + 1}
+      if (data.n114) {true3 = true3 + 1}
+      
+      let false3 = 18 - true3
+      if (false3 == 18) {$('[data-round-id=3]').addClass('sold')}
+
+      $('[data-round-id=3]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('3')
+        $('#trueApartments').append(true3)
+        $('#falseApartments').append(false3)
+      })
+      $('[data-round-id=3]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+
+      // round 4
+      let true4 = 0
+
+      if (data.n9) {true4 = true4 + 1}
+      if (data.n10) {true4 = true4 + 1}
+      if (data.n11) {true4 = true4 + 1}
+      if (data.n12) {true4 = true4 + 1}
+      if (data.n41) {true4 = true4 + 1}
+      if (data.n42) {true4 = true4 + 1}
+      if (data.n43) {true4 = true4 + 1}
+      if (data.n44) {true4 = true4 + 1}
+      if (data.n75) {true4 = true4 + 1}
+      if (data.n76) {true4 = true4 + 1}
+      if (data.n77) {true4 = true4 + 1}
+      if (data.n78) {true4 = true4 + 1}
+      if (data.n79) {true4 = true4 + 1}
+      if (data.n115) {true4 = true4 + 1}
+      if (data.n116) {true4 = true4 + 1}
+      if (data.n117) {true4 = true4 + 1}
+      if (data.n118) {true4 = true4 + 1}
+      if (data.n119) {true4 = true4 + 1}
+      
+      let false4 = 18 - true4
+      if (false4 == 18) {$('[data-round-id=4]').addClass('sold')}
+
+      $('[data-round-id=4]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('4')
+        $('#trueApartments').append(true4)
+        $('#falseApartments').append(false4)
+      })
+      $('[data-round-id=4]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+
+      // round 5
+      let true5 = 0
+
+      if (data.n13) {true5 = true5 + 1}
+      if (data.n14) {true5 = true5 + 1}
+      if (data.n15) {true5 = true5 + 1}
+      if (data.n16) {true5 = true5 + 1}
+      if (data.n45) {true5 = true5 + 1}
+      if (data.n46) {true5 = true5 + 1}
+      if (data.n47) {true5 = true5 + 1}
+      if (data.n48) {true5 = true5 + 1}
+      if (data.n80) {true5 = true5 + 1}
+      if (data.n81) {true5 = true5 + 1}
+      if (data.n82) {true5 = true5 + 1}
+      if (data.n83) {true5 = true5 + 1}
+      if (data.n84) {true5 = true5 + 1}
+      if (data.n120) {true5 = true5 + 1}
+      if (data.n121) {true5 = true5 + 1}
+      if (data.n122) {true5 = true5 + 1}
+      if (data.n123) {true5 = true5 + 1}
+      if (data.n124) {true5 = true5 + 1}
+      
+      let false5 = 18 - true5
+      if (false5 == 18) {$('[data-round-id=5]').addClass('sold')}
+
+      $('[data-round-id=5]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('5')
+        $('#trueApartments').append(true5)
+        $('#falseApartments').append(false5)
+      })
+      $('[data-round-id=5]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+
+      // round 6
+      let true6 = 0
+
+      if (data.n17) {true6 = true6 + 1}
+      if (data.n18) {true6 = true6 + 1}
+      if (data.n19) {true6 = true6 + 1}
+      if (data.n20) {true6 = true6 + 1}
+      if (data.n49) {true6 = true6 + 1}
+      if (data.n50) {true6 = true6 + 1}
+      if (data.n51) {true6 = true6 + 1}
+      if (data.n52) {true6 = true6 + 1}
+      if (data.n85) {true6 = true6 + 1}
+      if (data.n86) {true6 = true6 + 1}
+      if (data.n87) {true6 = true6 + 1}
+      if (data.n88) {true6 = true6 + 1}
+      if (data.n89) {true6 = true6 + 1}
+      if (data.n125) {true6 = true6 + 1}
+      if (data.n126) {true6 = true6 + 1}
+      if (data.n127) {true6 = true6 + 1}
+      if (data.n128) {true6 = true6 + 1}
+      if (data.n129) {true6 = true6 + 1}
+      
+      let false6 = 18 - true6
+      if (false6 == 18) {$('[data-round-id=6]').addClass('sold')}
+
+      $('[data-round-id=6]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('6')
+        $('#trueApartments').append(true6)
+        $('#falseApartments').append(false6)
+      })
+      $('[data-round-id=6]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+
+      // round 7
+      let true7 = 0
+
+      if (data.n21) {true7 = true7 + 1}
+      if (data.n22) {true7 = true7 + 1}
+      if (data.n23) {true7 = true7 + 1}
+      if (data.n24) {true7 = true7 + 1}
+      if (data.n53) {true7 = true7 + 1}
+      if (data.n54) {true7 = true7 + 1}
+      if (data.n55) {true7 = true7 + 1}
+      if (data.n56) {true7 = true7 + 1}
+      if (data.n90) {true7 = true7 + 1}
+      if (data.n91) {true7 = true7 + 1}
+      if (data.n92) {true7 = true7 + 1}
+      if (data.n93) {true7 = true7 + 1}
+      if (data.n94) {true7 = true7 + 1}
+      if (data.n30) {true7 = true7 + 1}
+      if (data.n31) {true7 = true7 + 1}
+      if (data.n32) {true7 = true7 + 1}
+      if (data.n33) {true7 = true7 + 1}
+      if (data.n34) {true7 = true7 + 1}
+      
+      let false7 = 18 - true7
+      if (false7 == 18) {$('[data-round-id=7]').addClass('sold')}
+
+      $('[data-round-id=7]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('7')
+        $('#trueApartments').append(true7)
+        $('#falseApartments').append(false7)
+      })
+      $('[data-round-id=7]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+
+      // round 8
+      let true8 = 0
+
+      if (data.n25) {true8 = true8 + 1}
+      if (data.n26) {true8 = true8 + 1}
+      if (data.n27) {true8 = true8 + 1}
+      if (data.n28) {true8 = true8 + 1}
+      if (data.n57) {true8 = true8 + 1}
+      if (data.n58) {true8 = true8 + 1}
+      if (data.n59) {true8 = true8 + 1}
+      if (data.n60) {true8 = true8 + 1}
+      if (data.n95) {true8 = true8 + 1}
+      if (data.n96) {true8 = true8 + 1}
+      if (data.n97) {true8 = true8 + 1}
+      if (data.n98) {true8 = true8 + 1}
+      if (data.n99) {true8 = true8 + 1}
+      if (data.n135) {true8 = true8 + 1}
+      if (data.n136) {true8 = true8 + 1}
+      if (data.n137) {true8 = true8 + 1}
+      if (data.n138) {true8 = true8 + 1}
+      if (data.n139) {true8 = true8 + 1}
+      
+      let false8 = 18 - true8
+      if (false8 == 18) {$('[data-round-id=8]').addClass('sold')}
+
+      $('[data-round-id=8]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('8')
+        $('#trueApartments').append(true8)
+        $('#falseApartments').append(false8)
+      })
+      $('[data-round-id=8]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+
+      // round 9
+      let true9 = 0
+
+      if (data.n29) {true9 = true9 + 1}
+      if (data.n30) {true9 = true9 + 1}
+      if (data.n31) {true9 = true9 + 1}
+      if (data.n32) {true9 = true9 + 1}
+      if (data.n61) {true9 = true9 + 1}
+      if (data.n62) {true9 = true9 + 1}
+      if (data.n63) {true9 = true9 + 1}
+      if (data.n64) {true9 = true9 + 1}
+      if (data.n100) {true9 = true9 + 1}
+      if (data.n101) {true9 = true9 + 1}
+      if (data.n102) {true9 = true9 + 1}
+      if (data.n103) {true9 = true9 + 1}
+      if (data.n104) {true9 = true9 + 1}
+      if (data.n140) {true9 = true9 + 1}
+      if (data.n141) {true9 = true9 + 1}
+      if (data.n142) {true9 = true9 + 1}
+      if (data.n143) {true9 = true9 + 1}
+      if (data.n144) {true9 = true9 + 1}
+      
+      let false9 = 18 - true9
+      if (false9 == 18) {$('[data-round-id=9]').addClass('sold')}
+
+      $('[data-round-id=9]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('9')
+        $('#trueApartments').append(true9)
+        $('#falseApartments').append(false9)
+      })
+      $('[data-round-id=9]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+    }
+  });
+}
+funcCalcTrueApartments()

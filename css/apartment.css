@@ -458,6 +458,7 @@
 }
 .round__container div > svg .apartment.this * {
   fill: #9EFF00;
+  fill-opacity: 0.9;
 }
 .round__container div > svg .apartment.sold * {
   fill: #f00;
