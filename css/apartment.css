@@ -71,6 +71,31 @@
   right: 12%;
   width: 70px;
 }
+.gallery__true-false-info {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 40px;
+}
+.gallery__true-false-info.true {
+  border: 5px solid #FFA500;
+  font-weight: 500;
+}
+.gallery__true-false-info.false {
+  border: 5px solid red;
+  font-weight: 500;
+}
+.gallery__true-paragraf {
+  margin: 0;
+  font-size: 30px;
+  color: #FFA500;
+}
+.gallery__false-paragraf {
+  margin: 0;
+  font-size: 30px;
+  color: red;
+}
 
 .number {
   margin-top: 20px;
@@ -437,33 +462,33 @@
 .round {
   margin: 50px 0;
 }
-.round__container div {
+.round__container > div {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.round__container div > svg {
+.round__container > div > svg {
   position: absolute;
   z-index: 1;
   max-height: 100%;
 }
-.round__container div > svg .apartment * {
+.round__container > div > svg .apartment * {
   fill: rgba(255, 255, 255, 0);
   cursor: pointer;
   transition: all 0.1s ease;
 }
-.round__container div > svg .apartment:hover * {
+.round__container > div > svg .apartment:hover * {
   fill: #9EFF00;
 }
-.round__container div > svg .apartment.this * {
+.round__container > div > svg .apartment.this * {
   fill: #9EFF00;
   fill-opacity: 0.9;
 }
-.round__container div > svg .apartment.sold * {
+.round__container > div > svg .apartment.sold * {
   fill: #f00;
 }
-.round__container div > svg line {
+.round__container > div > svg line {
   stroke: #9EFF00;
   stroke-width: 7;
 }
@@ -473,6 +498,30 @@
 .round__img-90 {
   display: none;
   width: 240%;
+}
+.round__apartment-info {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  z-index: 1;
+  border: 3px solid #FFA500;
+  border-radius: 25px;
+  background: #F8F1F1;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.round__apartment-info-true {
+  margin-bottom: 5px;
+  color: #FFA500;
+}
+.round__apartment-info-false {
+  margin-bottom: 5px;
+  color: red;
+}
+.round__place {
+  margin-bottom: 5px;
 }
 
 .round-bti__foreground-svg {
@@ -650,5 +699,10 @@
   }
   .window__photo-slider .movable {
     height: 250px;
+  }
+}
+@media (min-width: 600px) {
+  .round__apartment-info.active {
+    display: flex;
   }
 }

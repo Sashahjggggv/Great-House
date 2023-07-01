@@ -289,3 +289,39 @@ funcShowFalseApartments = function(){
     }
   });
 }
+
+// функція додавання інфо про квартиру при наведенні в плані поверху
+let isItInApartment = false;
+funcShowInfo = function(numOfApartment){
+  $('[data-apartment-id=' + numOfApartment + ']').mouseover(function(){
+    if (!isItInApartment) {
+      $('#numOfApartmnet').append(numOfApartment)
+      $.ajax({
+        "method": "GET",
+        'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
+        'success': function(data){
+          if (eval('data.n' + numOfApartment)) {$('#trueInfo').append('Квартира доступна')} else {$('#falseInfo').append('Квартира продана')}
+        }
+      });
+      $.ajax({
+        "method": "GET",
+        'url': "https://sashahjggggv.github.io/photos-great-house/144/" + numOfApartment + "/areas.json",
+        'success': function(data){
+          $('#allPlace').append(data.all)
+        }
+      });
+      $('.round-bti__apartment-info,.round__apartment-info').addClass('active')
+      isItInApartment = true;
+    }
+  })
+  $('[data-apartment-id=' + numOfApartment + ']').mouseleave(function(){
+    $('.round-bti__apartment-info,.round__apartment-info').removeClass('active')
+    $('#numOfApartmnet,#trueInfo,#falseInfo,#allPlace').empty()
+    isItInApartment = false;
+  })    
+}
+funcShowInfoBlockApartment = function(){
+  for(let i = 0; i < 145; i++) {
+    funcShowInfo(i);
+  }
+}

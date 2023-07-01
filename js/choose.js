@@ -1,66 +1,3 @@
-loadAndPutSVGBuilding = function() {
-  let choose = document.getElementById('choose')
-  $.ajax({
-    "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/building.svg",
-    'success': function(data){
-      choose.appendChild(data.documentElement);
-      $('.choose-round__path-round').click(function(event){
-        $(".round-bti").addClass('active')
-        $(".round-bti__bg-image").remove()
-        $(".round-bti__bg-image-90").remove()
-        $(".round-bti__foreground-svg").remove()
-        $(".round-bti__foreground-svg-90").remove()
-        funcPushImagesRoundBti($(this).attr("data-round-id"))
-      })
-    }
-  });
-}
-loadAndPutSVGBuilding()
-
-let roundBtiContainer = document.getElementById('roundBtiContainer')
-funcPushImagesRoundBti = function(numOfRound) {
-  $('round-bti__bg-image').remove();
-
-  $.ajax({
-    "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.svg",
-    'success': function(data){
-      let roundContent = document.getElementById('roundContent');
-      roundBtiContainer.appendChild(data.documentElement);
-      $('.apartment').click(function(event){
-        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
-      })
-      funcShowInfoBlockApartment()
-    }
-  });
-
-  $.ajax({
-    "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.svg",
-    'success': function(data){
-      let roundContent = document.getElementById('roundContent');
-      roundBtiContainer.appendChild(data.documentElement);
-      $('.apartment').click(function(event){
-        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
-      })
-      funcShowFalseApartments()
-      funcShowInfoBlockApartment()
-    }
-  });
-
-  let img = document.createElement('img');
-  img.classList.add("round-bti__bg-image");
-  img.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.png";
-  roundBtiContainer.appendChild(img);
-  document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
-
-  let img90 = document.createElement('img');
-  img90.classList.add("round-bti__bg-image-90");
-  img90.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.png";
-  roundBtiContainer.appendChild(img90);
-  document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
-}
 
 // функція вичислення кількості вільних квартир для інфоблоку поверху
 funcCalcTrueApartments = function(){
@@ -421,40 +358,70 @@ funcCalcTrueApartments = function(){
     }
   });
 }
-funcCalcTrueApartments()
 
-let isItInApartment = false;
-funcShowInfo = function(numOfApartment){
-  $('[data-apartment-id=' + numOfApartment + ']').mouseover(function(){
-    if (!isItInApartment) {
-      $('#numOfApartmnet').append(numOfApartment)
-      $.ajax({
-        "method": "GET",
-        'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
-        'success': function(data){
-          if (data.n + numOfApartment) {$('#trueInfo').append('Квартира доступна')} else {$('#falseInfo').append('Квартира продана')}
-        }
-      });
-      $.ajax({
-        "method": "GET",
-        'url': "https://sashahjggggv.github.io/photos-great-house/144/" + numOfApartment + "/areas.json",
-        'success': function(data){
-          $('#allPlace').append(data.all)
-        }
-      });
-      $('.round-bti__apartment-info').addClass('active')
-      isItInApartment = true;
+loadAndPutSVGBuilding = function() {
+  let choose = document.getElementById('choose')
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/building.svg",
+    'success': function(data){
+      choose.appendChild(data.documentElement);
+      $('.choose-round__path-round').click(function(event){
+        $(".round-bti").addClass('active')
+        $(".round-bti__bg-image").remove()
+        $(".round-bti__bg-image-90").remove()
+        $(".round-bti__foreground-svg").remove()
+        $(".round-bti__foreground-svg-90").remove()
+        funcPushImagesRoundBti($(this).attr("data-round-id"))
+      })
+      funcCalcTrueApartments()
     }
-  })
-  $('[data-apartment-id=' + numOfApartment + ']').mouseleave(function(){
-    $('.round-bti__apartment-info').removeClass('active')
-    $('#numOfApartmnet,#trueInfo,#falseInfo,#allPlace').empty()
-    isItInApartment = false;
-  })    
+  });
 }
-funcShowInfoBlockApartment = function(){
-  for(let i = 0; i < 145; i++) {
-    funcShowInfo(i);
-  }
+loadAndPutSVGBuilding()
+
+let roundBtiContainer = document.getElementById('roundBtiContainer')
+funcPushImagesRoundBti = function(numOfRound) {
+  $('round-bti__bg-image').remove();
+
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.svg",
+    'success': function(data){
+      let roundContent = document.getElementById('roundContent');
+      roundBtiContainer.appendChild(data.documentElement);
+      $('.apartment').click(function(event){
+        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
+      })
+      funcShowInfoBlockApartment()
+    }
+  });
+
+  $.ajax({
+    "method": "GET",
+    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.svg",
+    'success': function(data){
+      let roundContent = document.getElementById('roundContent');
+      roundBtiContainer.appendChild(data.documentElement);
+      $('.apartment').click(function(event){
+        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
+      })
+      funcShowFalseApartments()
+      funcShowInfoBlockApartment()
+    }
+  });
+
+  let img = document.createElement('img');
+  img.classList.add("round-bti__bg-image");
+  img.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.png";
+  roundBtiContainer.appendChild(img);
+  document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
+
+  let img90 = document.createElement('img');
+  img90.classList.add("round-bti__bg-image-90");
+  img90.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.png";
+  roundBtiContainer.appendChild(img90);
+  document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
 }
+
 funcShowInfoBlockApartment()

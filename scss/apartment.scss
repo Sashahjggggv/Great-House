@@ -71,6 +71,34 @@
     right: 12%;
     width: 70px;
   }
+
+  &__true-false-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    &.true {
+      border: 5px solid #FFA500;
+      font-weight: 500;
+    }
+    &.false {
+      border: 5px solid red;
+      font-weight: 500;
+    }
+  }
+
+  &__true-paragraf {
+    margin: 0;
+    font-size: 30px;
+    color: #FFA500;
+  }
+
+  &__false-paragraf {
+    margin: 0;
+    font-size: 30px;
+    color: red;
+  }
 }
 
 .number {
@@ -496,7 +524,7 @@
 .round {
   margin: 50px 0;
 
-  &__container div {
+  &__container > div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -535,6 +563,36 @@
   &__img-90 {
     display: none;
     width: 240%;
+  }
+
+  &__apartment-info {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    z-index: 1;
+    border: 3px solid #FFA500;
+    border-radius: 25px;
+    background: #F8F1F1;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {}
+
+  &__apartment-info-true {
+    margin-bottom: 5px;
+    color: #FFA500;
+  }
+
+  &__apartment-info-false {
+    margin-bottom: 5px;
+    color: red;
+  }
+
+  &__place {
+    margin-bottom: 5px;
   }
 }
 .round-bti__foreground-svg {
@@ -735,4 +793,8 @@
   .window__photo-slider .movable {
     height: 250px;
   }
+}
+
+@media (min-width:600px) {
+  .round__apartment-info.active {display: flex;}
 }

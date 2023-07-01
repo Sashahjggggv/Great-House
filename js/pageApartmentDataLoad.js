@@ -260,6 +260,8 @@ funcLoadImageRound = function(numOfRound) {
         window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
       })
       $("[data-apartment-id=" + numOfApartment + "]").addClass('this')
+      funcShowFalseApartments()
+      funcShowInfoBlockApartment()
     }
   });
   $.ajax({
@@ -273,6 +275,7 @@ funcLoadImageRound = function(numOfRound) {
       })
       $("[data-apartment-id=" + numOfApartment + "]").addClass('this')
       funcShowFalseApartments()
+      funcShowInfoBlockApartment()
     }
   });
 }
@@ -399,6 +402,7 @@ if (numOfApartment >= 1 && numOfApartment <= 144 ) {
 
   // добавлення номеру квартири в span
   document.getElementById("numOfApartment").innerHTML = numOfApartment
+
 } else {
   window.location.replace("../");
 }
@@ -589,3 +593,20 @@ funcPlanBtns = function(numOfType){
     document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.png"
   })
 }
+
+
+// визначення чи продана квартира
+console.log(numOfApartment)
+$.ajax({
+  "method": "GET",
+  'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
+  'success': function(data){
+    if (eval('data.n' + numOfApartment)) {
+      $('#trueApartment').append('Квартира доступна')
+      $('.gallery__true-false-info').addClass('true')
+    } else {
+      $('#falseApartment').append('Квартира продана')
+      $('.gallery__true-false-info').addClass('false')
+    }
+  }
+});
