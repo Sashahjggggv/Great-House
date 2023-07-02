@@ -211,6 +211,11 @@
   .choose-round__paths {
     left: 57%;
   }
+  .round-bti {
+    &__bg-element1, &__bg-element2 {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 600px) {

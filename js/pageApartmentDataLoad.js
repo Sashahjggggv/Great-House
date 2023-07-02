@@ -11,7 +11,7 @@ funcLoadImg = function(numOfType, numOfImg) {
 
 // функція підгрузки картинок для основної галереї по типах
 funcLoadGalleryImg = function(numOfType) {
-  if (numOfType == 1) {
+  if (numOfType == 1 || numOfType == 2 || numOfType == 3 || numOfType == 4 || numOfType == 5 || numOfType == 6 || numOfType == 7 || numOfType == 8 || numOfType == 9 || numOfType == 10 || numOfType == 11 || numOfType == 12 || numOfType == 13 || numOfType == 14 || numOfType == 15 || numOfType == 16 || numOfType == 17 || numOfType == 18) {
     funcLoadImg(numOfType, 1);
     funcLoadImg(numOfType, 2);
     funcLoadImg(numOfType, 3);
@@ -19,76 +19,76 @@ funcLoadGalleryImg = function(numOfType) {
     funcLoadImg(numOfType, 5);
     funcLoadImg(numOfType, 6);
   }
-  if (numOfType == 2) {
-    funcLoadImg(numOfType, 1);
-    funcLoadImg(numOfType, 2);
-    funcLoadImg(numOfType, 3);
-    funcLoadImg(numOfType, 4);
-    funcLoadImg(numOfType, 5);
-    funcLoadImg(numOfType, 6);
-    funcLoadImg(numOfType, 7);
-    funcLoadImg(numOfType, 8);
-    funcLoadImg(numOfType, 9);
-    funcLoadImg(numOfType, 10);
-  }
-  if (numOfType == 3) {
-    funcLoadImg(numOfType, 1);
-    funcLoadImg(numOfType, 2);
-    funcLoadImg(numOfType, 3);
-    funcLoadImg(numOfType, 4);
-    funcLoadImg(numOfType, 5);
-    funcLoadImg(numOfType, 6);
-    funcLoadImg(numOfType, 7);
-    funcLoadImg(numOfType, 8);
-    funcLoadImg(numOfType, 9);
-    funcLoadImg(numOfType, 10);
-  }
-  if (numOfType == 4) {
-    funcLoadImg(numOfType, 1);
-    funcLoadImg(numOfType, 2);
-    funcLoadImg(numOfType, 3);
-    funcLoadImg(numOfType, 4);
-    funcLoadImg(numOfType, 5);
-    funcLoadImg(numOfType, 6);
-    funcLoadImg(numOfType, 7);
-    funcLoadImg(numOfType, 8);
-    funcLoadImg(numOfType, 9);
-    funcLoadImg(numOfType, 10);
-    funcLoadImg(numOfType, 11);
-  }
-  if (numOfType == 5) {
-    funcLoadImg(numOfType, 1);
-    funcLoadImg(numOfType, 2);
-    funcLoadImg(numOfType, 3);
-    funcLoadImg(numOfType, 4);
-    funcLoadImg(numOfType, 5);
-    funcLoadImg(numOfType, 6);
-    funcLoadImg(numOfType, 7);
-    funcLoadImg(numOfType, 8);
-    funcLoadImg(numOfType, 9);
-    funcLoadImg(numOfType, 10);
-    funcLoadImg(numOfType, 11);
-    funcLoadImg(numOfType, 12);
-    funcLoadImg(numOfType, 13);
-  }
-  if (numOfType == 6) {
-    funcLoadImg(numOfType, 1);
-  }
-  if (numOfType == 7) {
-    funcLoadImg(numOfType, 1);
-  }
-  if (numOfType == 8) {
-    funcLoadImg(numOfType, 1);
-  }
-  if (numOfType == 9) {
-    funcLoadImg(numOfType, 1);
-  }
-  if (numOfType == 10) {
-    funcLoadImg(numOfType, 1);
-  }
-  if (numOfType == 11) {
-    funcLoadImg(numOfType, 1);
-  }
+  // if (numOfType == 2) {
+  //   funcLoadImg(numOfType, 1);
+  //   funcLoadImg(numOfType, 2);
+  //   funcLoadImg(numOfType, 3);
+  //   funcLoadImg(numOfType, 4);
+  //   funcLoadImg(numOfType, 5);
+  //   funcLoadImg(numOfType, 6);
+  //   funcLoadImg(numOfType, 7);
+  //   funcLoadImg(numOfType, 8);
+  //   funcLoadImg(numOfType, 9);
+  //   funcLoadImg(numOfType, 10);
+  // }
+  // if (numOfType == 3) {
+  //   funcLoadImg(numOfType, 1);
+  //   funcLoadImg(numOfType, 2);
+  //   funcLoadImg(numOfType, 3);
+  //   funcLoadImg(numOfType, 4);
+  //   funcLoadImg(numOfType, 5);
+  //   funcLoadImg(numOfType, 6);
+  //   funcLoadImg(numOfType, 7);
+  //   funcLoadImg(numOfType, 8);
+  //   funcLoadImg(numOfType, 9);
+  //   funcLoadImg(numOfType, 10);
+  // }
+  // if (numOfType == 4) {
+  //   funcLoadImg(numOfType, 1);
+  //   funcLoadImg(numOfType, 2);
+  //   funcLoadImg(numOfType, 3);
+  //   funcLoadImg(numOfType, 4);
+  //   funcLoadImg(numOfType, 5);
+  //   funcLoadImg(numOfType, 6);
+  //   funcLoadImg(numOfType, 7);
+  //   funcLoadImg(numOfType, 8);
+  //   funcLoadImg(numOfType, 9);
+  //   funcLoadImg(numOfType, 10);
+  //   funcLoadImg(numOfType, 11);
+  // }
+  // if (numOfType == 5) {
+  //   funcLoadImg(numOfType, 1);
+  //   funcLoadImg(numOfType, 2);
+  //   funcLoadImg(numOfType, 3);
+  //   funcLoadImg(numOfType, 4);
+  //   funcLoadImg(numOfType, 5);
+  //   funcLoadImg(numOfType, 6);
+  //   funcLoadImg(numOfType, 7);
+  //   funcLoadImg(numOfType, 8);
+  //   funcLoadImg(numOfType, 9);
+  //   funcLoadImg(numOfType, 10);
+  //   funcLoadImg(numOfType, 11);
+  //   funcLoadImg(numOfType, 12);
+  //   funcLoadImg(numOfType, 13);
+  // }
+  // if (numOfType == 6) {
+  //   funcLoadImg(numOfType, 1);
+  // }
+  // if (numOfType == 7) {
+  //   funcLoadImg(numOfType, 1);
+  // }
+  // if (numOfType == 8) {
+  //   funcLoadImg(numOfType, 1);
+  // }
+  // if (numOfType == 9) {
+  //   funcLoadImg(numOfType, 1);
+  // }
+  // if (numOfType == 10) {
+  //   funcLoadImg(numOfType, 1);
+  // }
+  // if (numOfType == 11) {
+  //   funcLoadImg(numOfType, 1);
+  // }
   funcSlideTopGallery()
 }
 
