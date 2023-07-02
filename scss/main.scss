@@ -660,10 +660,10 @@ section {
 
 .alex,.artem {
   position: fixed;
-  bottom: -50%;
+  top: 100%;
   left: 50%;
   z-index: 4;
-  transform: translate(-50%, 50%);
+  transform: translateX(-50%);
   background: #F0EAD6;
   border-radius: 20px;
   padding: 20px;
@@ -747,7 +747,8 @@ section {
     margin-top: 5px;
   }
   &.active {
-    bottom: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
