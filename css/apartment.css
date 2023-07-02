@@ -71,6 +71,33 @@
   right: 12%;
   width: 70px;
 }
+.gallery__true-false-info {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  background: #F8F1F1;
+  padding: 10px;
+  border-radius: 30px;
+}
+.gallery__true-false-info.true {
+  border: 5px solid #FFA500;
+}
+.gallery__true-false-info.false {
+  border: 5px solid red;
+}
+.gallery__true-paragraf {
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFA500;
+}
+.gallery__false-paragraf {
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: red;
+}
 
 .number {
   margin-top: 20px;

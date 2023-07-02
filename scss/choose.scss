@@ -61,12 +61,43 @@
       cursor: pointer;
     }
   }
+
+  &__hint {
+    background: #F8F1F1;
+    border: 5px solid #FFA500;
+    color: #FFA500;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap
+  }
 }
 
 .round-bti {
   display: none;
   padding: 100px 0;
   position: relative;
+
+  &__bg-element1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 400px;
+  }
+  &__bg-element2 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    transform: rotate(1deg);
+  }
 
   &__container {
     padding: 0;

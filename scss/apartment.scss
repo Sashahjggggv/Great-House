@@ -71,6 +71,35 @@
     right: 12%;
     width: 70px;
   }
+
+  &__true-false-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    background: #F8F1F1;
+    padding: 10px;
+    border-radius: 30px;
+    &.true {
+      border: 5px solid #FFA500;
+    }
+    &.false {
+      border: 5px solid red;
+    }
+  }
+  &__true-paragraf {
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFA500;
+  }
+
+  &__false-paragraf {
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: red;
+  }
 }
 
 .number {

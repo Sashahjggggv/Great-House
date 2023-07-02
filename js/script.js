@@ -347,3 +347,8 @@ funcShowInfoBlockApartment = function(){
     funcShowInfo(i);
   }
 }
+
+$(window).on('load', function () {
+  console.log("load")
+  $('.loader').addClass('hide');
+}) 
