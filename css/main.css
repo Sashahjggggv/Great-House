@@ -93,7 +93,7 @@ section {
 }
 
 .header {
-  background: #F8F1F1;
+  /* background: #F8F1F1; */
   position: fixed;
   top: -82px;
   left: 0;
@@ -362,8 +362,7 @@ section {
 .menu {
   position: fixed;
   top: 50%;
-  left: 50%;
-  left: 100%;
+  left: 110%;
   z-index: 4;
   transform: translateY(-50%);
   background: #F0EAD6;
@@ -471,7 +470,7 @@ section {
 .gallery-footer__btns > button:active {
   box-shadow: 0 0 10px #FFA500;
 }
-.gallery-footer .prev3 svg {
+.gallery-footer .prev3 svg, .gallery-footer .prev1 svg, .gallery-footer .prev2 svg, .gallery-footer .prev svg {
   transform: rotate(180deg);
 }
 
@@ -693,7 +692,7 @@ section {
   line-height: 25px;
 }
 
-.alex {
+.alex, .artem {
   position: fixed;
   bottom: -50%;
   left: 50%;
@@ -703,36 +702,36 @@ section {
   border-radius: 20px;
   padding: 20px;
 }
-.alex__container {
+.alex__container, .artem__container {
   display: flex;
   justify-content: space-between;
 }
-.alex__img {
+.alex__img, .artem__img {
   width: 200px;
   height: 200px;
   border-radius: 20px;
 }
-.alex__content {
+.alex__content, .artem__content {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.alex__links {
+.alex__links, .artem__links {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.alex__links:last-child {
+.alex__links:last-child, .artem__links:last-child {
   margin-bottom: 0;
 }
-.alex__link {
+.alex__link, .artem__link {
   width: 50%;
   margin-right: 10px;
 }
-.alex__link span {
+.alex__link span, .artem__link span {
   margin-top: 5px;
   white-space: nowrap;
   color: #6495ED;
@@ -743,37 +742,65 @@ section {
   border-radius: 20px;
   border: 2.5px solid #FFA500;
 }
-.alex__link span:hover, .alex__link span:focus {
+.alex__link span:hover, .alex__link span:focus, .artem__link span:hover, .artem__link span:focus {
   background: #FFA500;
   color: #E6E6FA;
 }
-.alex__link span:hover > svg path, .alex__link span:focus > svg path {
+.alex__link span:hover > svg path, .alex__link span:focus > svg path, .artem__link span:hover > svg path, .artem__link span:focus > svg path {
   fill: #E6E6FA;
 }
-.alex__link > svg:first-child {
+.alex__link > svg:first-child, .artem__link > svg:first-child {
   margin-right: 5px;
 }
-.alex__link:active {
+.alex__link:active, .artem__link:active {
   transform: scale(0.9);
 }
-.alex__link:last-child {
+.alex__link:last-child, .artem__link:last-child {
   margin-right: 0;
 }
-.alex__link-top {
+.alex__link-top, .artem__link-top {
   display: flex;
 }
-.alex__socialnetlogo {
+.alex__socialnetlogo, .artem__socialnetlogo {
   width: 30px;
   height: 30px;
 }
-.alex__paragraf {
+.alex__paragraf, .artem__paragraf {
   margin-left: 10px;
   font-size: 16px;
   color: #6495ED;
   margin-top: 5px;
 }
-.alex.active {
+.alex.active, .artem.active {
   bottom: 50%;
+}
+
+.image-text-container {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image-text-container__block-image {
+  height: 500px;
+  width: 49%;
+  border-radius: 40px;
+}
+.image-text-container__block-text {
+  width: 49%;
+  padding: 0 30px;
+}
+.image-text-container__paragraf {
+  text-indent: 2.5em;
+  line-height: 25px;
+}
+.image-text-container__title {
+  margin-bottom: 35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 @media (max-width: 1100px) {
@@ -800,7 +827,7 @@ section {
     font-size: 18px;
     margin-bottom: 20px;
     letter-spacing: 0;
-    line-height: 23px;
+    line-height: 25px;
   }
   .footer__container {
     padding-top: 30px;
@@ -865,6 +892,32 @@ section {
     margin: 10px;
     transform: scale(0.6);
   }
+  .image-text-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .image-text-container__block-image {
+    height: 350px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  .image-text-container__block-text {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+  }
+  .image-text-container__paragraf {
+    text-indent: 2em;
+  }
+  .image-text-container__title {
+    margin-bottom: 25px;
+  }
+  .image-text-container.reverce {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 1000px) {
   .footer__img1 {
@@ -881,28 +934,28 @@ section {
   }
 }
 @media (max-width: 767px) {
-  .alex__container {
+  .alex__container, .artem__container {
     flex-direction: column;
     align-items: center;
   }
-  .alex__img {
+  .alex__img, .artem__img {
     width: 150px;
     height: 150px;
   }
-  .alex__content {
+  .alex__content, .artem__content {
     margin-left: 0;
     margin-top: 20px;
   }
-  .alex__links {
+  .alex__links, .artem__links {
     flex-direction: column;
     margin-bottom: 0;
   }
-  .alex__link {
+  .alex__link, .artem__link {
     width: 100%;
     margin-right: 10px;
     margin-bottom: 10px;
   }
-  .alex__link span {
+  .alex__link span, .artem__link span {
     margin-top: 5px;
     white-space: nowrap;
     color: #6495ED;
@@ -913,30 +966,30 @@ section {
     border-radius: 20px;
     border: 2.5px solid #FFA500;
   }
-  .alex__link span:hover, .alex__link span:focus {
+  .alex__link span:hover, .alex__link span:focus, .artem__link span:hover, .artem__link span:focus {
     background: #FFA500;
     color: #E6E6FA;
   }
-  .alex__link span:hover > svg path, .alex__link span:focus > svg path {
+  .alex__link span:hover > svg path, .alex__link span:focus > svg path, .artem__link span:hover > svg path, .artem__link span:focus > svg path {
     fill: #E6E6FA;
   }
-  .alex__link > svg:first-child {
+  .alex__link > svg:first-child, .artem__link > svg:first-child {
     margin-right: 5px;
   }
-  .alex__link:active {
+  .alex__link:active, .artem__link:active {
     transform: scale(0.9);
   }
-  .alex__link:last-child {
+  .alex__link:last-child, .artem__link:last-child {
     margin-right: 0;
   }
-  .alex__link-top {
+  .alex__link-top, .artem__link-top {
     display: flex;
   }
-  .alex__socialnetlogo {
+  .alex__socialnetlogo, .artem__socialnetlogo {
     width: 30px;
     height: 30px;
   }
-  .alex__paragraf {
+  .alex__paragraf, .artem__paragraf {
     margin-left: 10px;
     font-size: 16px;
     color: #6495ED;

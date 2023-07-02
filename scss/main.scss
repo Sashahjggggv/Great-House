@@ -25,7 +25,7 @@ section {
 }
 
 .header {
-  background: #F8F1F1;
+  /* background: #F8F1F1; */
   position: fixed;
   top: -82px;
   left: 0;
@@ -316,8 +316,7 @@ section {
 .menu {
   position: fixed;
   top: 50%;
-  left: 50%;
-  left: 100%;
+  left: 110%;
   z-index: 4;
   transform: translateY(-50%);
   background: #F0EAD6;
@@ -425,7 +424,7 @@ section {
       }
     }
   }
-  & .prev3 svg {
+  & .prev3 svg, & .prev1 svg, & .prev2 svg, & .prev svg {
       transform: rotate(180deg);
   }
 }
@@ -659,7 +658,7 @@ section {
   line-height: 25px;
 }
 
-.alex {
+.alex,.artem {
   position: fixed;
   bottom: -50%;
   left: 50%;
@@ -752,6 +751,39 @@ section {
   }
 }
 
+.image-text-container {
+  margin-top: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__block-image {
+    height: 500px;
+    width: 49%;
+    border-radius: 40px;
+  }
+
+  &__block-text {
+    width: 49%;
+    padding: 0 30px;
+  }
+
+  &__paragraf {
+    text-indent: 2.5em;
+    line-height: 25px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 @media (max-width: 1100px) {
   .container {
     padding-left: 10px;
@@ -779,7 +811,7 @@ section {
     font-size: 18px;
     margin-bottom: 20px;
     letter-spacing: 0;
-    line-height: 23px;
+    line-height: 25px;
   }
   .footer {
 
@@ -855,6 +887,38 @@ section {
     margin: 10px;
     transform: scale(0.6);
   }
+
+  .image-text-container {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__block-image {
+      height: 350px;
+      width: 100%;
+      border-radius: 40px;
+    }
+
+    &__block-text {
+      margin-top: 30px;
+      width: 100%;
+      padding: 0;
+    }
+
+    &__paragraf {
+      text-indent: 2em;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+    }
+    &.reverce {
+      flex-direction: column-reverse;
+    }
+  }
 }
 @media (max-width: 1000px) {
   .footer {
@@ -874,7 +938,7 @@ section {
 }
 
 @media (max-width: 767px) {
-  .alex {
+  .alex,.artem {
 
     &__container {
       flex-direction: column;

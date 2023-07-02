@@ -71,31 +71,6 @@
   right: 12%;
   width: 70px;
 }
-.gallery__true-false-info {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding: 20px;
-  border-radius: 40px;
-}
-.gallery__true-false-info.true {
-  border: 5px solid #FFA500;
-  font-weight: 500;
-}
-.gallery__true-false-info.false {
-  border: 5px solid red;
-  font-weight: 500;
-}
-.gallery__true-paragraf {
-  margin: 0;
-  font-size: 30px;
-  color: #FFA500;
-}
-.gallery__false-paragraf {
-  margin: 0;
-  font-size: 30px;
-  color: red;
-}
 
 .number {
   margin-top: 20px;
