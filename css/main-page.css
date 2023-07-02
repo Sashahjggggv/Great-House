@@ -204,6 +204,9 @@
   align-items: center;
   justify-content: center;
 }
+.location__block-map h3 {
+  line-height: 23px;
+}
 .location__compas {
   position: absolute;
   bottom: 10px;

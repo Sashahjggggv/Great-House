@@ -1,0 +1,135 @@
+.location {
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  &__grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+  }
+
+  &__grid-element {
+    display: flex;
+    align-items: center;
+    background: #ffa50050;
+    border-radius: 40px;
+  }
+
+  &__grid-elem-img {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+  }
+
+  &__grid-elem-rigth {
+    margin-right: 15px;
+    width: 100%;
+  }
+
+  &__grid-elem-subtitle {
+    margin: 10px 0;
+  }
+
+  &__grid-elem-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  &__grid-elem-type-logo {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__grid-elem-paragraf {
+    margin: 0;
+    font-size: 22px;
+    color: #000;
+  }
+
+  &__block-map {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h3 {
+      line-height: 25px;
+    }
+  }
+
+  &__compas {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    height: 500px;
+  }
+
+  &__bg1 {
+    bottom: 5%;
+    left: 45%;
+    width: 50px;
+  }
+  &__bg2 {
+    top: 20%;
+    left: 2%;
+    width: 70px;
+  }
+}
+
+@media (max-width:1000px) {
+  .location {
+    &__grid-container {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: auto auto;
+    }
+
+    &__grid-element {
+      border-radius: 35px;
+    }
+    &__grid-elem-img {
+      width: 35px;
+      height: 35px;
+      margin: 0 5px 0 10px;
+    }
+    &__grid-elem-rigth {
+      margin-right: 10px;
+    }
+    &__grid-elem-type-logo {
+      width: 25px;
+      height: 25px;
+      margin-left: 3px;
+    }
+    &__grid-elem-paragraf {
+      font-size: 20px;
+    }
+  }
+}

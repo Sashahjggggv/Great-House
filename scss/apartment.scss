@@ -293,6 +293,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    & h3 {
+      line-height: 23px;
+    }
   }
 
   &__compas {
