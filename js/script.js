@@ -316,7 +316,6 @@ funcShowFalseApartments = function(){
 let isItInApartment = false;
 funcShowInfo = function(numOfApartment){
   $('[data-apartment-id=' + numOfApartment + ']').mouseover(function(){
-    $('#numOfApartmnet,#trueInfo,#falseInfo,#allPlace').empty()
     if (!isItInApartment) {
       $('#numOfApartmnet').append(numOfApartment)
       $.ajax({
