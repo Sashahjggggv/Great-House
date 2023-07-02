@@ -27,7 +27,7 @@ section {
 .header {
   /* background: #F8F1F1; */
   position: fixed;
-  top: -82px;
+  top: -100px;
   left: 0;
   z-index: 4;
   width: 100%;
@@ -43,8 +43,11 @@ section {
     padding: 10px 100px;
   }
 
-  &__logo:hover, :focus {
-    transform: scale(1.1);
+  &__logo {
+    width: 90px;
+    &:hover, :focus {
+      transform: scale(1.1);
+    }
   }
 
   &__links {
@@ -656,6 +659,7 @@ section {
   margin-bottom: 25px;
   letter-spacing: 1px;
   line-height: 25px;
+  text-align: center;
 }
 
 .alex,.artem {
@@ -771,7 +775,7 @@ section {
   }
 
   &__paragraf {
-    text-indent: 2.5em;
+    /* text-indent: 2.5em; */
     line-height: 25px;
   }
 
@@ -931,7 +935,7 @@ section {
     }
 
     &__paragraf {
-      text-indent: 2em;
+      /* text-indent: 2em; */
     }
 
     &__title {

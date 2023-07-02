@@ -44,7 +44,7 @@
   border-radius: 40px;
 }
 .building__paragraf {
-  text-indent: 2em;
+  /* text-indent: 2em; */
   color: #F8F1F1;
 }
 
@@ -310,7 +310,7 @@
     margin-bottom: 0;
   }
   .building__paragraf {
-    text-indent: 2em;
+    /* text-indent: 2em; */
     color: #F8F1F1;
   }
 }

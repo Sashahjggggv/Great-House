@@ -95,7 +95,7 @@ section {
 .header {
   /* background: #F8F1F1; */
   position: fixed;
-  top: -82px;
+  top: -100px;
   left: 0;
   z-index: 4;
   width: 100%;
@@ -109,7 +109,10 @@ section {
   justify-content: space-between;
   padding: 10px 100px;
 }
-.header__logo:hover, .header :focus {
+.header__logo {
+  width: 90px;
+}
+.header__logo:hover, .header__logo :focus {
   transform: scale(1.1);
 }
 .header__links {
@@ -690,6 +693,7 @@ section {
   margin-bottom: 25px;
   letter-spacing: 1px;
   line-height: 25px;
+  text-align: center;
 }
 
 .alex, .artem {
@@ -792,7 +796,7 @@ section {
   padding: 0 30px;
 }
 .image-text-container__paragraf {
-  text-indent: 2.5em;
+  /* text-indent: 2.5em; */
   line-height: 25px;
 }
 .image-text-container__title {
@@ -930,7 +934,7 @@ section {
     padding: 0;
   }
   .image-text-container__paragraf {
-    text-indent: 2em;
+    /* text-indent: 2em; */
   }
   .image-text-container__title {
     margin-bottom: 25px;
