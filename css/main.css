@@ -945,13 +945,13 @@ section {
 }
 @media (max-width: 1000px) {
   .footer__img1 {
-    background: url("../img/Photo-51.JPG") center 0/100% auto no-repeat;
+    background: url("../img/Photo-51.webp") center 0/100% auto no-repeat;
   }
   .footer__img2 {
-    background: url("../img/Photo-52.JPG") center 0/100% auto no-repeat;
+    background: url("../img/Photo-52.webp") center 0/100% auto no-repeat;
   }
   .footer__img3 {
-    background: url("../img/Photo-61.JPG") center 0/100% auto no-repeat;
+    background: url("../img/Photo-61.webp") center 0/100% auto no-repeat;
   }
   .gallery-footer {
     height: 250px;
