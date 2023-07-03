@@ -118,14 +118,15 @@
 
   &__round-block {
     display: none;
+    &.active {display: block;}
     border: 2px solid #FFA500;
     border-radius: 25px;
     background: #F8F1F1;
     padding: 15px;
-    width: 80%;
-    transform: translateX(-50%);
-    margin-left: 50%;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 25%;
+    left: 105px;
+    z-index: 1;
   }
 
   &__round-block-num {
@@ -140,6 +141,13 @@
   &__round-block-false {
     margin-bottom: 5px;
     color: red;
+  }
+
+  &__round-block-hint {
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFA500;
   }
 
   &__container > svg {
@@ -215,7 +223,11 @@
     &__bg-element1, &__bg-element2 {
       display: none;
     }
-  }
+
+    &__round-block {
+      top: 20px;
+      left: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -235,7 +247,13 @@
       margin: 0 50px;
       justify-content: start;
     }
-    &__round-block.active {display: block;}
+    &__round-block.active {
+      width: 80%;
+      transform: translateX(-50%);
+      margin-left: 50%;
+      margin-bottom: 20px;
+      position: static;
+    }
     &__bg-image {
       display: none;
     }

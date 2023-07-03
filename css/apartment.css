@@ -274,8 +274,8 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   z-index: 1;
 }
 .location__map {
@@ -652,6 +652,10 @@
   }
   .location__block-map {
     width: 100%;
+  }
+  .location__compas {
+    width: 70px;
+    height: 70px;
   }
   .location__map {
     height: 400px;

@@ -110,10 +110,13 @@
   border-radius: 25px;
   background: #F8F1F1;
   padding: 15px;
-  width: 80%;
-  transform: translateX(-50%);
-  margin-left: 50%;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 25%;
+  left: 105px;
+  z-index: 1;
+}
+.round-bti__round-block.active {
+  display: block;
 }
 .round-bti__round-block-num {
   margin-bottom: 10px;
@@ -125,6 +128,12 @@
 .round-bti__round-block-false {
   margin-bottom: 5px;
   color: red;
+}
+.round-bti__round-block-hint {
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFA500;
 }
 .round-bti__container > svg {
   position: absolute;
@@ -208,7 +217,11 @@
     justify-content: start;
   }
   .round-bti__round-block.active {
-    display: block;
+    width: 80%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-bottom: 20px;
+    position: static;
   }
   .round-bti__bg-image {
     display: none;
