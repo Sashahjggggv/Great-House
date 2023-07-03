@@ -82,7 +82,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    & > button {
+    & > * {
+      cursor: pointer;
       border-radius: 50%;
       width: 70px;
       height: 70px;

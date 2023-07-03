@@ -407,7 +407,8 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    & > button {
+    & > * {
+      cursor: pointer;
       border-radius: 50%;
       width: 70px;
       height: 70px;
@@ -909,7 +910,7 @@ section {
   .menu__container > * {
     white-space: nowrap;
   }
-  .gallery-footer__btns > button {
+  .gallery-footer__btns > * {
     margin: 10px;
     transform: scale(0.6);
   }

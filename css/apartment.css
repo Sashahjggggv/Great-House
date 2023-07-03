@@ -31,7 +31,8 @@
   display: flex;
   justify-content: space-between;
 }
-.gallery__btns > button {
+.gallery__btns > * {
+  cursor: pointer;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -41,13 +42,13 @@
   align-items: center;
   justify-content: center;
 }
-.gallery__btns > button:hover {
+.gallery__btns > *:hover {
   background: #FFA500;
 }
-.gallery__btns > button:hover svg path {
+.gallery__btns > *:hover svg path {
   fill: #fff;
 }
-.gallery__btns > button:active {
+.gallery__btns > *:active {
   box-shadow: 0 0 10px #FFA500;
 }
 .gallery .prev svg {
@@ -167,7 +168,8 @@
   display: flex;
   justify-content: space-between;
 }
-.window__btns-slide > button {
+.window__btns-slide > * {
+  cursor: pointer;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -177,13 +179,13 @@
   align-items: center;
   justify-content: center;
 }
-.window__btns-slide > button:hover {
+.window__btns-slide > *:hover {
   background: #FFA500;
 }
-.window__btns-slide > button:hover svg path {
+.window__btns-slide > *:hover svg path {
   fill: #fff;
 }
-.window__btns-slide > button:active {
+.window__btns-slide > *:active {
   box-shadow: 0 0 10px #FFA500;
 }
 .window .prev1 svg {

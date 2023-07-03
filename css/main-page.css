@@ -78,7 +78,8 @@
   display: flex;
   justify-content: space-between;
 }
-.slider__btns > button {
+.slider__btns > * {
+  cursor: pointer;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -88,13 +89,13 @@
   align-items: center;
   justify-content: center;
 }
-.slider__btns > button:hover {
+.slider__btns > *:hover {
   background: #FFA500;
 }
-.slider__btns > button:hover svg path {
+.slider__btns > *:hover svg path {
   fill: #fff;
 }
-.slider__btns > button:active {
+.slider__btns > *:active {
   box-shadow: 0 0 10px #FFA500;
 }
 .slider .prev svg {

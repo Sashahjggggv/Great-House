@@ -454,7 +454,8 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.gallery-footer__btns > button {
+.gallery-footer__btns > * {
+  cursor: pointer;
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -464,13 +465,13 @@ section {
   align-items: center;
   justify-content: center;
 }
-.gallery-footer__btns > button:hover {
+.gallery-footer__btns > *:hover {
   background: #FFA500;
 }
-.gallery-footer__btns > button:hover svg path {
+.gallery-footer__btns > *:hover svg path {
   fill: #fff;
 }
-.gallery-footer__btns > button:active {
+.gallery-footer__btns > *:active {
   box-shadow: 0 0 10px #FFA500;
 }
 .gallery-footer .prev3 svg, .gallery-footer .prev1 svg, .gallery-footer .prev2 svg, .gallery-footer .prev svg {
@@ -912,7 +913,7 @@ section {
   .menu__container > * {
     white-space: nowrap;
   }
-  .gallery-footer__btns > button {
+  .gallery-footer__btns > * {
     margin: 10px;
     transform: scale(0.6);
   }
