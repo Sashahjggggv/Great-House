@@ -630,7 +630,7 @@
       height: auto;
       max-height: 85vh;
     }
-    &__btns > button {
+    &__btns > * {
       margin: 10px;
       transform: scale(0.6);
     }
@@ -710,7 +710,7 @@
       width: 100%;
       margin-top: 20px;
     }
-    &__btns-slide > button {
+    &__btns-slide > * {
       margin: 10px;
       transform: scale(0.6);
     }

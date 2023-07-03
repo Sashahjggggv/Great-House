@@ -251,7 +251,7 @@
     font-size: 18px;
     border: 3px solid #FFA500;
   }
-  .slider__btns button {
+  .slider__btns > * {
     margin: 10px;
     transform: scale(0.6);
   }

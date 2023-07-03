@@ -275,7 +275,7 @@
         border: 3px solid #FFA500;
       }
     }
-    &__btns button {
+    &__btns > * {
       margin: 10px;
       transform: scale(0.6);
     }

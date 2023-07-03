@@ -207,31 +207,31 @@ funcLoadType = function(numOfType) {
     }
   });
 
-  // підгрузка опису за типом квартири
-  $.ajax({
-    "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/description-apartment.json",
-    'success': function(data){
-      if (data.paragraf) {
-        let paragraf = document.createElement('p')
-        paragraf.classList.add("paragraf")
-        paragraf.innerHTML = data.paragraf
-        document.getElementById("textContainer").appendChild(paragraf);
-      }
-      if (data.paragraf2) {
-        let paragraf = document.createElement('p')
-        paragraf.classList.add("paragraf")
-        paragraf.innerHTML = data.paragraf2
-        document.getElementById("textContainer").appendChild(paragraf);
-      }
-      if (data.paragraf3) {
-        let paragraf = document.createElement('p')
-        paragraf.classList.add("paragraf")
-        paragraf.innerHTML = data.paragraf3
-        document.getElementById("textContainer").appendChild(paragraf);
-      }
-    }
-  });
+  // // підгрузка опису за типом квартири
+  // $.ajax({
+  //   "method": "GET",
+  //   'url': "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/description-apartment.json",
+  //   'success': function(data){
+  //     if (data.paragraf) {
+  //       let paragraf = document.createElement('p')
+  //       paragraf.classList.add("paragraf")
+  //       paragraf.innerHTML = data.paragraf
+  //       document.getElementById("textContainer").appendChild(paragraf);
+  //     }
+  //     if (data.paragraf2) {
+  //       let paragraf = document.createElement('p')
+  //       paragraf.classList.add("paragraf")
+  //       paragraf.innerHTML = data.paragraf2
+  //       document.getElementById("textContainer").appendChild(paragraf);
+  //     }
+  //     if (data.paragraf3) {
+  //       let paragraf = document.createElement('p')
+  //       paragraf.classList.add("paragraf")
+  //       paragraf.innerHTML = data.paragraf3
+  //       document.getElementById("textContainer").appendChild(paragraf);
+  //     }
+  //   }
+  // });
 
   // підгрузка плану з ремонтом відносно типу
   document.getElementById("furniture-plan").src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/furniture-plan.png";
@@ -596,7 +596,6 @@ funcPlanBtns = function(numOfType){
 
 
 // визначення чи продана квартира
-console.log(numOfApartment)
 $.ajax({
   "method": "GET",
   'url': "https://sashahjggggv.github.io/photos-great-house/144.json",

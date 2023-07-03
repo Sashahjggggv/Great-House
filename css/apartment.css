@@ -560,7 +560,7 @@
     height: auto;
     max-height: 85vh;
   }
-  .gallery__btns > button {
+  .gallery__btns > * {
     margin: 10px;
     transform: scale(0.6);
   }
@@ -631,7 +631,7 @@
     width: 100%;
     margin-top: 20px;
   }
-  .window__btns-slide > button {
+  .window__btns-slide > * {
     margin: 10px;
     transform: scale(0.6);
   }
