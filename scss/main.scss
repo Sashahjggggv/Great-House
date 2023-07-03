@@ -240,6 +240,10 @@ section {
     margin-bottom: 10px;
   }
 
+  & h3 {
+    line-height: 25px;
+  }
+
   &__feedback {}
 
   &__input {
@@ -303,6 +307,10 @@ section {
     &:active {
       transform: scale(0.9);
     }
+  }
+
+  &__title {
+    line-height: 25px;
   }
   
   &__close {
@@ -641,7 +649,7 @@ section {
 }
 
 .title {
-  font-size: 22px;
+  font-size: 28px;
   color: #FFA500;
   margin-bottom: 20px;
   font-weight: 600;
@@ -665,7 +673,7 @@ section {
 
 .alex,.artem {
   position: fixed;
-  top: 100%;
+  top: 150%;
   left: 50%;
   z-index: 4;
   transform: translateX(-50%);
@@ -782,6 +790,7 @@ section {
 
   &__title {
     margin-bottom: 35px;
+    font-size: 28px;
   }
 }
 

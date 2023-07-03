@@ -87,7 +87,7 @@ funcSlideFooterGallery = function(){
         N        = $slides.length,
         C        = 0,
         itv      = null;
-    function play() { itv = setInterval(anim, 3000); }
+    function play() { itv = setInterval(anim, 5000); }
     function stop() { clearInterval(itv); }
     function anim() {
       C = ($(this).is(".prev") ? --C : ++C) <0 ? N-1 : C%N;

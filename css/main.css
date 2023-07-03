@@ -293,6 +293,9 @@ section {
 .contacts__block-phone {
   margin-bottom: 10px;
 }
+.contacts h3 {
+  line-height: 25px;
+}
 .contacts__input {
   border: 2.5px solid #FFA500;
   padding: 9.5px 12px;
@@ -351,6 +354,9 @@ section {
 }
 .contacts__link:active {
   transform: scale(0.9);
+}
+.contacts__title {
+  line-height: 25px;
 }
 .contacts__close {
   position: absolute;
@@ -673,7 +679,7 @@ section {
 }
 
 .title {
-  font-size: 22px;
+  font-size: 28px;
   color: #FFA500;
   margin-bottom: 20px;
   font-weight: 600;
@@ -699,7 +705,7 @@ section {
 
 .alex, .artem {
   position: fixed;
-  top: 100%;
+  top: 150%;
   left: 50%;
   z-index: 4;
   transform: translateX(-50%);
@@ -802,6 +808,7 @@ section {
 }
 .image-text-container__title {
   margin-bottom: 35px;
+  font-size: 28px;
 }
 
 .uppercase {
