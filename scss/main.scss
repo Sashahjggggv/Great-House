@@ -605,18 +605,22 @@ section {
   &__creators {
     position: relative;
     background: #00836a;
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   &__creators-text {
     margin: 0 !important;
     line-height: 30px;
-    & span {
+    font-size: 16px !important;
+    & > span {
       color: #6495ed;
       text-decoration: underline;
       cursor: pointer;
       &:hover {
         text-shadow: 0 0 5px #6495ed;
+      }
+      & > img {
+        margin-top: 4px;
       }
     }
     & br {

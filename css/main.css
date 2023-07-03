@@ -634,19 +634,23 @@ section {
 .footer__creators {
   position: relative;
   background: #00836a;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .footer__creators-text {
   margin: 0 !important;
   line-height: 30px;
+  font-size: 16px !important;
 }
-.footer__creators-text span {
+.footer__creators-text > span {
   color: #6495ed;
   text-decoration: underline;
   cursor: pointer;
 }
-.footer__creators-text span:hover {
+.footer__creators-text > span:hover {
   text-shadow: 0 0 5px #6495ed;
+}
+.footer__creators-text > span > img {
+  margin-top: 4px;
 }
 .footer__creators-text br {
   display: none;
