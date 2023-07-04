@@ -53,6 +53,7 @@
   &__paragraf {
     /* text-indent: 2em; */
     color: #F8F1F1;
+    font-weight: 600;
   }
 }
 
@@ -124,9 +125,10 @@
     }
     & p {
       text-align: center;
-      color: #6495ed;
-      font-size: 27px;
+      color: #F8F1F1;
+      font-size: 30px;
       font-weight: 600;
+      white-space: pre;
     }
     & a {
       display: flex;
@@ -224,7 +226,7 @@
     align-items: center;
     justify-content: center;
     & h3 {
-      line-height: 23px;
+      line-height: 32px;
     }
   }
 
@@ -268,8 +270,8 @@
       }
       & p {
         text-align: center;
-        color: #6495ed;
-        font-size: 20px;
+        color: #F8F1F1;
+        font-size: 23px;
         font-weight: 600;
       }
       & a {
