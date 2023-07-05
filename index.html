@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/main.css">
@@ -10,6 +10,9 @@
   <title>Great House</title>
 </head>
 <body>
+  <?php 
+    echo $root=S_SERVER['DOCUMENT_ROOT'];
+  ?>
   <header class="header sticky">
     <div class="header__container container">
       <a href="#">
@@ -103,6 +106,7 @@
   </div>
   
   <section class="slider">
+    <img src="img/ready.png" alt="Будинок зданий!" class="slider__img-building-ready">
     <div id="movable" class="movable">
       <div style="background: url('img/images-building/1.webp') center/cover no-repeat;" class="slider__element1"></div>
       <div style="background: url('img/images-building/2.webp') center/cover no-repeat;" class="slider__element2"></div>
@@ -536,10 +540,10 @@
         <div class="footer__feedback">
           <h3 class="subtitle">Ми вам зателефонуємо:</h3>
           <div class="footer__content">
-            <form action="">
-              <input type="text" placeholder="Імʼя, Прізвище" class="footer__input">
-              <input type="tel" placeholder="(096) 070 77-55" class="footer__input">
-              <button class="footer__btn-submit">Замовити дзвінок</button>
+            <form action="/" method="post">
+              <input type="text" name="name" placeholder="Імʼя, Прізвище" class="footer__input">
+              <input type="tel" name="phone" placeholder="(096) 070 77-55" class="footer__input">
+              <button type="submit" name="send" class="footer__btn-submit">Замовити дзвінок</button>
             </form>
           </div>
         </div>

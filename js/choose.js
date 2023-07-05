@@ -355,6 +355,49 @@ funcCalcTrueApartments = function(){
         $('#trueApartments1').append(true9)
         $('#falseApartments1').append(false9)
       })
+
+      // round 10
+      let true10 = 0
+
+      if (data.n145) {true10 = true10 + 1}
+      if (data.n146) {true10 = true10 + 1}
+      if (data.n147) {true10 = true10 + 1}
+      if (data.n148) {true10 = true10 + 1}
+      if (data.n149) {true10 = true10 + 1}
+      if (data.n150) {true10 = true10 + 1}
+      if (data.n151) {true10 = true10 + 1}
+      if (data.n152) {true10 = true10 + 1}
+      if (data.n153) {true10 = true10 + 1}
+      if (data.n154) {true10 = true10 + 1}
+      if (data.n155) {true10 = true10 + 1}
+      if (data.n156) {true10 = true10 + 1}
+      if (data.n157) {true10 = true10 + 1}
+      if (data.n158) {true10 = true10 + 1}
+      if (data.n159) {true10 = true10 + 1}
+      if (data.n160) {true10 = true10 + 1}
+      if (data.n161) {true10 = true10 + 1}
+      if (data.n162) {true10 = true10 + 1}
+      
+      let false10 = 18 - true10
+      if (false10 == 18) {$('[data-round-id=10]').addClass('sold')}
+
+      $('[data-round-id=10]').mouseover(function(){
+        $('.choose-round__round-block').addClass('active')
+        $('#numOfRound').append('10')
+        $('#trueApartments').append(true10)
+        $('#falseApartments').append(false10)
+      })
+      $('[data-round-id=10]').mouseleave(function(){
+        $('.choose-round__round-block').removeClass('active')
+        $('#numOfRound,#trueApartments,#falseApartments').empty()
+      })
+      $('[data-round-id=10]').click(function(){
+        $('.round-bti__round-block').addClass('active')
+        $('#numOfRound1,#trueApartments1,#falseApartments1').empty()
+        $('#numOfRound1').append('10')
+        $('#trueApartments1').append(true10)
+        $('#falseApartments1').append(false10)
+      })
     }
   });
 }

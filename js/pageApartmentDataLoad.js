@@ -11,184 +11,201 @@ funcLoadImg = function(numOfType, numOfImg) {
 
 // функція підгрузки картинок для основної галереї по типах
 funcLoadGalleryImg = function(numOfType) {
-  if (numOfType == 1 || numOfType == 2 || numOfType == 3 || numOfType == 4 || numOfType == 5 || numOfType == 6 || numOfType == 7 || numOfType == 8 || numOfType == 9 || numOfType == 10 || numOfType == 11 || numOfType == 12 || numOfType == 13 || numOfType == 14 || numOfType == 15 || numOfType == 16 || numOfType == 17 || numOfType == 18) {
+  if (numOfType == 1 || numOfType == 2) {
     funcLoadImg(numOfType, 1);
     funcLoadImg(numOfType, 2);
     funcLoadImg(numOfType, 3);
     funcLoadImg(numOfType, 4);
     funcLoadImg(numOfType, 5);
     funcLoadImg(numOfType, 6);
+  } if (numOfType == 3) {
+    funcLoadImg(numOfType, 1);
+  } if (numOfType == 4) {
+    funcLoadImg(numOfType, 1);
+  } if (numOfType == 5) {
+    funcLoadImg(numOfType, 1);
+  } if (numOfType == 6) {
+    funcLoadImg(numOfType, 1);
+  } if (numOfType == 7) {
+    funcLoadImg(numOfType, 1);
+  } if (numOfType == 8) {
+    funcLoadImg(numOfType, 1);
+  } if (numOfType == 9) {
+    funcLoadImg(numOfType, 1);
+    funcLoadImg(numOfType, 2);
+    funcLoadImg(numOfType, 3);
+    funcLoadImg(numOfType, 4);
+    funcLoadImg(numOfType, 5);
+    funcLoadImg(numOfType, 6);
+    funcLoadImg(numOfType, 7);
+    funcLoadImg(numOfType, 8);
+    funcLoadImg(numOfType, 9);
+    funcLoadImg(numOfType, 10);
+  } if (numOfType == 10 || numOfType == 11) {
+    funcLoadImg(numOfType, 1);
+    funcLoadImg(numOfType, 2);
+    funcLoadImg(numOfType, 3);
+    funcLoadImg(numOfType, 4);
+    funcLoadImg(numOfType, 5);
+    funcLoadImg(numOfType, 6);
+    funcLoadImg(numOfType, 7);
+    funcLoadImg(numOfType, 8);
+    funcLoadImg(numOfType, 9);
+  } if (numOfType == 12 || numOfType == 13) {
+    funcLoadImg(numOfType, 1);
+    funcLoadImg(numOfType, 2);
+    funcLoadImg(numOfType, 3);
+    funcLoadImg(numOfType, 4);
+    funcLoadImg(numOfType, 5);
+    funcLoadImg(numOfType, 6);
+    funcLoadImg(numOfType, 7);
+    funcLoadImg(numOfType, 8);
+    funcLoadImg(numOfType, 9);
+    funcLoadImg(numOfType, 10);
+    funcLoadImg(numOfType, 11);
+  } if (numOfType == 14) {
+    funcLoadImg(numOfType, 1);
+    funcLoadImg(numOfType, 2);
+    funcLoadImg(numOfType, 3);
+    funcLoadImg(numOfType, 4);
+    funcLoadImg(numOfType, 5);
+    funcLoadImg(numOfType, 6);
+    funcLoadImg(numOfType, 7);
+    funcLoadImg(numOfType, 8);
+    funcLoadImg(numOfType, 9);
+    funcLoadImg(numOfType, 10);
+    funcLoadImg(numOfType, 11);
+    funcLoadImg(numOfType, 12);
+    funcLoadImg(numOfType, 13);
+    funcLoadImg(numOfType, 14);
   }
-  // if (numOfType == 2) {
-  //   funcLoadImg(numOfType, 1);
-  //   funcLoadImg(numOfType, 2);
-  //   funcLoadImg(numOfType, 3);
-  //   funcLoadImg(numOfType, 4);
-  //   funcLoadImg(numOfType, 5);
-  //   funcLoadImg(numOfType, 6);
-  //   funcLoadImg(numOfType, 7);
-  //   funcLoadImg(numOfType, 8);
-  //   funcLoadImg(numOfType, 9);
-  //   funcLoadImg(numOfType, 10);
-  // }
-  // if (numOfType == 3) {
-  //   funcLoadImg(numOfType, 1);
-  //   funcLoadImg(numOfType, 2);
-  //   funcLoadImg(numOfType, 3);
-  //   funcLoadImg(numOfType, 4);
-  //   funcLoadImg(numOfType, 5);
-  //   funcLoadImg(numOfType, 6);
-  //   funcLoadImg(numOfType, 7);
-  //   funcLoadImg(numOfType, 8);
-  //   funcLoadImg(numOfType, 9);
-  //   funcLoadImg(numOfType, 10);
-  // }
-  // if (numOfType == 4) {
-  //   funcLoadImg(numOfType, 1);
-  //   funcLoadImg(numOfType, 2);
-  //   funcLoadImg(numOfType, 3);
-  //   funcLoadImg(numOfType, 4);
-  //   funcLoadImg(numOfType, 5);
-  //   funcLoadImg(numOfType, 6);
-  //   funcLoadImg(numOfType, 7);
-  //   funcLoadImg(numOfType, 8);
-  //   funcLoadImg(numOfType, 9);
-  //   funcLoadImg(numOfType, 10);
-  //   funcLoadImg(numOfType, 11);
-  // }
-  // if (numOfType == 5) {
-  //   funcLoadImg(numOfType, 1);
-  //   funcLoadImg(numOfType, 2);
-  //   funcLoadImg(numOfType, 3);
-  //   funcLoadImg(numOfType, 4);
-  //   funcLoadImg(numOfType, 5);
-  //   funcLoadImg(numOfType, 6);
-  //   funcLoadImg(numOfType, 7);
-  //   funcLoadImg(numOfType, 8);
-  //   funcLoadImg(numOfType, 9);
-  //   funcLoadImg(numOfType, 10);
-  //   funcLoadImg(numOfType, 11);
-  //   funcLoadImg(numOfType, 12);
-  //   funcLoadImg(numOfType, 13);
-  // }
-  // if (numOfType == 6) {
-  //   funcLoadImg(numOfType, 1);
-  // }
-  // if (numOfType == 7) {
-  //   funcLoadImg(numOfType, 1);
-  // }
-  // if (numOfType == 8) {
-  //   funcLoadImg(numOfType, 1);
-  // }
-  // if (numOfType == 9) {
-  //   funcLoadImg(numOfType, 1);
-  // }
-  // if (numOfType == 10) {
-  //   funcLoadImg(numOfType, 1);
-  // }
-  // if (numOfType == 11) {
-  //   funcLoadImg(numOfType, 1);
-  // }
+  if (numOfType == 15) {
+    funcLoadImg(numOfType, 1);
+  }
+  if (numOfType == 16) {
+    funcLoadImg(numOfType, 1);
+  }
+  if (numOfType == 17) {
+    funcLoadImg(numOfType, 1);
+  }
+  if (numOfType == 18) {
+    funcLoadImg(numOfType, 1);
+    funcLoadImg(numOfType, 2);
+    funcLoadImg(numOfType, 3);
+    funcLoadImg(numOfType, 4);
+    funcLoadImg(numOfType, 5);
+    funcLoadImg(numOfType, 6);
+    funcLoadImg(numOfType, 7);
+    funcLoadImg(numOfType, 8);
+    funcLoadImg(numOfType, 9);
+    funcLoadImg(numOfType, 10);
+    funcLoadImg(numOfType, 11);
+    funcLoadImg(numOfType, 12);
+    funcLoadImg(numOfType, 13);
+    funcLoadImg(numOfType, 14);
+    funcLoadImg(numOfType, 15);
+    funcLoadImg(numOfType, 16);
+  }
   funcSlideTopGallery()
 }
 
-// функція створення діва, імг і їх підстановку в вигляди з вікна
-funcLoadWindowLooks = function(side, numOfImg) {
-  let div = document.createElement("div");
-  let img = document.createElement('img');
-  img.classList.add("window__card-item");
-  img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".jpg";
-  div.appendChild(img);
-  let movable2 = document.getElementById("movable2");
-  movable2.appendChild(div);
-}
+// // функція створення діва, імг і їх підстановку в вигляди з вікна
+// funcLoadWindowLooks = function(side, numOfImg) {
+//   let div = document.createElement("div");
+//   let img = document.createElement('img');
+//   img.classList.add("window__card-item");
+//   img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".jpg";
+//   div.appendChild(img);
+//   let movable2 = document.getElementById("movable2");
+//   movable2.appendChild(div);
+// }
 // функція підгрузки картинок для виглядів з вікна
-funcLoadAllWindowLooks = function(side) {
-  if (side == "E") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-  }
-  if (side == "ES") {
-    funcLoadWindowLooks(side, 1);
-  }
-  if (side == "N") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-  }
-  if (side == "NE") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
-    funcLoadWindowLooks(side, 6);
-    funcLoadWindowLooks(side, 7);
-    funcLoadWindowLooks(side, 8);
-  }
-  if (side == "NEW") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
-    funcLoadWindowLooks(side, 6);
-    funcLoadWindowLooks(side, 7);
-    funcLoadWindowLooks(side, 8);
-  }
-  if (side == "NS") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
-    funcLoadWindowLooks(side, 6);
-    funcLoadWindowLooks(side, 7);
-    funcLoadWindowLooks(side, 8);
-    funcLoadWindowLooks(side, 9);
-    funcLoadWindowLooks(side, 10);
-    funcLoadWindowLooks(side, 11);
-    funcLoadWindowLooks(side, 12);
-  }
-  if (side == "S") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
-    funcLoadWindowLooks(side, 6);
-    funcLoadWindowLooks(side, 7);
-    funcLoadWindowLooks(side, 8);
-    funcLoadWindowLooks(side, 9);
-    funcLoadWindowLooks(side, 10);
-  }
-  if (side == "SW") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
-    funcLoadWindowLooks(side, 6);
-    funcLoadWindowLooks(side, 7);
-  }
-  if (side == "W") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-  }
-  if (side == "WN") {
-    funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
-    funcLoadWindowLooks(side, 6);
-  }
-  funcSlideWindowGallery()
-}
+// funcLoadAllWindowLooks = function(side) {
+//   if (side == "E") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//   }
+//   if (side == "ES") {
+//     funcLoadWindowLooks(side, 1);
+//   }
+//   if (side == "N") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//   }
+//   if (side == "NE") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//     funcLoadWindowLooks(side, 5);
+//     funcLoadWindowLooks(side, 6);
+//     funcLoadWindowLooks(side, 7);
+//     funcLoadWindowLooks(side, 8);
+//   }
+//   if (side == "NEW") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//     funcLoadWindowLooks(side, 5);
+//     funcLoadWindowLooks(side, 6);
+//     funcLoadWindowLooks(side, 7);
+//     funcLoadWindowLooks(side, 8);
+//   }
+//   if (side == "NS") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//     funcLoadWindowLooks(side, 5);
+//     funcLoadWindowLooks(side, 6);
+//     funcLoadWindowLooks(side, 7);
+//     funcLoadWindowLooks(side, 8);
+//     funcLoadWindowLooks(side, 9);
+//     funcLoadWindowLooks(side, 10);
+//     funcLoadWindowLooks(side, 11);
+//     funcLoadWindowLooks(side, 12);
+//   }
+//   if (side == "S") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//     funcLoadWindowLooks(side, 5);
+//     funcLoadWindowLooks(side, 6);
+//     funcLoadWindowLooks(side, 7);
+//     funcLoadWindowLooks(side, 8);
+//     funcLoadWindowLooks(side, 9);
+//     funcLoadWindowLooks(side, 10);
+//   }
+//   if (side == "SW") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//     funcLoadWindowLooks(side, 5);
+//     funcLoadWindowLooks(side, 6);
+//     funcLoadWindowLooks(side, 7);
+//   }
+//   if (side == "W") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//   }
+//   if (side == "WN") {
+//     funcLoadWindowLooks(side, 1);
+//     funcLoadWindowLooks(side, 2);
+//     funcLoadWindowLooks(side, 3);
+//     funcLoadWindowLooks(side, 4);
+//     funcLoadWindowLooks(side, 5);
+//     funcLoadWindowLooks(side, 6);
+//   }
+//   funcSlideWindowGallery()
+// }
 
 // функція підгрузки всіх файлів по типу квартири
 funcLoadType = function(numOfType) {
@@ -341,7 +358,7 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
   if (allArea) { funcCreateLastLineInTable(allArea) }
 }
 
-// загрузка файлу json з даними площі, з номером типу
+// загрузка файлу json з даними площі, з номером типу, загрузка компасу
 funcLoadAreas = function(numOfApartment) {
   $.ajax({
     "method": "GET",
@@ -387,14 +404,14 @@ funcLoadAreas = function(numOfApartment) {
   });
 }
 
-// функція підгрузки даних, коли запит від 1-144 квартири
+// функція підгрузки даних, коли запит від 1-162 квартири
 // https://greathouse.rv.ua/choose/apartment/?num=5
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 const numOfApartment = urlParams.get('num')
 // console.log(numOfApartment)
-if (numOfApartment >= 1 && numOfApartment <= 144 ) {
+if (numOfApartment >= 1 && numOfApartment <= 162 ) {
 
   funcLoadAreas(numOfApartment);
 
@@ -407,7 +424,7 @@ if (numOfApartment >= 1 && numOfApartment <= 144 ) {
   window.location.replace("../");
 }
 
-// таблиця (наведення)
+// таблиця наведення - появляється на плані
 funcTableHover = function() {
   $('.line-table-1').mouseover(function(){
     $('g.1').addClass('hover')
@@ -487,7 +504,7 @@ funcTableHover = function() {
   })
 }
 
-// план наведення
+// план наведення - появляється на таблиці
 funcBtiHover = function(){
   $('g.1').mouseover(function(){
     $('g.1,.line-table-1').addClass('hover')

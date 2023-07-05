@@ -35,26 +35,26 @@ funcSlideTopGallery = function(){
   });
 }
 
-// функції перелистування картинок в блоці вигляду з вікна
-funcSlideWindowGallery = function(){
-  $('.window').each(function() {
-    var $gal     = $(this),
-        $movable = $(".movable", $gal), 
-        $slides  = $(">*", $movable),
-        N        = $slides.length,
-        C        = 0,
-        itv      = null;
-    function play() { itv = setInterval(anim, 3000); }
-    function stop() { clearInterval(itv); }
-    function anim() {
-      C = ($(this).is(".prev1") ? --C : ++C) <0 ? N-1 : C%N;
-      $movable.css({transform: "translateX(-"+ (C*100) +"%)"});
-    }
-    $(".prev1, .next1", this).on("click", anim);
-    $gal.hover(stop, play);
-    play();
-  });
-}
+// // функції перелистування картинок в блоці вигляду з вікна
+// funcSlideWindowGallery = function(){
+//   $('.window').each(function() {
+//     var $gal     = $(this),
+//         $movable = $(".movable", $gal), 
+//         $slides  = $(">*", $movable),
+//         N        = $slides.length,
+//         C        = 0,
+//         itv      = null;
+//     function play() { itv = setInterval(anim, 3000); }
+//     function stop() { clearInterval(itv); }
+//     function anim() {
+//       C = ($(this).is(".prev1") ? --C : ++C) <0 ? N-1 : C%N;
+//       $movable.css({transform: "translateX(-"+ (C*100) +"%)"});
+//     }
+//     $(".prev1, .next1", this).on("click", anim);
+//     $gal.hover(stop, play);
+//     play();
+//   });
+// }
 
 // функції взяті з інету перелистування картинок в першому блоці футера
 funcSlideFooterGallery = function(){
@@ -308,6 +308,26 @@ funcShowFalseApartments = function(){
       if (data.n142) {} else { $("[data-apartment-id=142]").addClass('sold')}
       if (data.n143) {} else { $("[data-apartment-id=143]").addClass('sold')}
       if (data.n144) {} else { $("[data-apartment-id=144]").addClass('sold')}
+
+      // round 10
+      if (data.n145) {} else { $("[data-apartment-id=145]").addClass('sold')}
+      if (data.n146) {} else { $("[data-apartment-id=146]").addClass('sold')}
+      if (data.n147) {} else { $("[data-apartment-id=147]").addClass('sold')}
+      if (data.n148) {} else { $("[data-apartment-id=148]").addClass('sold')}
+      if (data.n149) {} else { $("[data-apartment-id=149]").addClass('sold')}
+      if (data.n150) {} else { $("[data-apartment-id=150]").addClass('sold')}
+      if (data.n151) {} else { $("[data-apartment-id=151]").addClass('sold')}
+      if (data.n152) {} else { $("[data-apartment-id=152]").addClass('sold')}
+      if (data.n153) {} else { $("[data-apartment-id=153]").addClass('sold')}
+      if (data.n154) {} else { $("[data-apartment-id=154]").addClass('sold')}
+      if (data.n155) {} else { $("[data-apartment-id=155]").addClass('sold')}
+      if (data.n156) {} else { $("[data-apartment-id=156]").addClass('sold')}
+      if (data.n157) {} else { $("[data-apartment-id=157]").addClass('sold')}
+      if (data.n158) {} else { $("[data-apartment-id=158]").addClass('sold')}
+      if (data.n159) {} else { $("[data-apartment-id=159]").addClass('sold')}
+      if (data.n160) {} else { $("[data-apartment-id=160]").addClass('sold')}
+      if (data.n161) {} else { $("[data-apartment-id=161]").addClass('sold')}
+      if (data.n162) {} else { $("[data-apartment-id=162]").addClass('sold')}
     }
   });
 }
