@@ -10,22 +10,6 @@
   <title>Great House</title>
 </head>
 <body>
-  <?php 
-    $root=S_SERVER['DOCUMENT_ROOT'];
-    if(isset($_POST['send']) && count($_POST)==2){
-      $name=strip_tags(trim($_POST['name']));
-      $phone=trim($_POST['phone']);
-
-      $result=[];
-      
-      if(empty($mane) || mb_strlen($name, 'UTF-8') > 40){
-        $result[]='Занадто довге імʼя'
-      }
-      if(empty(mb_strlen($phone, 'UTF-8') != 10){
-        echo 'Телефон введено неправильно'
-      }
-    }
-  ?>
   <header class="header sticky">
     <div class="header__container container">
       <a href="#">
@@ -553,9 +537,9 @@
         <div class="footer__feedback">
           <h3 class="subtitle">Ми вам зателефонуємо:</h3>
           <div class="footer__content">
-            <form action="/" method="post">
-              <input type="text" name="name" placeholder="Імʼя, Прізвище" class="footer__input">
-              <input type="tel" name="phone" placeholder="(096) 070 77-55" class="footer__input">
+            <form action="send.php" method="post">
+              <input type="text" name="name" placeholder="Імʼя, Прізвище" class="footer__input" required>
+              <input type="tel" name="phone" placeholder="(096) 070 77-55" class="footer__input" required>
               <button type="submit" name="send" class="footer__btn-submit">Замовити дзвінок</button>
             </form>
           </div>
