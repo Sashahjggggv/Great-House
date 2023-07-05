@@ -10,9 +10,22 @@
   <title>Great House</title>
 </head>
 <body>
-  <!-- <?php 
-    echo $root=S_SERVER['DOCUMENT_ROOT'];
-  ?> -->
+  <?php 
+    $root=S_SERVER['DOCUMENT_ROOT'];
+    if(isset($_POST['send']) && count($_POST)==2){
+      $name=strip_tags(trim($_POST['name']));
+      $phone=trim($_POST['phone']);
+
+      $result=[];
+      
+      if(empty($mane) || mb_strlen($name, 'UTF-8') > 40){
+        $result[]='Занадто довге імʼя'
+      }
+      if(empty(mb_strlen($phone, 'UTF-8') != 10){
+        echo 'Телефон введено неправильно'
+      }
+    }
+  ?>
   <header class="header sticky">
     <div class="header__container container">
       <a href="#">
