@@ -11,6 +11,8 @@
   $name = trim($name);
   $phone = trim($phone);
 
+  echo $name
+
   if(mail("info@greathouse.rv.ua",
   "Нова заявка з сайту greathouse.rv.ua",
   "Імʼя: " $name "\n"
