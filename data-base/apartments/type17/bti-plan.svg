@@ -1,0 +1,28 @@
+<svg class="bti-svg" width="871" height="1020" viewBox="0 0 871 1020" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g class="rooms">
+    <g class="1">
+      <rect x="118" y="206.773" width="299.602" height="95.8727" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect x="118" y="302.646" width="203.729" height="221.706" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect x="207.881" y="524.351" width="113.849" height="55.9257" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="2">
+      <rect x="118" y="35" width="203.729" height="171.772" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="3">
+      <rect x="417.602" y="35" width="327.565" height="267.645" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="4">
+      <rect x="321.729" y="302.646" width="549.271" height="277.631" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="5">
+      <rect x="207.881" y="580.275" width="501.334" height="277.631" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="6">
+      <rect x="321.729" y="35" width="95.8727" height="171.772" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="7">
+      <rect x="207.88" y="857.907" width="663.119" height="161.785" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect x="709.214" y="580.275" width="161.785" height="277.631" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+  </g>
+</svg>

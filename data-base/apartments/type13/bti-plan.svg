@@ -1,0 +1,23 @@
+<svg class="bti-svg" width="782" height="1285" viewBox="0 0 782 1285" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g class="rooms">
+    <g class="1">
+      <rect x="264.301" y="464.748" width="300.534" height="163.204" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="2">
+      <rect width="294.563" height="529.417" transform="matrix(-1 0 0 1 736 627.95)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="3">
+      <rect width="266.699" height="127.379" transform="matrix(-1 0 0 1 708.136 1157.37)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="4">
+      <rect x="564.834" y="331.398" width="171.165" height="296.553" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="5">
+      <rect x="395.66" y="3" width="340.34" height="328.398" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect x="395.66" y="331.398" width="169.175" height="133.349" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="6">
+      <rect x="121" y="94.5537" width="274.66" height="370.194" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+  </g>
+</svg>
