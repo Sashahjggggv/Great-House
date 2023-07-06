@@ -121,7 +121,7 @@ $(window).scroll(function() {
 funcShowFalseApartments = function(){
   $.ajax({
     "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
+    'url': "https://greathouse.rv.ua/data-base/144.json",
     'success': function(data){
       // round 2
       if (data.n1) {} else { $("[data-apartment-id=1]").addClass('sold')}
@@ -345,14 +345,14 @@ funcShowInfo = function(numOfApartment){
       $('#numOfApartmnet').append(numOfApartment)
       $.ajax({
         "method": "GET",
-        'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
+        'url': "https://greathouse.rv.ua/data-base/144.json",
         'success': function(data){
           if (eval('data.n' + numOfApartment)) {$('#trueInfo').append('Квартира доступна')} else {$('#falseInfo').append('Квартира продана')}
         }
       });
       $.ajax({
         "method": "GET",
-        'url': "https://sashahjggggv.github.io/photos-great-house/144/" + numOfApartment + "/areas.json",
+        'url': "https://greathouse.rv.ua/data-base/144/" + numOfApartment + "/areas.json",
         'success': function(data){
           $('#allPlace').append(data.all)
         }

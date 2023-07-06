@@ -3,7 +3,7 @@ funcLoadImg = function(numOfType, numOfImg) {
   let div = document.createElement("div");
   let img = document.createElement('img');
   img.classList.add("gallery__card-item");
-  img.src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/inside-models/" + numOfImg + ".jpg";
+  img.src = "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/inside-models/" + numOfImg + ".jpg";
   div.appendChild(img);
   let movable = document.getElementById("movable");
   movable.appendChild(div);
@@ -114,7 +114,7 @@ funcLoadWindowLooks = function(side, numOfImg) {
   let div = document.createElement("div");
   let img = document.createElement('img');
   img.classList.add("window__card-item");
-  img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".jpg";
+  img.src = "https://greathouse.rv.ua/data-base/window-looks/" + side + "/" + numOfImg + ".jpg";
   div.appendChild(img);
   let movable2 = document.getElementById("movable2");
   movable2.appendChild(div);
@@ -184,12 +184,12 @@ funcLoadType = function(numOfType) {
   funcLoadGalleryImg(numOfType)
 
   // підгрузка фону бті плану
-  document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.png";
+  document.getElementById('bti-plan').src = "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/bti-plan.png";
 
   // підгрузка свг бті плану
   $.ajax({
     "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.svg",
+    'url': "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/bti-plan.svg",
     'success': function(data){
       document.getElementById('bti-plan-content').appendChild(data.documentElement)
       funcBtiHover()
@@ -199,7 +199,7 @@ funcLoadType = function(numOfType) {
   // // підгрузка опису за типом квартири
   // $.ajax({
   //   "method": "GET",
-  //   'url': "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/description-apartment.json",
+  //   'url': "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/description-apartment.json",
   //   'success': function(data){
   //     if (data.paragraf) {
   //       let paragraf = document.createElement('p')
@@ -223,7 +223,7 @@ funcLoadType = function(numOfType) {
   // });
 
   // підгрузка плану з ремонтом відносно типу
-  document.getElementById("furniture-plan").src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/furniture-plan.png";
+  document.getElementById("furniture-plan").src = "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/furniture-plan.png";
 
   // функціонал кнопок перепланування і бті
   funcPlanBtns(numOfType);
@@ -234,14 +234,14 @@ funcLoadImageRound = function(numOfRound) {
 
   // background png
   let roundImg = document.getElementById("round__img");
-  roundImg.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.png"
+  roundImg.src = "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/0.png"
   let roundIng90 = document.getElementById('round__img-90')
-  roundIng90.src = "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.png"
+  roundIng90.src = "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/90.png"
 
   // foreground svg
   $.ajax({
     "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/0.svg",
+    'url': "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/0.svg",
     'success': function(data){
       let roundContent = document.getElementById('roundContent');
       roundContent.appendChild(data.documentElement);
@@ -255,7 +255,7 @@ funcLoadImageRound = function(numOfRound) {
   });
   $.ajax({
     "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/rounds/" + numOfRound + "/90.svg",
+    'url': "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/90.svg",
     'success': function(data){
       let roundContent = document.getElementById('roundContent');
       roundContent.appendChild(data.documentElement);
@@ -334,7 +334,7 @@ funcAddInfoInTable = function(line1, line2, line3, line4, line5, line6, line7, l
 funcLoadAreas = function(numOfApartment) {
   $.ajax({
     "method": "GET",
-    'url': "https://sashahjggggv.github.io/photos-great-house/144/" + numOfApartment + "/areas.json",
+    'url': "https://greathouse.rv.ua/data-base/144/" + numOfApartment + "/areas.json",
     'success': function(data){
       let numOfRound = data.round,
       numOfType = data.type;
@@ -357,13 +357,13 @@ funcLoadAreas = function(numOfApartment) {
       // підгрузка компасу
       let compas = document.getElementById('compas')
       if (side == 'N' || side == 'NEW') {
-        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/N.png";
+        compas.src = "https://greathouse.rv.ua/data-base/window-looks/N.png";
       } if (side == 'S' || side == 'ES' || side == 'NS') {
-        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/S.png";
+        compas.src = "https://greathouse.rv.ua/data-base/window-looks/S.png";
       } if (side == 'W' || side == 'SW' || side == 'WN') {
-        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/W.png";
+        compas.src = "https://greathouse.rv.ua/data-base/window-looks/W.png";
       } if (side == 'E' || side == 'NE') {
-        compas.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/E.png";
+        compas.src = "https://greathouse.rv.ua/data-base/window-looks/E.png";
       } else {
         console.error("compas load")
       }
@@ -561,25 +561,25 @@ funcPlanBtns = function(numOfType){
     $('.bti-btn,.plan-v2,.plan-v3').removeClass('active')
     $('.plan-v1').addClass('active')
     $('.bti-svg').addClass('hide')
-    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/variant-plan/1.png"
+    document.getElementById('bti-plan').src = "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/variant-plan/1.png"
   })
   $('.plan-v2').click(function(){
     $('.bti-btn,.plan-v1,.plan-v3').removeClass('active')
     $('.plan-v2').addClass('active')
     $('.bti-svg').addClass('hide')
-    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/variant-plan/2.png"
+    document.getElementById('bti-plan').src = "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/variant-plan/2.png"
   })
   $('.plan-v3').click(function(){
     $('.bti-btn,.plan-v1,.plan-v2').removeClass('active')
     $('.plan-v3').addClass('active')
     $('.bti-svg').addClass('hide')
-    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/variant-plan/3.png"
+    document.getElementById('bti-plan').src = "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/variant-plan/3.png"
   })
   $('.bti-btn').click(function(){
     $('.plan-v1,.plan-v2,.plan-v3').removeClass('active')
     $('.bti-btn').addClass('active')
     $('.bti-svg').removeClass('hide')
-    document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.png"
+    document.getElementById('bti-plan').src = "https://greathouse.rv.ua/data-base/apartments/type" + numOfType + "/bti-plan.png"
   })
 }
 
@@ -587,7 +587,7 @@ funcPlanBtns = function(numOfType){
 // визначення чи продана квартира
 $.ajax({
   "method": "GET",
-  'url': "https://sashahjggggv.github.io/photos-great-house/144.json",
+  'url': "https://greathouse.rv.ua/data-base/144.json",
   'success': function(data){
     if (eval('data.n' + numOfApartment)) {
       $('#trueApartment').append('Квартира доступна')
