@@ -150,8 +150,6 @@ funcLoadAllWindowLooks = function(side) {
     funcLoadWindowLooks(side, 2);
     funcLoadWindowLooks(side, 3);
     funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
-    funcLoadWindowLooks(side, 6);
   }
   if (side == "S") {
     funcLoadWindowLooks(side, 1);
@@ -185,7 +183,6 @@ funcLoadAllWindowLooks = function(side) {
 funcLoadType = function(numOfType) {
   funcLoadGalleryImg(numOfType)
 
-  console.log('bti suka')
   // підгрузка фону бті плану
   document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.png";
 
