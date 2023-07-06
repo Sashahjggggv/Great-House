@@ -109,108 +109,83 @@ funcLoadGalleryImg = function(numOfType) {
   funcSlideTopGallery()
 }
 
-// // функція створення діва, імг і їх підстановку в вигляди з вікна
-// funcLoadWindowLooks = function(side, numOfImg) {
-//   let div = document.createElement("div");
-//   let img = document.createElement('img');
-//   img.classList.add("window__card-item");
-//   img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".jpg";
-//   div.appendChild(img);
-//   let movable2 = document.getElementById("movable2");
-//   movable2.appendChild(div);
-// }
+// функція створення діва, імг і їх підстановку в вигляди з вікна
+funcLoadWindowLooks = function(side, numOfImg) {
+  let div = document.createElement("div");
+  let img = document.createElement('img');
+  img.classList.add("window__card-item");
+  img.src = "https://sashahjggggv.github.io/photos-great-house/window-looks/" + side + "/" + numOfImg + ".jpg";
+  div.appendChild(img);
+  let movable2 = document.getElementById("movable2");
+  movable2.appendChild(div);
+}
 // функція підгрузки картинок для виглядів з вікна
-// funcLoadAllWindowLooks = function(side) {
-//   if (side == "E") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//   }
-//   if (side == "ES") {
-//     funcLoadWindowLooks(side, 1);
-//   }
-//   if (side == "N") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//   }
-//   if (side == "NE") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//     funcLoadWindowLooks(side, 5);
-//     funcLoadWindowLooks(side, 6);
-//     funcLoadWindowLooks(side, 7);
-//     funcLoadWindowLooks(side, 8);
-//   }
-//   if (side == "NEW") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//     funcLoadWindowLooks(side, 5);
-//     funcLoadWindowLooks(side, 6);
-//     funcLoadWindowLooks(side, 7);
-//     funcLoadWindowLooks(side, 8);
-//   }
-//   if (side == "NS") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//     funcLoadWindowLooks(side, 5);
-//     funcLoadWindowLooks(side, 6);
-//     funcLoadWindowLooks(side, 7);
-//     funcLoadWindowLooks(side, 8);
-//     funcLoadWindowLooks(side, 9);
-//     funcLoadWindowLooks(side, 10);
-//     funcLoadWindowLooks(side, 11);
-//     funcLoadWindowLooks(side, 12);
-//   }
-//   if (side == "S") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//     funcLoadWindowLooks(side, 5);
-//     funcLoadWindowLooks(side, 6);
-//     funcLoadWindowLooks(side, 7);
-//     funcLoadWindowLooks(side, 8);
-//     funcLoadWindowLooks(side, 9);
-//     funcLoadWindowLooks(side, 10);
-//   }
-//   if (side == "SW") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//     funcLoadWindowLooks(side, 5);
-//     funcLoadWindowLooks(side, 6);
-//     funcLoadWindowLooks(side, 7);
-//   }
-//   if (side == "W") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//   }
-//   if (side == "WN") {
-//     funcLoadWindowLooks(side, 1);
-//     funcLoadWindowLooks(side, 2);
-//     funcLoadWindowLooks(side, 3);
-//     funcLoadWindowLooks(side, 4);
-//     funcLoadWindowLooks(side, 5);
-//     funcLoadWindowLooks(side, 6);
-//   }
-//   funcSlideWindowGallery()
-// }
+funcLoadAllWindowLooks = function(side) {
+  if (side == "E") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+  }
+  if (side == "ES") {
+    funcLoadWindowLooks(side, 1);
+  }
+  if (side == "N") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+  }
+  if (side == "NE") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+  }
+  if (side == "NEW") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+  }
+  if (side == "NS") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+  }
+  if (side == "S") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+  }
+  if (side == "SW") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+  }
+  if (side == "W") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+  }
+  if (side == "WN") {
+    funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+  }
+  funcSlideWindowGallery()
+}
 
 // функція підгрузки всіх файлів по типу квартири
 funcLoadType = function(numOfType) {
   funcLoadGalleryImg(numOfType)
 
+  console.log('bti suka')
   // підгрузка фону бті плану
   document.getElementById('bti-plan').src = "https://sashahjggggv.github.io/photos-great-house/apartments/type" + numOfType + "/bti-plan.png";
 
