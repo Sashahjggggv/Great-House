@@ -1,0 +1,26 @@
+<svg class="bti-svg" width="781" height="1185" viewBox="0 0 781 1185" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g class="rooms">
+    <g class="1">
+      <rect width="197.066" height="203.038" transform="matrix(-1 0 0 1 540.84 451.859)" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect width="119.434" height="159.245" transform="matrix(-1 0 0 1 343.774 495.651)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="2">
+      <rect width="322.472" height="529.49" transform="matrix(-1 0 0 1 718 654.896)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="3">
+      <rect width="177.16" height="111.472" transform="matrix(-1 0 0 1 718 543.425)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="4">
+      <rect width="177.16" height="185.123" transform="matrix(-1 0 0 1 718 358.302)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="5">
+      <rect width="374.226" height="326.453" transform="matrix(-1 0 0 1 718 31.8491)" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect width="197.066" height="95.5472" transform="matrix(-1 0 0 1 540.84 358.302)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="6">
+      <rect width="258.774" height="352.33" transform="matrix(-1 0 0 1 343.774 143.321)" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect width="226.925" height="143.321" transform="matrix(-1 0 0 1 327.849 0)" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect width="15.9245" height="111.472" transform="matrix(-1 0 0 1 343.774 31.8491)" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+  </g>
+</svg>
