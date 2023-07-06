@@ -1,0 +1,21 @@
+<svg width="703" height="788" viewBox="0 0 703 788" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g class="rooms">
+    <g class="1">
+      <rect x="279.558" y="119" width="98.0216" height="217.608" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect x="377.579" y="119" width="49.0108" height="121.547" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="2">
+      <rect x="109" y="119" width="170.558" height="217.608" fill="#9EFF00" fill-opacity="0.5"/>  
+    </g>
+    <g class="3">
+      <rect x="109" y="336.608" width="268.579" height="303.867" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="4">
+      <rect x="377.579" y="240.547" width="276.421" height="364.64" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect x="426.59" y="119" width="227.41" height="121.547" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="5">
+      <rect x="377.579" y="605.187" width="276.421" height="160.755" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+  </g>
+</svg>

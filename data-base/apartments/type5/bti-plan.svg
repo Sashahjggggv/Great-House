@@ -1,0 +1,17 @@
+<svg class="bti-svg" width="705" height="642" viewBox="0 0 705 642" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g class="rooms">
+    <g class="1">
+      <rect x="328" y="108" width="309" height="125" fill="#9EFF00" fill-opacity="0.5"/>
+      <rect x="328" y="233" width="309" height="88" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="2">
+      <rect x="94" y="108" width="234" height="170" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="3">
+      <rect x="94" y="278" width="234" height="364" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+    <g class="4">
+      <rect x="328" y="321" width="309" height="321" fill="#9EFF00" fill-opacity="0.5"/>
+    </g>
+  </g>
+</svg>
