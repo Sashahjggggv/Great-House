@@ -128,6 +128,9 @@ funcLoadAllWindowLooks = function(side) {
   }
   if (side == "ES") {
     funcLoadWindowLooks(side, 1);
+    funcLoadWindowLooks(side, 2);
+    funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
   }
   if (side == "N") {
     funcLoadWindowLooks(side, 1);
@@ -139,34 +142,40 @@ funcLoadAllWindowLooks = function(side) {
     funcLoadWindowLooks(side, 1);
     funcLoadWindowLooks(side, 2);
     funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
   }
   if (side == "NEW") {
     funcLoadWindowLooks(side, 1);
     funcLoadWindowLooks(side, 2);
     funcLoadWindowLooks(side, 3);
+    funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
+    funcLoadWindowLooks(side, 6);
+    funcLoadWindowLooks(side, 7);
+    funcLoadWindowLooks(side, 8);
+    funcLoadWindowLooks(side, 9);
   }
   if (side == "NS") {
     funcLoadWindowLooks(side, 1);
     funcLoadWindowLooks(side, 2);
     funcLoadWindowLooks(side, 3);
     funcLoadWindowLooks(side, 4);
+    funcLoadWindowLooks(side, 5);
   }
   if (side == "S") {
     funcLoadWindowLooks(side, 1);
-    funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
   }
   if (side == "SW") {
     funcLoadWindowLooks(side, 1);
     funcLoadWindowLooks(side, 2);
     funcLoadWindowLooks(side, 3);
-    funcLoadWindowLooks(side, 4);
-    funcLoadWindowLooks(side, 5);
   }
   if (side == "W") {
     funcLoadWindowLooks(side, 1);
     funcLoadWindowLooks(side, 2);
-    funcLoadWindowLooks(side, 3);
   }
   if (side == "WN") {
     funcLoadWindowLooks(side, 1);
