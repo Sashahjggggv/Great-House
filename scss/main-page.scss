@@ -134,9 +134,9 @@
     }
     & p {
       text-align: center;
-      color: #6495ed;
-      font-size: 30px;
-      font-weight: 600;
+      color: #FFA500;
+      font-size: 35px;
+      font-weight: 700;
       white-space: pre;
     }
     & a {
@@ -146,16 +146,14 @@
       margin-top: 20px;
       font-size: 22px;
       padding: 15px 0;
-      color: #FFA500;
+      /* color: #FFA500; */
       font-weight: 600;
       border: 5px solid #FFA500;
       width: 100%;
       border-radius: 30px;
-      &:hover, &:focus {
-        box-shadow: rgb(255, 165, 0) 0px 0px 10px;
-        background: #FFA500;
-        color: #fff;
-      }
+      box-shadow: rgb(255, 165, 0) 0px 0px 10px;
+      background: #FFA500;
+      color: #fff;
       &:active {
         transform: scale(0.9);
       }
@@ -291,9 +289,9 @@
       }
       & p {
         text-align: center;
-        color: #6495ed;
-        font-size: 20px;
-        font-weight: 500;
+        color: #FFA500;
+        font-size: 23px;
+        font-weight: 600;
       }
       & a {
         font-size: 18px;
