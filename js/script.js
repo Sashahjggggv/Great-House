@@ -352,7 +352,7 @@ funcShowInfo = function(numOfApartment){
       });
       $.ajax({
         "method": "GET",
-        'url': "./data-base/144/" + numOfApartment + "/areas.json",
+        'url': "../data-base/144/" + numOfApartment + "/areas.json",
         'success': function(data){
           $('#allPlace').append(data.all)
         }
