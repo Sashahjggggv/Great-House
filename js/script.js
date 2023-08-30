@@ -121,7 +121,7 @@ $(window).scroll(function() {
 funcShowFalseApartments = function(){
   $.ajax({
     "method": "GET",
-    'url': "./data-base/144.json",
+    'url': "../data-base/144.json",
     'success': function(data){
       // round 2
       if (data.n1) {} else { $("[data-apartment-id=1]").addClass('sold')}
@@ -345,7 +345,7 @@ funcShowInfo = function(numOfApartment){
       $('#numOfApartmnet').append(numOfApartment)
       $.ajax({
         "method": "GET",
-        'url': "./data-base/144.json",
+        'url': "../data-base/144.json",
         'success': function(data){
           if (eval('data.n' + numOfApartment)) {$('#trueInfo').append('Квартира доступна')} else {$('#falseInfo').append('Квартира продана')}
         }
