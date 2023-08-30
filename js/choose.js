@@ -3,7 +3,7 @@
 funcCalcTrueApartments = function(){
   $.ajax({
     "method": "GET",
-    'url': "https://greathouse.rv.ua/data-base/144.json",
+    'url': "../data-base/144.json",
     'success': function(data){
       // round 2
       let true2 = 0
@@ -406,7 +406,7 @@ loadAndPutSVGBuilding = function() {
   let choose = document.getElementById('choose')
   $.ajax({
     "method": "GET",
-    'url': "https://greathouse.rv.ua/data-base/rounds/building.svg",
+    'url': "../../data-base/rounds/building.svg",
     'success': function(data){
       choose.appendChild(data.documentElement);
       $('.choose-round__path-round').click(function(event){
@@ -429,12 +429,12 @@ funcPushImagesRoundBti = function(numOfRound) {
 
   $.ajax({
     "method": "GET",
-    'url': "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/0.svg",
+    'url': "../../data-base/rounds/" + numOfRound + "/0.svg",
     'success': function(data){
       let roundContent = document.getElementById('roundContent');
       roundBtiContainer.appendChild(data.documentElement);
       $('.apartment').click(function(event){
-        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
+        window.location.href = "./apartment/?num=" + $(this).attr("data-apartment-id");
       })
       funcShowInfoBlockApartment()
     }
@@ -442,12 +442,12 @@ funcPushImagesRoundBti = function(numOfRound) {
 
   $.ajax({
     "method": "GET",
-    'url': "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/90.svg",
+    'url': "../data-base/rounds/" + numOfRound + "/90.svg",
     'success': function(data){
       let roundContent = document.getElementById('roundContent');
       roundBtiContainer.appendChild(data.documentElement);
       $('.apartment').click(function(event){
-        window.location.href = "https://greathouse.rv.ua/choose/apartment/?num=" + $(this).attr("data-apartment-id");
+        window.location.href = "./apartment/?num=" + $(this).attr("data-apartment-id");
       })
       funcShowFalseApartments()
       funcShowInfoBlockApartment()
@@ -456,13 +456,13 @@ funcPushImagesRoundBti = function(numOfRound) {
 
   let img = document.createElement('img');
   img.classList.add("round-bti__bg-image");
-  img.src = "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/0.png";
+  img.src = "../data-base/rounds/" + numOfRound + "/0.png";
   roundBtiContainer.appendChild(img);
   document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
 
   let img90 = document.createElement('img');
   img90.classList.add("round-bti__bg-image-90");
-  img90.src = "https://greathouse.rv.ua/data-base/rounds/" + numOfRound + "/90.png";
+  img90.src = "../data-base/rounds/" + numOfRound + "/90.png";
   roundBtiContainer.appendChild(img90);
   document.getElementById('round-bti').scrollIntoView({behavior: "smooth"});
 }
