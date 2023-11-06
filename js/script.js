@@ -375,7 +375,3 @@ funcShowInfoBlockApartment = function(){
 $(window).on('load', function () {
   $('.loader').addClass('hide');
 }) 
-
-$('.footer__btn-submit').click(function(event){
-  $('.message-sended').addClass('active')
-});

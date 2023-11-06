@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $message);
 
     // Redirect back to the form or a thank you page
-    // header("Location: /?thank");
+    header("Location: thanks.html");
     exit();
 }
 ?>
