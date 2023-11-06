@@ -582,13 +582,14 @@
           </div>
 
         </div>
+
         <div class="footer__feedback">
           <h3 class="subtitle">Ми вам зателефонуємо:</h3>
           <div class="footer__content">
-            <form action="send.php" method="post">
-              <input type="text" name="name" placeholder="Імʼя, Прізвище" class="footer__input" required>
-              <input type="tel" name="phone" placeholder="(096) 070 77-55" class="footer__input" required>
-              <button type="submit" name="send" class="footer__btn-submit">Замовити дзвінок</button>
+            <form action="submit.php" method="post">
+              <input id="name" name="name" type="text" placeholder="Імʼя, Прізвище" class="footer__input" required>
+              <input type="tel" id="phone" name="phone" placeholder="(096) 070 77-55" class="footer__input" required>
+              <button type="submit" value="Submit" class="footer__btn-submit">Замовити дзвінок</button>
             </form>
           </div>
         </div>
