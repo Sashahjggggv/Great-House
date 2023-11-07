@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дякуємо за звернення!</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #redirect {
+            color: #333;
+        }
+    </style>
+    <script>
+        // Redirect to the main page after 5 seconds
+        setTimeout(function() {
+            window.location.href = "https://greathouse.rv.ua/";
+        }, 5000);
+    </script>
 </head>
 <body>
-  Дякую, за повідомлення!
-  Звʼяжемося найближчим часом.
+    <a href="https://greathouse.rv.ua/"><img src="/img/logo.svg" alt="Great House" style="width: 150px;"></a>
+    <h1>Дякуємо за Ваше звернення!</h1>
+    <p id="redirect">Ми звʼяжемося з Вами найближчим часом.</p>
+    <p id="redirect">Ви будете перенаправлені на головну сторінку через 5 секунд. Якщо ні, <a href="https://greathouse.rv.ua/">натисніть тут</a>.</p>
 </body>
 </html>

@@ -83,10 +83,10 @@
       <div class="contacts__feedback">
         <h3 class="contacts__title subtitle">Ми вам зателефонуємо:</h3>
         <div class="contacts__content">
-          <form action="">
-            <input type="text" placeholder="Імʼя, Прізвище" class="contacts__input">
-            <input type="tel" placeholder="(096) 070 77-55" class="contacts__input">
-            <button class="contacts__btn-submit">Замовити дзвінок</button>
+          <form action="../../submit.php" method="post">
+            <input id="name" name="name" type="text" placeholder="Імʼя, Прізвище" class="contacts__input" required>
+            <input type="tel" id="phone" name="phone" placeholder="(096) 070 77-55" class="contacts__input" required>
+            <button type="submit" value="Submit" class="contacts__btn-submit">Замовити дзвінок</button>
           </form>
         </div>
       </div>
@@ -516,10 +516,10 @@
         <div class="footer__feedback">
           <h3 class="subtitle">Ми вам зателефонуємо:</h3>
           <div class="footer__content">
-            <form action="">
-              <input type="text" placeholder="Імʼя, Прізвище" class="footer__input">
-              <input type="tel" placeholder="(096) 070 77-55" class="footer__input">
-              <button class="footer__btn-submit">Замовити дзвінок</button>
+            <form action="../../submit.php" method="post">
+              <input id="name" name="name" type="text" placeholder="Імʼя, Прізвище" class="footer__input" required>
+              <input type="tel" id="phone" name="phone" placeholder="(096) 070 77-55" class="footer__input" required>
+              <button type="submit" value="Submit" class="footer__btn-submit">Замовити дзвінок</button>
             </form>
           </div>
         </div>
