@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST["phone"];
 
     // Email configuration
-    $to = "info@greathouse.rv.ua";
+    $to = "mail@greathouse.rv.ua";
     $subject = "New Feedback Submission";
     $message = "Name: $name\nPhone: $phone";
 
